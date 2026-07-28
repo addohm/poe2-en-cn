@@ -112,6 +112,11 @@
   .rail button .zh { font-size: 12.5px; color: var(--ink-faint); }
   .rail button.on .zh { color: var(--gold-dim); }
   .rail button .n { margin-left: auto; font-size: 12px; color: var(--ink-faint); }
+  .rail button.sub { padding-left: 32px; font-size: 14px; position: relative; }
+  .rail button.sub::before {
+    content: "◆"; position: absolute; left: 19px; font-size: 7px;
+    color: var(--gold-dim); opacity: .6; top: 50%; transform: translateY(-50%);
+  }
   .rail .foot { padding: 12px 18px 4px; font-size: 11.5px; color: var(--ink-faint); border-top: 1px solid var(--line); margin-top: 10px; }
 
   main { flex: 1; min-width: 0; }
@@ -228,6 +233,8 @@
     nav.rail { position: static; width: 100%; flex: none; display: flex; flex-wrap: wrap; gap: 2px; padding: 8px; }
     .rail h3 { flex-basis: 100%; padding: 8px 10px 2px; }
     .rail button { width: auto; border-left: 0; border: 1px solid transparent; border-radius: 3px; padding: 5px 10px; }
+    .rail button.sub { padding-left: 10px; font-size: 14px; }
+    .rail button.sub::before { display: none; }
     .rail button.on { border-color: var(--gold-dim); }
     .rail button .n { margin-left: 6px; }
     .rail .foot { display: none; }
@@ -287,15 +294,38 @@ const NAV = [
     ["chaos-mod", "Chaos Trial", "混沌试炼"],
   ]},
   { section: ["Endgame", "终局"], cats: [
-    ["atlas-tree", "Atlas Tree", "舆图天赋"],
+    ["atlas-core", "Atlas Tree", "舆图天赋"],
+    ["atlas-breach", "Breach", "裂隙", true],
+    ["atlas-delirium", "Delirium", "惊悸迷雾", true],
+    ["atlas-ritual", "Ritual", "驱灵祭坛", true],
+    ["atlas-expedition", "Expedition", "先祖秘藏", true],
+    ["atlas-abyss", "Abyss", "深渊", true],
+    ["atlas-incursion", "Incursion", "穿越", true],
+    ["atlas-master", "Atlas Tree Masters", "异界大师"],
     ["genesis-tree", "Genesis Tree", "创世天赋"],
   ]},
   { section: ["Character", "角色"], cats: [
     ["passive-tree", "Passive Tree", "天赋树"],
   ]},
 ];
-const GRID_CATS = new Set(["sekhemas-boon", "sekhemas-affliction", "atlas-tree", "genesis-tree", "passive-tree", "chaos-mod"]);
+const GRID_CATS = new Set(["sekhemas-boon", "sekhemas-affliction", "genesis-tree", "passive-tree", "chaos-mod", "atlas-master",
+  "atlas-core", "atlas-breach", "atlas-delirium", "atlas-ritual", "atlas-expedition", "atlas-abyss", "atlas-incursion"]);
 const CHUNK = 120;
+// virtual categories: id -> [real cat, atlas sub-tree]
+const VIRT = {
+  "atlas-core": ["atlas-tree", "Core"],
+  "atlas-breach": ["atlas-tree", "Breach"],
+  "atlas-delirium": ["atlas-tree", "Delirium"],
+  "atlas-ritual": ["atlas-tree", "Ritual"],
+  "atlas-expedition": ["atlas-tree", "Expedition"],
+  "atlas-abyss": ["atlas-tree", "Abyss"],
+  "atlas-incursion": ["atlas-tree", "Incursion"],
+};
+const subtreeOf = (e) => (e.en.sub || "").split("·")[0].trim() || "Core";
+const inCat = (e, id) => {
+  const v = VIRT[id];
+  return v ? e.cat === v[0] && subtreeOf(e) === v[1] : e.cat === id;
+};
 
 const DATA = window.POE2REF.entries;
 const CAT_INFO = {};
@@ -317,13 +347,20 @@ function groupOf(e) {
       const s = e.en.sub || "";
       return /major/i.test(s) ? ["Major", "主要"] : /minor/i.test(s) ? ["Minor", "次要"] : ["", ""];
     }
+    case "atlas-master": {
+      const g = (e.en.sub || "").replace(/\s*T\d+$/, "").trim();
+      const zh = (e.cn?.sub || "").replace(/\s*T\d+$/, "").trim();
+      return [g || "Masters", zh];
+    }
     case "sekhemas-room": {
       const f = (e.en.sub || "").match(/Floor: (.+)/);
       return f ? [f[1].trim(), ""] : ["", ""];
     }
-    case "atlas-tree": {
-      const seg = (e.en.sub || "").split("·")[0].trim();
-      return [seg || "Core", ""];
+    case "atlas-tree": case "genesis-tree-kind": {
+      const s = e.en.sub || "";
+      if (/Keystone/.test(s)) return ["Keystones", "基石"];
+      if (/Notable/.test(s)) return ["Notables", "核心天赋"];
+      return ["Small Passives", "小天赋"];
     }
     case "passive-tree": {
       const s = e.en.sub || "";
@@ -441,7 +478,7 @@ function renderChunk() {
 
 function render() {
   const q = query;
-  let items = DATA.filter((e) => e.cat === cat && (!q || e._blob.includes(q)));
+  let items = DATA.filter((e) => inCat(e, cat) && (!q || e._blob.includes(q)));
   // attach group labels + stable idx
   for (const e of items) {
     const pair = groupOf(e);
@@ -450,11 +487,11 @@ function render() {
   // group-aware ordering (stable: entries keep source order within a group)
   if (cat === "quest") {
     items.sort((a, b) => (parseInt(a.act) || 99) - (parseInt(b.act) || 99));
-  } else if (cat === "passive-tree" || cat === "genesis-tree") {
+  } else if (cat === "passive-tree" || cat === "genesis-tree" || VIRT[cat]) {
     const rank = (g) => { const i = GROUP_ORDER.indexOf(g); return i < 0 ? 10 : i; };
     items.sort((a, b) => rank(a._g) - rank(b._g) || a._g.localeCompare(b._g) || a.en.name.localeCompare(b.en.name));
-  } else if (cat === "atlas-tree") {
-    items.sort((a, b) => (a._g === "Core" ? "" : a._g).localeCompare(b._g === "Core" ? "" : b._g) || a.en.name.localeCompare(b.en.name));
+  } else if (cat === "atlas-master") {
+    items.sort((a, b) => a._g.localeCompare(b._g) || (a.en.sub || "").localeCompare(b.en.sub || ""));
   } else if (cat === "sekhemas-boon" || cat === "sekhemas-affliction") {
     const rank = (g) => (g === "Minor" ? 0 : 1);
     items.sort((a, b) => rank(a._g) - rank(b._g));
@@ -479,14 +516,14 @@ function render() {
 /* ---------------- interactions ---------------- */
 function buildRail() {
   const counts = {};
-  for (const e of DATA) counts[e.cat] = (counts[e.cat] ?? 0) + 1;
+  for (const s of NAV) for (const [id] of s.cats) counts[id] = DATA.filter((e) => inCat(e, id)).length;
   let html = "";
   for (const s of NAV) {
     const cats = s.cats.filter(([id]) => counts[id]);
     if (!cats.length) continue;
     html += `<h3>${esc(s.section[0])} · ${esc(s.section[1])}</h3>`;
-    for (const [id, en, zh] of cats) {
-      html += `<button data-cat="${id}"><span>${esc(en)}</span><span class="zh">${esc(zh)}</span><span class="n">${counts[id]}</span></button>`;
+    for (const [id, en, zh, indent] of cats) {
+      html += `<button data-cat="${id}"${indent ? ' class="sub"' : ""}><span>${esc(en)}</span><span class="zh">${esc(zh)}</span><span class="n">${counts[id]}</span></button>`;
     }
   }
   html += `<div class="foot">Official localized text from both game clients, paired via <a href="https://poe2db.tw" target="_blank" rel="noopener">poe2db.tw</a>.<br>国际服与国服官方文本对照。</div>`;

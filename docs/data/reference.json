@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-28T09:05:36.635Z",
+ "generated": "2026-07-28T09:38:50.238Z",
  "source": "poe2db.tw (/us and /cn)",
  "entries": [
   {
@@ -26306,6 +26306,546 @@
    ]
   },
   {
+   "cat": "atlas-master",
+   "key": "atlas-master/JadoKeystone1",
+   "icon": "assets/icons/12f5ba_jadokeystone1.webp",
+   "en": {
+    "name": "Trove Seekers",
+    "sub": "Jado's Spycraft T1",
+    "desc": "100% increased amount of Rare ChestsStrongboxes have 100% increased chance to be Unique"
+   },
+   "cn": {
+    "name": "宝藏寻猎者",
+    "sub": "贾多的间谍之道 T1",
+    "desc": "稀有宝箱数量提高 100%保险箱为传奇的几率提高 100%"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/JadoKeystone2",
+   "icon": "assets/icons/9257c1_jadokeystone2.webp",
+   "en": {
+    "name": "In The Wrong Hands",
+    "sub": "Jado's Spycraft T1",
+    "desc": "Powerful Map Bosses drop an additional unique item"
+   },
+   "cn": {
+    "name": "落入错手",
+    "sub": "贾多的间谍之道 T1",
+    "desc": "强力地图首领掉落一件额外的传奇物品"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/JadoKeystone3",
+   "icon": "assets/icons/fd3ede_jadokeystone3.webp",
+   "en": {
+    "name": "Unexpected Missions",
+    "sub": "Jado's Spycraft T1",
+    "desc": "Corrupted Waystones open a Random Map Area when used on Basic MapsCorrupted Waystones open Maps with 1 additional random Modifiers"
+   },
+   "cn": {
+    "name": "意外使命",
+    "sub": "贾多的间谍之道 T1",
+    "desc": "被腐化引路石用于基础地图时，会开启一个随机地图区域。由被腐化引路石开启的地图拥有额外 1 个随机词缀"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/JadoKeystone4",
+   "icon": "assets/icons/ef2f6f_jadokeystone4.webp",
+   "en": {
+    "name": "Unforeseen Threats",
+    "sub": "Jado's Spycraft T2",
+    "desc": "5% chance on completing Maps for a nearby Anomaly Map to be revealed"
+   },
+   "cn": {
+    "name": "未卜之患",
+    "sub": "贾多的间谍之道 T2",
+    "desc": "完成地图后，有 5% 的几率揭示一张邻近的奇点地图"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/JadoKeystone5",
+   "icon": "assets/icons/5a20a6_jadokeystone5.webp",
+   "en": {
+    "name": "Mysterious Gifts",
+    "sub": "Jado's Spycraft T2",
+    "desc": "Rare Strongbox Monsters have 5% chance to drop a Cryptic KeyUnique Monsters have 1% chance to drop a Cryptic Key"
+   },
+   "cn": {
+    "name": "神秘馈赠",
+    "sub": "贾多的间谍之道 T2",
+    "desc": "稀有保险箱有 5% 的几率掉落一把神秘钥匙传奇怪物有 1% 的几率掉落一把神秘钥匙"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/JadoKeystone6",
+   "icon": "assets/icons/41f45a_jadokeystone6.webp",
+   "en": {
+    "name": "Eastern Knowledge",
+    "sub": "Jado's Spycraft T2",
+    "desc": "Verisium Remnants have 10% chance to be rolled an additional time, keeping the rarest outcome"
+   },
+   "cn": {
+    "name": "东方学识",
+    "sub": "贾多的间谍之道 T2",
+    "desc": "维金残片有 10% 的几率额外随机出一次，保留最稀有的结果"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/JadoKeystone7",
+   "icon": "assets/icons/a3f4c0_jadokeystone7.webp",
+   "en": {
+    "name": "Partial Translations",
+    "sub": "Jado's Spycraft T3",
+    "desc": "Randomly gain between 0 and 40% increased effect of Explicit Modifiers on Tablets"
+   },
+   "cn": {
+    "name": "残篇译解",
+    "sub": "贾多的间谍之道 T3",
+    "desc": "石板上的外延词缀效果随机提高 0 至 40%"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/JadoKeystone8",
+   "icon": "assets/icons/66fed0_jadokeystone8.webp",
+   "en": {
+    "name": "Stolen Relics",
+    "sub": "Jado's Spycraft T3",
+    "desc": "Unique Strongboxes may be the Legacy of the Order, dropping a Twilight Reliquary Key"
+   },
+   "cn": {
+    "name": "失窃圣物",
+    "sub": "贾多的间谍之道 T3",
+    "desc": "传奇保险箱可能为教团之遗，并掉落暮光圣物厅钥匙"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/JadoKeystone9",
+   "icon": "assets/icons/2030dd_jadokeystone9.webp",
+   "en": {
+    "name": "Long Days",
+    "sub": "Jado's Spycraft T3",
+    "desc": "20% more chance of Random Extra Content"
+   },
+   "cn": {
+    "name": "悠长岁月",
+    "sub": "贾多的间谍之道 T3",
+    "desc": "随机额外内容出现几率总增 20%"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/JadoKeystone10",
+   "icon": "assets/icons/38e6e2_jadokeystone10.webp",
+   "en": {
+    "name": "Keen Appraisal",
+    "sub": "Jado's Spycraft T4",
+    "desc": "50% increased Exceptional Items found"
+   },
+   "cn": {
+    "name": "敏锐鉴识",
+    "sub": "贾多的间谍之道 T4",
+    "desc": "找到卓越物品的几率提高 50%"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/JadoKeystone11",
+   "icon": "assets/icons/9269f2_jadokeystone11.webp",
+   "en": {
+    "name": "Untold Histories",
+    "sub": "Jado's Spycraft T4",
+    "desc": "35% increased chance to find Lineage SupportsPinnacle Bosses have an 50% increased chance to drop Lineage SupportsPinnacle Bosses take 35% less Damage"
+   },
+   "cn": {
+    "name": "未闻史册",
+    "sub": "贾多的间谍之道 T4",
+    "desc": "血脉辅助的掉落几率提高 35%巅峰首领受到的伤害降低 35%巅峰首领掉落血脉辅助的几率提高 50%"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/JadoKeystone12",
+   "icon": "assets/icons/83be57_jadokeystone12.webp",
+   "en": {
+    "name": "Ancient Activations",
+    "sub": "Jado's Spycraft T4",
+    "desc": "Powerful Map Bosses have 5% chance to add a Ancient Modifiers to a nearby Map"
+   },
+   "cn": {
+    "name": "远古启动",
+    "sub": "贾多的间谍之道 T4",
+    "desc": "强力地图首领有 5% 的几率为一张邻近地图增加一个远古词缀"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/DoryaniKeystone1",
+   "icon": "assets/icons/6f9e1f_doryanikeystone1.webp",
+   "en": {
+    "name": "Stitch the Flesh",
+    "sub": "Doryani's Science T1",
+    "desc": "Your Maps have an additional Revival, up to 6"
+   },
+   "cn": {
+    "name": "缝合血肉",
+    "sub": "多里亚尼的科学之道 T1",
+    "desc": "你的地图有一次额外复活"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/DoryaniKeystone2",
+   "icon": "assets/icons/d083a8_doryanikeystone2.webp",
+   "en": {
+    "name": "Refined Formula",
+    "sub": "Doryani's Science T1",
+    "desc": "150% increased Expedition Explosive Radius100% increased Expedition Explosive Placement RangeExpeditions have only 1 ExplosiveGrand Expeditions have only 5 Explosives"
+   },
+   "cn": {
+    "name": "精炼配方",
+    "sub": "多里亚尼的科学之道 T1",
+    "desc": "先祖秘藏的爆破半径提高 150%先祖秘藏的炸药放置范围提高 100%先祖秘藏仅有 1 个炸药大型探险仅含有5个炸药"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/DoryaniKeystone3",
+   "icon": "assets/icons/8b7f8f_doryanikeystone3.webp",
+   "en": {
+    "name": "Evolutionary Pressure",
+    "sub": "Doryani's Science T1",
+    "desc": "1% increased Rarity of Items Dropped by Monsters per Explicit Modifier on the Map2% increased Effectiveness of Monsters per Explicit Modifier on the MapRare Monsters have a 3% increased chance of Monster Modifiers per Explicit Modifier on the Map"
+   },
+   "cn": {
+    "name": "进化压力",
+    "sub": "多里亚尼的科学之道 T1",
+    "desc": "地图上每有一个外延词缀，怪物掉落的物品稀有度提高 1%地图上每有一个外延词缀，怪物的效能提高 2%地图上每有一个外延词缀，稀有怪物拥有怪物词缀的几率提高 3%"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/DoryaniKeystone4",
+   "icon": "assets/icons/2d6872_doryanikeystone4.webp",
+   "en": {
+    "name": "Improved Calibration",
+    "sub": "Doryani's Science T2",
+    "desc": "Waystones have 25% more effect of Prefix Modifiers or 25% more effect of Suffix Modifiers when opening Maps"
+   },
+   "cn": {
+    "name": "改良校准",
+    "sub": "多里亚尼的科学之道 T2",
+    "desc": "打开地图时，引路石的前缀效果总增 25%，或者后缀效果总增 25%"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/DoryaniKeystone5",
+   "icon": "assets/icons/f7879e_doryanikeystone5.webp",
+   "en": {
+    "name": "Disengaged Safeties",
+    "sub": "Doryani's Science T2",
+    "desc": "Map Areas are Irradiated"
+   },
+   "cn": {
+    "name": "解除保险",
+    "sub": "多里亚尼的科学之道 T2",
+    "desc": "地图区域为能量辐照"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/DoryaniKeystone6",
+   "icon": "assets/icons/68f815_doryanikeystone6.webp",
+   "en": {
+    "name": "Careful Procurement",
+    "sub": "Doryani's Science T2",
+    "desc": "Magic Monster Packs have 35% chance to have an additional Modifier"
+   },
+   "cn": {
+    "name": "谨慎采购",
+    "sub": "多里亚尼的科学之道 T2",
+    "desc": "魔法怪物群落有 35% 的几率拥有一个额外的词缀"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/DoryaniKeystone7",
+   "icon": "assets/icons/a4f623_doryanikeystone7.webp",
+   "en": {
+    "name": "Volatile Connection",
+    "sub": "Doryani's Science T3",
+    "desc": "15% chance areas are Cleansed or Corrupted"
+   },
+   "cn": {
+    "name": "易爆链路",
+    "sub": "多里亚尼的科学之道 T3",
+    "desc": "区域有 15% 的几率已净化或被腐化"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/DoryaniKeystone8",
+   "icon": "assets/icons/794515_doryanikeystone8.webp",
+   "en": {
+    "name": "Mechanical Guardians",
+    "sub": "Doryani's Science T3",
+    "desc": "Non-Unique Strongboxes are guarded by a dormant ConstructThese Strongboxes only roll Modifiers which apply to the ConstructOpening the Strongbox activates the ConstructStrongboxes have 2% increased Item Quantity per Modifier"
+   },
+   "cn": {
+    "name": "机械守卫",
+    "sub": "多里亚尼的科学之道 T3",
+    "desc": "非传奇保险箱由一个休眠构造体看守这些保险箱只会随机出应用于构造体的词缀开启保险箱将激活构造体每有一个词缀，保险箱的物品数量提高 2%"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/DoryaniKeystone9",
+   "icon": "assets/icons/be3ce6_doryanikeystone9.webp",
+   "en": {
+    "name": "Hidden Patterns",
+    "sub": "Doryani's Science T3",
+    "desc": "10% chance when completing a Map to make nearby Maps accessible"
+   },
+   "cn": {
+    "name": "暗藏规律",
+    "sub": "多里亚尼的科学之道 T3",
+    "desc": "完成一张地图后有 10% 的几率解锁附近的地图"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/DoryaniKeystone10",
+   "icon": "assets/icons/e5a168_doryanikeystone10.webp",
+   "en": {
+    "name": "Dam the River",
+    "sub": "Doryani's Science T4",
+    "desc": "Azmeri Spirits only Possess monsters after reaching maximum empowerment"
+   },
+   "cn": {
+    "name": "截断江河",
+    "sub": "多里亚尼的科学之道 T4",
+    "desc": "阿兹莫里之灵只有在达到最大强化后才会附身怪物"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/DoryaniKeystone11",
+   "icon": "assets/icons/80ee61_doryanikeystone11.webp",
+   "en": {
+    "name": "Remnants of Greatness",
+    "sub": "Doryani's Science T4",
+    "desc": "Map Bosses have 20% chance to be guarding a Precursor Terraformer which can be used to change the biome of a group of maps nearby"
+   },
+   "cn": {
+    "name": "伟大遗迹",
+    "sub": "多里亚尼的科学之道 T4",
+    "desc": "地图首领有 20% 正在看守一个先驱地貌改造者，该装置可用于改造一组邻近地图的地貌"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/DoryaniKeystone12",
+   "icon": "assets/icons/38a880_doryanikeystone12.webp",
+   "en": {
+    "name": "Head of the Snake",
+    "sub": "Doryani's Science T4",
+    "desc": "Pinnacle Bosses have 25% chance to drop an additional Unique itemPowerful Map Bosses have 5% chance when defeated to reveal a nearby CitadelPinnacle Bosses have a single Revive"
+   },
+   "cn": {
+    "name": "斩首蛇头",
+    "sub": "多里亚尼的科学之道 T4",
+    "desc": "巅峰首领有 25% 的几率额外掉落一件传奇物品强力地图首领被击败时，有 5% 的几率破解一个附近的城塞巅峰首领可复活一次"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/HildaKeystone1",
+   "icon": "assets/icons/520f16_hildakeystone1.webp",
+   "en": {
+    "name": "Breeding Season",
+    "sub": "Hilda's Hunting T1",
+    "desc": "15% increased Rare MonstersRare Monsters have 25% increased chance of Monster Modifiers"
+   },
+   "cn": {
+    "name": "繁殖季节",
+    "sub": "希尔达的狩猎之道 T1",
+    "desc": "稀有怪物提高 15%稀有怪物有怪物词缀的几率提高 25%"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/HildaKeystone2",
+   "icon": "assets/icons/4f5dbb_hildakeystone2.webp",
+   "en": {
+    "name": "Mighty Prey",
+    "sub": "Hilda's Hunting T1",
+    "desc": "25% chance to upgrade Map Bosses to Powerful Map Bosses"
+   },
+   "cn": {
+    "name": "强横猎物",
+    "sub": "希尔达的狩猎之道 T1",
+    "desc": "地图首领有 25% 的几率升级为强力地图首领"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/HildaKeystone3",
+   "icon": "assets/icons/050f36_hildakeystone3.webp",
+   "en": {
+    "name": "Scarred Lands",
+    "sub": "Hilda's Hunting T1",
+    "desc": "15% increased number of Runic Monster Markers20% increased number of Rare Expedition Monsters"
+   },
+   "cn": {
+    "name": "伤痕大地",
+    "sub": "希尔达的狩猎之道 T1",
+    "desc": "符文怪物之印的数量提高 15%稀有先祖秘藏怪物的数量提高 20%"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/HildaKeystone4",
+   "icon": "assets/icons/4341bd_hildakeystone4.webp",
+   "en": {
+    "name": "Dangerous Game",
+    "sub": "Hilda's Hunting T2",
+    "desc": "Rogue Exiles have 20% chance to Flee to an adjacent Map and upgrade their Equipment"
+   },
+   "cn": {
+    "name": "危险游戏",
+    "sub": "希尔达的狩猎之道 T2",
+    "desc": "盗贼流放者有 20% 的几率逃往相邻地图，并升级其装备"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/HildaKeystone5",
+   "icon": "assets/icons/643f96_hildakeystone5.webp",
+   "en": {
+    "name": "Soul Eaters",
+    "sub": "Hilda's Hunting T2",
+    "desc": "Map Bosses have 2% increased Effectiveness per 100 Power of Monsters slain in the Area"
+   },
+   "cn": {
+    "name": "噬魂者",
+    "sub": "希尔达的狩猎之道 T2",
+    "desc": "在区域内击杀的怪物每有 100 点威力值，地图首领的效能提高 2%"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/HildaKeystone6",
+   "icon": "assets/icons/760fb1_hildakeystone6.webp",
+   "en": {
+    "name": "Will of the Draíocht",
+    "sub": "Hilda's Hunting T2",
+    "desc": "Azmeri Spirits cannot Possess Rare Monsters"
+   },
+   "cn": {
+    "name": "德莱契之意志",
+    "sub": "希尔达的狩猎之道 T2",
+    "desc": "阿兹莫里之灵无法附身稀有怪物"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/HildaKeystone7",
+   "icon": "assets/icons/e8ad49_hildakeystone7.webp",
+   "en": {
+    "name": "Call of the Spirits",
+    "sub": "Hilda's Hunting T3",
+    "desc": "Possessed Unique Monsters release Spirits on death"
+   },
+   "cn": {
+    "name": "万灵召唤",
+    "sub": "希尔达的狩猎之道 T3",
+    "desc": "被附身的传奇怪物被击败时释出阿兹莫里之灵"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/HildaKeystone8",
+   "icon": "assets/icons/9c6cc3_hildakeystone8.webp",
+   "en": {
+    "name": "Ancient Inscriptions",
+    "sub": "Hilda's Hunting T3",
+    "desc": "8% increased effect of Explicit Modifiers on Tablets for each type of Tablet affecting Map area"
+   },
+   "cn": {
+    "name": "远古铭文",
+    "sub": "希尔达的狩猎之道 T3",
+    "desc": "每有一种影响地图区域的石板类型，石板上的外延词缀效果提高 8%"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/HildaKeystone9",
+   "icon": "assets/icons/32d809_hildakeystone9.webp",
+   "en": {
+    "name": "Lethal Adaptation",
+    "sub": "Hilda's Hunting T3",
+    "desc": "40% increased Effectiveness of Unique Monsters with Modifiers"
+   },
+   "cn": {
+    "name": "致命适应",
+    "sub": "希尔达的狩猎之道 T3",
+    "desc": "带有词缀的传奇怪物效能提高 40%"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/HildaKeystone10",
+   "icon": "assets/icons/e7b201_hildakeystone10.webp",
+   "en": {
+    "name": "Patient Battue",
+    "sub": "Hilda's Hunting T4",
+    "desc": "25% chance 1 Rare Monster is replaced by a random Map Boss5% chance 3 additional Rare Monsters are replaced by a random Map Boss"
+   },
+   "cn": {
+    "name": "耐心驱猎",
+    "sub": "希尔达的狩猎之道 T4",
+    "desc": "有 25% 的几率 1 个稀有怪物被替换为一个随机地图首领3 个额外稀有怪物有 5% 的几率被替换为一个随机地图首领"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/HildaKeystone11",
+   "icon": "assets/icons/4698a5_hildakeystone11.webp",
+   "en": {
+    "name": "Gutting and Skinning",
+    "sub": "Hilda's Hunting T4",
+    "desc": "Pinnacle Bosses may be scavenged for 5% chance to drop an additional Unique item1% chance Unique Monsters may be scavenged for a Unique item"
+   },
+   "cn": {
+    "name": "开膛破肚",
+    "sub": "希尔达的狩猎之道 T4",
+    "desc": "巅峰首领可被回收，且有 5% 的几率额外掉落一件传奇物品有 1% 的几率可从传奇怪物身上搜刮一件传奇物品"
+   }
+  },
+  {
+   "cat": "atlas-master",
+   "key": "atlas-master/HildaKeystone12",
+   "icon": "assets/icons/a11b88_hildakeystone12.webp",
+   "en": {
+    "name": "Claimed Territories",
+    "sub": "Hilda's Hunting T4",
+    "desc": "Overlord's Influence and Overlord's Domain Atlas Passive Skills have 45% chance to add twice as much content"
+   },
+   "cn": {
+    "name": "占据之地",
+    "sub": "希尔达的狩猎之道 T4",
+    "desc": "霸主之影响与霸主之域异界天赋有 45% 的几率使内容数量翻倍"
+   }
+  },
+  {
    "cat": "atlas-tree",
    "key": "atlas-tree/Grand_Mirror_Chance",
    "icon": "assets/icons/3afd48_deliriumnode1.webp",
@@ -26345,13 +26885,13 @@
    "icon": "assets/icons/2c415b_abyssnotable1.webp",
    "en": {
     "name": "Balance of Power",
-    "sub": "Abyss · Keystone",
+    "sub": "Abyss · Keystone/Notable",
     "desc": "Select an Abyss Faction to always encounter\n• Amanamu\n• Kurgal\n• Ulaman\n• Any Faction",
     "flavour": ""
    },
    "cn": {
     "name": "力量平衡",
-    "sub": "Abyss · Keystone",
+    "sub": "Abyss · Keystone/Notable",
     "desc": "选择一个必定遭遇的深渊派系\n• 阿曼娜姆\n• 古加尔\n• 乌拉曼\n• 任意派系",
     "flavour": ""
    }
@@ -26506,6 +27046,23 @@
     "name": "夏波卡多的阴谋",
     "sub": "Incursion · Notable",
     "desc": "神庙中每有一个不同的房间，神庙房间词缀的效果提高 1%",
+    "flavour": ""
+   }
+  },
+  {
+   "cat": "atlas-tree",
+   "key": "atlas-tree/Come_on_Face_me",
+   "icon": "assets/icons/52f6ff_deliriumnotable3.webp",
+   "en": {
+    "name": "Come on! Face me!",
+    "sub": "Delirium · Notable",
+    "desc": "25% increased chance to manifest additional Unique Boss Shards within Delirium Fog\nSlaying Unique Monsters pauses the Delirium Mirror Timer for 10 seconds",
+    "flavour": ""
+   },
+   "cn": {
+    "name": "来啊！面对我！",
+    "sub": "Delirium · Notable",
+    "desc": "额外传奇首领碎片在惊悸迷雾中显现的几率提高 25%\n击败传奇怪物使惊悸迷雾之镜的倒计时暂停 10 秒",
     "flavour": ""
    }
   },
@@ -26753,13 +27310,13 @@
    "icon": "assets/icons/984ee8_breachbossclaspedhands.webp",
    "en": {
     "name": "Breeding Program",
-    "sub": "Breach · Keystone",
+    "sub": "Breach · Keystone/Notable",
     "desc": "100% increased chance to find selected Wombgifts\n• Lavish Wombgifts\n• Ornate Wombgifts\n• Banded Wombgifts\n• Signet Wombgifts",
     "flavour": ""
    },
    "cn": {
     "name": "繁育计划",
-    "sub": "Breach · Keystone",
+    "sub": "Breach · Keystone/Notable",
     "desc": "所选孕育赠礼掉落的几率提高 100%\n• 丰裕孕育赠礼\n• 华丽孕育赠礼\n• 束带孕育赠礼\n• 印戒孕育赠礼",
     "flavour": ""
    }
@@ -26872,13 +27429,13 @@
    "icon": "assets/icons/c88985_alvanotable3.webp",
    "en": {
     "name": "Atziri's Assets",
-    "sub": "Incursion · Keystone",
+    "sub": "Incursion · Keystone/Notable",
     "desc": "Requires defeating Atziri in the Temple\nAtziri's Vault will contain an additional reward\n• Vaal Unique Item\n• Medallion\n• Temple Currency\n• 20% chance of an extra Atziri Unique",
     "flavour": ""
    },
    "cn": {
     "name": "阿兹里资产",
-    "sub": "Incursion · Keystone",
+    "sub": "Incursion · Keystone/Notable",
     "desc": "需要在神庙中击败阿兹里\n阿兹里的秘宝库会包含一项额外奖励\n• 瓦尔传奇物品\n• 纹章\n• 神庙通货\n• 有 20% 的几率出现一件额外的阿兹里传奇",
     "flavour": ""
    }
@@ -28028,13 +28585,13 @@
    "icon": "assets/icons/cda825_ritualnotable4.webp",
    "en": {
     "name": "Invigorated Sacrifices",
-    "sub": "Ritual · Keystone",
+    "sub": "Ritual · Keystone/Notable",
     "desc": "Requires defeating the Ritual Pinnacle Boss\nAlter the difficulty and rewards of Rituals\n• Revived monsters from Rituals have 5% reduced penalty to Tribute granted\n• Skills from Ritual Altars deal 50% increased DamageRitual Altars offer 10% increased number of Favours\n• Revived monsters from Rituals have 20% increased Toughnessand 10% increased Damage for each time they have been RevivedRevived monsters from Rituals have 50% reduced penalty to Tribute granted",
     "flavour": ""
    },
    "cn": {
     "name": "活力献祭",
-    "sub": "Ritual · Keystone",
+    "sub": "Ritual · Keystone/Notable",
     "desc": "需要击败驱灵仪式巅峰首领\n改变驱灵祭坛的难度和奖励\n• 驱灵祭坛复活怪物的贡品惩罚降低 5%\n• 驱灵祭坛的技能造成的伤害提高 50%驱灵祭坛提供的恩典数量提高 10%\n• 由驱灵祭坛复活的怪物每被复活一次，韧性提高 20%，伤害提高 10%驱灵祭坛复活怪物的贡品惩罚降低 50%",
     "flavour": ""
    }
@@ -28147,13 +28704,13 @@
    "icon": "assets/icons/38cbc7_deliriumnotable5.webp",
    "en": {
     "name": "Recurring Nightmares",
-    "sub": "Delirium · Keystone",
+    "sub": "Delirium · Keystone/Small",
     "desc": "Requires defeating the Delirium Pinnacle Boss\nAdjust the way Delirium Fog spreads from Grand Mirrors throughout the world\n• Delirium Fog spread to Maps has 50% increased chance to spread to an additional MapDelirium Fog spread to additional Maps has 25% chance to spread to each connected Map\n• Delirium Fog spreads to +4 Maps",
     "flavour": ""
    },
    "cn": {
     "name": "噩梦循环",
-    "sub": "Delirium · Keystone",
+    "sub": "Delirium · Keystone/Small",
     "desc": "需要击败惊悸迷雾巅峰首领\n调整惊悸迷雾从恢宏之镜中向世界的扩散方式\n• 扩散给地图的惊悸迷雾有 50% 的几率扩散给一张额外地图扩散给额外地图的惊悸迷雾有 25% 的几率扩散给每张关联地图\n• 惊悸迷雾扩散给 +4 张地图",
     "flavour": ""
    }
@@ -28368,13 +28925,13 @@
    "icon": "assets/icons/cfbc56_breachnotable3.webp",
    "en": {
     "name": "Sole Purpose",
-    "sub": "Breach · Keystone",
+    "sub": "Breach · Keystone/Notable",
     "desc": "Requires defeating the Breach Pinnacle Boss\nSpecialise in skills created by Ailith within Breach Hives\n• 100% increased damage of skills created\n• 50% increased number of skills created",
     "flavour": ""
    },
    "cn": {
     "name": "唯一目的",
-    "sub": "Breach · Keystone",
+    "sub": "Breach · Keystone/Notable",
     "desc": "需要击败裂隙巅峰首领\n艾利丝在裂隙巢穴内创造的专精技能\n• 生成的技能伤害提高 100%\n• 生成的技能数量提高 50%",
     "flavour": ""
    }
@@ -28449,7 +29006,7 @@
   },
   {
    "cat": "atlas-tree",
-   "key": "atlas-tree/I_know_your_childhood_fears...",
+   "key": "atlas-tree/I_know_your_childhood_fears",
    "icon": "assets/icons/8305ec_deliriumnotable7.webp",
    "en": {
     "name": "I know your childhood fears...",
@@ -28521,14 +29078,31 @@
    "icon": "assets/icons/4ed2f9_abyssnotable3.webp",
    "en": {
     "name": "Vile Treasures",
-    "sub": "Abyss · Keystone",
+    "sub": "Abyss · Keystone/Notable",
     "desc": "50% increased chance to find Abyssal Items\n• Abyssal Eyes\n• Omens\n• Lineage Supports",
     "flavour": ""
    },
    "cn": {
     "name": "污秽宝藏",
-    "sub": "Abyss · Keystone",
+    "sub": "Abyss · Keystone/Notable",
     "desc": "深渊物品的掉落几率提高 50%\n• 深渊之眼\n• 预兆\n• 血脉辅助",
+    "flavour": ""
+   }
+  },
+  {
+   "cat": "atlas-tree",
+   "key": "atlas-tree/You_cant_scare_me_anymore",
+   "icon": "assets/icons/8305ec_deliriumnotable7.webp",
+   "en": {
+    "name": "You can't scare me anymore!",
+    "sub": "Delirium · Notable",
+    "desc": "Requires activating a Grand Mirror\nUnique Monsters have a chance to drop Potent Emotions when slain within Delirium Fog:5% chance for Humanoids to drop Potent Liquid Melancholy5% chance for Beasts to drop Potent Liquid Ferocity5% chance for Constructs to drop Potent Liquid Contempt",
+    "flavour": ""
+   },
+   "cn": {
+    "name": "你再也吓不倒我了！",
+    "sub": "Delirium · Notable",
+    "desc": "需要激活 1 个恢宏之境\n在惊悸迷雾中击杀传奇怪物有几率掉落强力情感：人形有 5% 的几率掉落强效的液化悲哀野兽有 5% 的几率掉落强效的液化凶残构建体有 5% 的几率掉落 强效的液化轻蔑",
     "flavour": ""
    }
   },
@@ -29082,13 +29656,13 @@
    "icon": "assets/icons/67cd78_abyssmonstersspawn.webp",
    "en": {
     "name": "Lord of the Pit",
-    "sub": "Abyss · Keystone",
+    "sub": "Abyss · Keystone/Notable",
     "desc": "Manipulate Abyss Pits throughout Areas\n• Abyss Pits are scattered throughout Areas with Abysses\n• Abyssal Monsters have 10% increased Effectiveness for each closed Pit, up to 100%\n• Abysses have a 20% chance to contain an additional Abyss",
     "flavour": ""
    },
    "cn": {
     "name": "深坑主宰",
-    "sub": "Abyss · Keystone",
+    "sub": "Abyss · Keystone/Notable",
     "desc": "操纵整个区域内的深渊巨坑\n• 深渊巨坑散布在整个含有深渊的区域内\n• 每关闭一个巨坑，深渊怪物的强度提高 10%，最高可达 100%\n• 深渊有 20% 的几率额外包含一个深渊",
     "flavour": ""
    }
@@ -29367,7 +29941,7 @@
   },
   {
    "cat": "atlas-tree",
-   "key": "atlas-tree/Theres_nowhere_to_hide...",
+   "key": "atlas-tree/Theres_nowhere_to_hide",
    "icon": "assets/icons/b0e588_deliriumnotable6.webp",
    "en": {
     "name": "There's nowhere to hide...",
@@ -29520,6 +30094,23 @@
   },
   {
    "cat": "atlas-tree",
+   "key": "atlas-tree/Get_out_of_my_head",
+   "icon": "assets/icons/b0e588_deliriumnotable6.webp",
+   "en": {
+    "name": "Get out of my head!",
+    "sub": "Delirium · Notable",
+    "desc": "Magic Monsters within Delirium Fog have 25% chance to have an additional Delirium Modifier",
+    "flavour": ""
+   },
+   "cn": {
+    "name": "滚出我的脑袋！",
+    "sub": "Delirium · Notable",
+    "desc": "惊悸迷雾中的魔法怪物有 25% 的几率有一个额外惊悸迷雾词缀",
+    "flavour": ""
+   }
+  },
+  {
+   "cat": "atlas-tree",
    "key": "atlas-tree/Rotting_Bones",
    "icon": "assets/icons/ff34de_abyssnotable.webp",
    "en": {
@@ -29566,6 +30157,23 @@
     "name": "精良对手",
     "sub": "Core · Keystone",
     "desc": "盗贼流放者使用需求特定属性的装备的几率提高 100%\n• 力量\n• 敏捷\n• 智慧",
+    "flavour": ""
+   }
+  },
+  {
+   "cat": "atlas-tree",
+   "key": "atlas-tree/I_see_your_true_nature_now",
+   "icon": "assets/icons/b33063_deliriumnotable8.webp",
+   "en": {
+    "name": "I see your true nature now!",
+    "sub": "Delirium · Notable",
+    "desc": "Requires activating a Grand Mirror\nDelirium Fog may now manifest Shards which add an additional Boss to the Map Boss arena or a guaranteed Grand Mirror",
+    "flavour": ""
+   },
+   "cn": {
+    "name": "我现在看清了你的真面目！",
+    "sub": "Delirium · Notable",
+    "desc": "需要激活 1 个恢宏之境\n惊悸迷雾现在可以显现碎片，碎片会在地图首领竞技场内增加一个额外首领，或必定增加一面恢宏之镜",
     "flavour": ""
    }
   },
@@ -29804,6 +30412,23 @@
     "name": "神圣树液",
     "sub": "Core · Keystone",
     "desc": "适用于等级 70+区域\n需要完成东方或西方通道\n选择一个圣洁或强化阿兹莫里之灵加成\n• 你地图中的阿兹莫里之灵为圣洁之灵的几率提高 25%\n• 当一个怪物被一个圣洁精魂附身时，也同时被另一个随机精魂附身\n• 击败灵魂影响的怪物时，阿兹莫里之灵的强化提高 50%",
+    "flavour": ""
+   }
+  },
+  {
+   "cat": "atlas-tree",
+   "key": "atlas-tree/Im_not_alone_anymore",
+   "icon": "assets/icons/38cbc7_deliriumnotable5.webp",
+   "en": {
+    "name": "I'm not alone anymore!",
+    "sub": "Delirium · Notable",
+    "desc": "Azmeri Spirits within Delirium Fog manifest a Fracturing Mirror every 10 seconds",
+    "flavour": ""
+   },
+   "cn": {
+    "name": "我不再是孤身一人！",
+    "sub": "Delirium · Notable",
+    "desc": "惊悸迷雾中的阿兹莫里之灵每 10 秒显现一个破溃之镜",
     "flavour": ""
    }
   },
@@ -30302,7 +30927,7 @@
   },
   {
    "cat": "atlas-tree",
-   "key": "atlas-tree/You_cant_just_wake_up_from_this_one.",
+   "key": "atlas-tree/You_cant_just_wake_up_from_this_one",
    "icon": "assets/icons/12ad16_deliriumnotable4.webp",
    "en": {
     "name": "You can't just wake up from this one.",
@@ -30319,7 +30944,7 @@
   },
   {
    "cat": "atlas-tree",
-   "key": "atlas-tree/These_demons_are_all_your_own...",
+   "key": "atlas-tree/These_demons_are_all_your_own",
    "icon": "assets/icons/8305ec_deliriumnotable7.webp",
    "en": {
     "name": "These demons are all your own...",
@@ -30408,13 +31033,13 @@
    "icon": "assets/icons/862f11_mapsadditionalbreaches.webp",
    "en": {
     "name": "Shape the Chains",
-    "sub": "Breach · Keystone",
+    "sub": "Breach · Keystone/Notable",
     "desc": "Select Breach Monster Bonus\n• 30% increased Effectiveness of Rare Breach Monsters\n• Breaches have 20% reduced Pack Size20% increased Effectiveness of Breach Monsters\n• Breaches have 15% increased Pack Size",
     "flavour": ""
    },
    "cn": {
     "name": "塑造锁链",
-    "sub": "Breach · Keystone",
+    "sub": "Breach · Keystone/Notable",
     "desc": "选择裂隙怪物加成\n• 稀有裂隙怪物的强度提高 30%\n• 裂隙中的怪物群落规模降低 20%裂隙怪物的效能提高 20%\n• 裂隙中的怪物群落规模提高 15%",
     "flavour": ""
    }
@@ -30518,6 +31143,23 @@
     "name": "无名者时刻",
     "sub": "Ritual · Notable",
     "desc": "需要开启无名仪式\n无名仪式有极小概率提供特定的珍贵传奇物品",
+    "flavour": ""
+   }
+  },
+  {
+   "cat": "atlas-tree",
+   "key": "atlas-tree/The_mirrors_the_mirrors",
+   "icon": "assets/icons/9c5367_deliriumnotable1.webp",
+   "en": {
+    "name": "The mirrors... the mirrors!",
+    "sub": "Delirium · Notable",
+    "desc": "50% increased Fracturing Mirrors manifested within Delirium Fog",
+    "flavour": ""
+   },
+   "cn": {
+    "name": "镜子……那些镜子！",
+    "sub": "Delirium · Notable",
+    "desc": "破溃之镜在惊悸迷雾中显现的几率提高 50%",
     "flavour": ""
    }
   },
@@ -30850,13 +31492,13 @@
    "icon": "assets/icons/854a5a_breachnotable4.webp",
    "en": {
     "name": "Tear Open the Rift",
-    "sub": "Breach · Keystone",
+    "sub": "Breach · Keystone/Notable",
     "desc": "Requires defeating the Breach Pinnacle Boss\nRevealing Breach Strongholds will add Modifiers to revealed Maps\n• Consume an additional Breachstone to add Modifiers to all revealed Maps\n• Add a Modifier to one revealed Map",
     "flavour": ""
    },
    "cn": {
     "name": "撕开裂隙",
-    "sub": "Breach · Keystone",
+    "sub": "Breach · Keystone/Notable",
     "desc": "需要击败裂隙巅峰首领\n破解裂隙要塞时会为已破解的地图增加词缀\n• 额外消耗一个裂隙石，为所有已破解的地图增加词缀\n• 为一张已破解的地图增加一个词缀",
     "flavour": ""
    }
@@ -30943,6 +31585,74 @@
     "name": "道途守护",
     "sub": "Core · Notable",
     "desc": "地图首领掉落的引路石数量提高 15%",
+    "flavour": ""
+   }
+  },
+  {
+   "cat": "atlas-tree",
+   "key": "atlas-tree/Logbook_Chance",
+   "icon": "assets/icons/204102_expeditionnode1.webp",
+   "en": {
+    "name": "Logbook Chance",
+    "sub": "Expedition · Small",
+    "desc": "Quantity: 12\n5% increased Quantity of Expedition Logbooks dropped by Runic Monsters",
+    "flavour": ""
+   },
+   "cn": {
+    "name": "日志几率",
+    "sub": "Expedition · Small",
+    "desc": "数量: 12\n你地图内符文怪物掉落的先祖秘藏日志数量提高 5%",
+    "flavour": ""
+   }
+  },
+  {
+   "cat": "atlas-tree",
+   "key": "atlas-tree/Im_not_afraid_of_you",
+   "icon": "assets/icons/12ad16_deliriumnotable4.webp",
+   "en": {
+    "name": "I'm not afraid of you!",
+    "sub": "Delirium · Notable",
+    "desc": "Delirium Bosses in your Maps have 50% increased maximum Life\nDelirium Bosses in your Maps drop 100% increased Simulacrum Splinters",
+    "flavour": ""
+   },
+   "cn": {
+    "name": "我不畏惧你！",
+    "sub": "Delirium · Notable",
+    "desc": "你地图中的惊悸迷雾首领的生命上限提高 50%\n地图内惊悸迷雾首领掉落的梦魇拟像裂片提高 100%",
+    "flavour": ""
+   }
+  },
+  {
+   "cat": "atlas-tree",
+   "key": "atlas-tree/Altered_Faith",
+   "icon": "assets/icons/d00935_ritualnotable2.webp",
+   "en": {
+    "name": "Altered Faith",
+    "sub": "Ritual · Notable",
+    "desc": "10% reduced Toughness of Ritual Monsters from randomly appearing Ritual Altars in your Maps\nRitual Tablets also provide 15% increased Rarity of Items Dropped to Ritual Monsters",
+    "flavour": ""
+   },
+   "cn": {
+    "name": "异变信仰",
+    "sub": "Ritual · Notable",
+    "desc": "你地图中来自随机出现的仪式祭坛的驱灵祭坛怪物韧性降低 10%\n驱灵祭坛石板同样使驱灵祭坛怪物掉落的物品稀有度提高 15%",
+    "flavour": ""
+   }
+  },
+  {
+   "cat": "atlas-tree",
+   "key": "atlas-tree/Territorial_Wealth",
+   "icon": "assets/icons/055605_alvanode2.webp",
+   "en": {
+    "name": "Territorial Wealth",
+    "sub": "Incursion · Notable",
+    "desc": "",
+    "flavour": ""
+   },
+   "cn": {
+    "name": "领土财富",
+    "sub": "Incursion · Notable",
+    "desc": "",
     "flavour": ""
    }
   },
@@ -36286,6 +36996,23 @@
   },
   {
    "cat": "passive-tree",
+   "key": "passive-tree/Unleash_Hell",
+   "icon": "assets/icons/76e271_tacticiandeathfromabovecommand.webp",
+   "en": {
+    "name": "Unleash Hell!",
+    "sub": "Ascendancy: Mercenary1 · Notable",
+    "desc": "Ascendancy: Tactician\nCharacter: Mercenary\nGrants Skill: Supporting Fire",
+    "flavour": ""
+   },
+   "cn": {
+    "name": "倾泻火力！",
+    "sub": "Ascendancy: Mercenary1 · Notable",
+    "desc": "升华: 战术家\n角色: 佣兵\n获得技能: 支援火力",
+    "flavour": ""
+   }
+  },
+  {
+   "cat": "passive-tree",
    "key": "passive-tree/Warcry_Speed",
    "icon": "assets/icons/2dcd98_warcryeffect.webp",
    "en": {
@@ -40978,7 +41705,7 @@
   },
   {
    "cat": "passive-tree",
-   "key": "passive-tree/I_am_the_Thunder...",
+   "key": "passive-tree/I_am_the_Thunder",
    "icon": "assets/icons/d8fa34_invokershockmagnitude.webp",
    "en": {
     "name": "I am the Thunder...",
@@ -41267,7 +41994,7 @@
   },
   {
    "cat": "passive-tree",
-   "key": "passive-tree/Lead_me_through_Grace...",
+   "key": "passive-tree/Lead_me_through_Grace",
    "icon": "assets/icons/3b5f66_invokerevasionenergyshieldgrantsspirit.webp",
    "en": {
     "name": "Lead me through Grace...",
@@ -50141,7 +50868,7 @@
   },
   {
    "cat": "passive-tree",
-   "key": "passive-tree/I_am_the_Blizzard...",
+   "key": "passive-tree/I_am_the_Blizzard",
    "icon": "assets/icons/5a67fb_invokerchillchancebasedondamage.webp",
    "en": {
     "name": "I am the Blizzard...",
@@ -61310,7 +62037,7 @@
   },
   {
    "cat": "passive-tree",
-   "key": "passive-tree/Life_Leech._Armour_and_Evasion_while_Leeching",
+   "key": "passive-tree/Life_Leech_Armour_and_Evasion_while_Leeching",
    "icon": "assets/icons/38065d_lifeleech.webp",
    "en": {
     "name": "Life Leech. Armour and Evasion while Leeching",
@@ -62908,7 +63635,7 @@
   },
   {
    "cat": "passive-tree",
-   "key": "passive-tree/...and_Scatter_Them_to_the_Winds",
+   "key": "passive-tree/and_Scatter_Them_to_the_Winds",
    "icon": "assets/icons/d1f2e3_invokerwildstrike.webp",
    "en": {
     "name": "...and Scatter Them to the Winds",
@@ -67277,7 +68004,7 @@
   },
   {
    "cat": "passive-tree",
-   "key": "passive-tree/Sunder_my_Enemies...",
+   "key": "passive-tree/Sunder_my_Enemies",
    "icon": "assets/icons/1854ec_invokercriticalstrikesignoreresistances.webp",
    "en": {
     "name": "Sunder my Enemies...",
@@ -67362,7 +68089,7 @@
   },
   {
    "cat": "passive-tree",
-   "key": "passive-tree/...and_I_Shall_Rage",
+   "key": "passive-tree/and_I_Shall_Rage",
    "icon": "assets/icons/554e1c_invokerunboundavatar.webp",
    "en": {
     "name": "...and I Shall Rage",
@@ -67753,7 +68480,7 @@
   },
   {
    "cat": "passive-tree",
-   "key": "passive-tree/...and_Protect_me_from_Harm",
+   "key": "passive-tree/and_Protect_me_from_Harm",
    "icon": "assets/icons/7feaad_invokerevasiongrantsphysicaldamagereduction.webp",
    "en": {
     "name": "...and Protect me from Harm",

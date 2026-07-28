@@ -252,11 +252,11 @@ async function getTreeData() {
 }
 
 function nameToSlug(name) {
-  // poe2db slugs: text before ":", spaces -> "_", apostrophes stripped
+  // poe2db slugs: text before ":", punctuation stripped, spaces -> "_"
   return name
     .split(":")[0]
+    .replaceAll(/['’!?.,]/g, "")
     .trim()
-    .replaceAll(/['’]/g, "")
     .replaceAll(/\s+/g, "_");
 }
 
@@ -306,21 +306,29 @@ async function scrapeTrees() {
 
   // slug -> { cats: Map<cat, {sub, kinds:Set}>, names:Set }
   const wanted = new Map();
+  const addSkill = (s, cat, sub) => {
+    if (skip(s)) return;
+    const slug = nameToSlug(s.name);
+    if (!wanted.has(slug)) wanted.set(slug, { cats: new Map(), fallbackName: s.name.split(":")[0].trim() });
+    const w = wanted.get(slug);
+    const k = `${cat} ${sub}`;
+    if (!w.cats.has(k)) w.cats.set(k, { cat, sub, kinds: new Set() });
+    w.cats.get(k).kinds.add(kind(s));
+  };
   const addNodes = (nodes, cat, subOf) => {
     for (const node of Object.values(nodes)) {
       const s = ps[node.skill_id];
-      if (skip(s)) continue;
-      const slug = nameToSlug(s.name);
-      if (!wanted.has(slug)) wanted.set(slug, { cats: new Map(), fallbackName: s.name.split(":")[0].trim() });
-      const w = wanted.get(slug);
-      const sub = subOf ? subOf(s) : "";
-      const k = `${cat} ${sub}`;
-      if (!w.cats.has(k)) w.cats.set(k, { cat, sub, kinds: new Set() });
-      w.cats.get(k).kinds.add(kind(s));
+      if (s) addSkill(s, cat, subOf ? subOf(s) : "");
     }
   };
 
   addNodes(tree.atlas_passive_tree.nodes, "atlas-tree", (s) => s.atlas_sub_tree ?? "Core");
+  // master sub-tree skills are flagged in passive_skills; some (e.g. the whole
+  // Expedition cluster) are absent from atlas_passive_tree.nodes, so add the
+  // flagged set directly
+  for (const s of Object.values(ps)) {
+    if (s.atlas_sub_tree) addSkill(s, "atlas-tree", s.atlas_sub_tree);
+  }
   addNodes(tree.genesis_passive_tree.nodes, "genesis-tree", () => "");
   addNodes(tree.passive_tree.nodes, "passive-tree", (s) => (s.ascendancy ? `Ascendancy: ${s.ascendancy}` : ""));
 
@@ -365,6 +373,57 @@ async function scrapeTrees() {
   return out;
 }
 
+// ---- Atlas Masters ---------------------------------------------------------
+// poe2db /us/Atlas_Masters and /cn/Atlas_Masters list all master specialization
+// nodes (Doryani's Science, Hilda's Hunting, Jado's Spycraft) with a
+// "<name> <span>Master's Spec T#</span>" row; paired by icon filename.
+
+function parseMastersPage(html) {
+  const $ = cheerio.load(html);
+  const out = [];
+  $("div.d-flex.border-top").each((_, row) => {
+    const $row = $(row);
+    const $img = $row.children(".flex-shrink-0").find("img").first();
+    const iconKey = $img.attr("alt") ?? "";
+    const iconUrl = $img.attr("src") ?? "";
+    const $body = $row.children(".flex-grow-1").first();
+    if (!$body.length) return;
+    const $nameRow = $body.children("div.d-flex").first();
+    if (!$nameRow.length) return;
+    const sub = $nameRow.find("span").first().text().replace(/\s+/g, " ").trim();
+    const name = $nameRow.clone().children("span").remove().end().text().replace(/\s+/g, " ").trim();
+    if (!name) return;
+    const desc = $body
+      .children("div")
+      .not($nameRow)
+      .map((_, d) => cleanText($(d)))
+      .get()
+      .filter(Boolean)
+      .join("\n");
+    out.push({ iconKey, iconUrl, name, sub, desc });
+  });
+  return out;
+}
+
+async function scrapeAtlasMasters() {
+  console.log("Atlas Masters:");
+  const en = parseMastersPage(await getPage("us", "Atlas_Masters"));
+  const cn = parseMastersPage(await getPage("cn", "Atlas_Masters"));
+  const cnByKey = new Map(cn.map((e) => [e.iconKey, e]));
+  const out = en.map((e, i) => {
+    const c = e.iconKey ? cnByKey.get(e.iconKey) : cn[i];
+    return {
+      cat: "atlas-master",
+      key: `atlas-master/${e.iconKey || i}`,
+      icon: e.iconUrl,
+      en: { name: e.name, sub: e.sub, desc: e.desc },
+      cn: c ? { name: c.name, sub: c.sub, desc: c.desc } : null,
+    };
+  });
+  console.log(`  atlas-master: ${out.length} entries (cn paired: ${out.filter((e) => e.cn).length})`);
+  return out;
+}
+
 // ---- main ------------------------------------------------------------------
 
 await mkdir(CACHE, { recursive: true });
@@ -394,6 +453,7 @@ entries.push(
 );
 
 entries.push(...(await scrapeQuests()));
+entries.push(...(await scrapeAtlasMasters()));
 entries.push(...(await scrapeTrees()));
 
 // drop unlocalized internal rows (CamelCase key shown as name in both

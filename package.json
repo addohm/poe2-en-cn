@@ -1,0 +1,15 @@
+{
+  "name": "poe2-cn-en",
+  "version": "2.0.0",
+  "description": "PoE2 Codex — Chinese ⇄ English reference site (quests, trials, atlas/genesis/passive trees) built from official client text",
+  "private": true,
+  "scripts": {
+    "scrape": "node scrape.mjs",
+    "scrape:fresh": "node scrape.mjs --fresh",
+    "icons": "node icons.mjs",
+    "build": "node scrape.mjs && node icons.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  }
+}

@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PoE2 Codex · 中英对照</title>
+<meta name="description" content="Path of Exile 2 Chinese ⇄ English reference — quests, trials, atlas & passive trees. Official localized text from both clients.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Noto+Serif+SC:wght@500;600&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 5 95 50 50 95 5 50Z' fill='%23c9a86a'/><path d='M50 22 78 50 50 78 22 50Z' fill='%230a0908'/><path d='M50 34 66 50 50 66 34 50Z' fill='%23c9a86a'/></svg>">
+<style>
+  :root {
+    --bg: #0a0908;
+    --bg2: #12100c;
+    --panel: #161310;
+    --panel2: #1d1913;
+    --line: #2b2519;
+    --line-bright: #4a3d26;
+    --gold: #c9a86a;
+    --gold-bright: #f0d9a0;
+    --gold-dim: #8a744d;
+    --ink: #d9d2c4;
+    --ink-dim: #94897a;
+    --ink-faint: #635b4e;
+    --accent: #7fb0d8;
+    --ember: #b3502a;
+    --serif-en: "Cinzel", Georgia, serif;
+    --serif-cn: "Noto Serif SC", "Microsoft YaHei", serif;
+    --body: "Spectral", Georgia, "Microsoft YaHei", serif;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.55 var(--body);
+    min-height: 100vh;
+  }
+  /* layered ambience */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: -2; pointer-events: none;
+    background:
+      radial-gradient(1100px 500px at 50% -10%, rgba(179,110,42,.16), transparent 65%),
+      radial-gradient(900px 600px at 90% 110%, rgba(38,58,74,.18), transparent 60%),
+      radial-gradient(700px 500px at -10% 100%, rgba(90,58,26,.10), transparent 60%),
+      var(--bg);
+  }
+  body::after { /* grain */
+    content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: .35;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* ---------- header ---------- */
+  .hero { text-align: center; padding: 44px 16px 10px; }
+  .hero h1 {
+    font-family: var(--serif-en); font-weight: 700; letter-spacing: .12em;
+    font-size: clamp(26px, 4.6vw, 44px);
+    background: linear-gradient(180deg, #f5e5bb 0%, var(--gold) 55%, #97783f 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    text-shadow: 0 0 34px rgba(201,168,106,.18);
+  }
+  .hero .zh {
+    font-family: var(--serif-cn); font-weight: 600; letter-spacing: .5em; text-indent: .5em;
+    color: var(--gold-dim); font-size: clamp(13px, 1.8vw, 17px); margin-top: 6px;
+  }
+  .flourish { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 18px auto 0; max-width: 560px; }
+  .flourish::before, .flourish::after {
+    content: ""; flex: 1; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--line-bright));
+  }
+  .flourish::after { background: linear-gradient(90deg, var(--line-bright), transparent); }
+  .flourish svg { flex: none; }
+
+  .searchwrap { max-width: 680px; margin: 26px auto 0; padding: 0 16px; position: relative; }
+  #q {
+    width: 100%; padding: 15px 52px 15px 20px;
+    background: linear-gradient(180deg, #0d0b09, #131009);
+    border: 1px solid var(--line-bright); border-radius: 3px;
+    color: var(--ink); font: 17px var(--body); outline: none;
+    box-shadow: inset 0 2px 8px rgba(0,0,0,.6);
+    transition: border-color .25s, box-shadow .25s;
+  }
+  #q::placeholder { color: var(--ink-faint); }
+  #q:focus { border-color: var(--gold-dim); box-shadow: inset 0 2px 8px rgba(0,0,0,.6), 0 0 22px rgba(201,168,106,.15); }
+  .searchwrap kbd {
+    position: absolute; right: 30px; top: 50%; transform: translateY(-50%);
+    font: 12px var(--body); color: var(--ink-faint);
+    border: 1px solid var(--line); border-radius: 3px; padding: 2px 7px; pointer-events: none;
+  }
+
+  /* ---------- layout ---------- */
+  .frame { display: flex; gap: 26px; max-width: 1500px; margin: 34px auto 0; padding: 0 20px 90px; align-items: flex-start; }
+  nav.rail {
+    position: sticky; top: 18px; flex: 0 0 240px;
+    background: linear-gradient(180deg, var(--panel), rgba(22,19,16,.6));
+    border: 1px solid var(--line); border-radius: 4px; padding: 14px 0 10px;
+  }
+  .rail h3 {
+    font-family: var(--serif-en); font-size: 11px; letter-spacing: .28em; font-weight: 600;
+    color: var(--gold-dim); padding: 12px 18px 6px; text-transform: uppercase;
+  }
+  .rail button {
+    display: flex; align-items: baseline; gap: 8px; width: 100%;
+    background: none; border: 0; border-left: 2px solid transparent;
+    padding: 7px 18px; cursor: pointer; text-align: left;
+    color: var(--ink-dim); font: 15px var(--body);
+    transition: color .2s, background .2s, border-color .2s;
+  }
+  .rail button:hover { color: var(--ink); background: rgba(201,168,106,.05); }
+  .rail button.on { color: var(--gold-bright); border-left-color: var(--gold); background: linear-gradient(90deg, rgba(201,168,106,.10), transparent); }
+  .rail button .zh { font-size: 12.5px; color: var(--ink-faint); }
+  .rail button.on .zh { color: var(--gold-dim); }
+  .rail button .n { margin-left: auto; font-size: 12px; color: var(--ink-faint); }
+  .rail .foot { padding: 12px 18px 4px; font-size: 11.5px; color: var(--ink-faint); border-top: 1px solid var(--line); margin-top: 10px; }
+
+  main { flex: 1; min-width: 0; }
+  .topbar { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+  .topbar h2 {
+    font-family: var(--serif-en); font-size: 22px; font-weight: 600; letter-spacing: .06em; color: var(--gold);
+  }
+  .topbar .zh { font-family: var(--serif-cn); color: var(--ink-dim); font-size: 15px; }
+  #count { color: var(--ink-faint); font-size: 13px; margin-left: auto; }
+  .viewtoggle { display: flex; border: 1px solid var(--line); border-radius: 3px; overflow: hidden; }
+  .viewtoggle button {
+    background: none; border: 0; color: var(--ink-faint); padding: 5px 12px; cursor: pointer; font-size: 13px;
+  }
+  .viewtoggle button.on { background: rgba(201,168,106,.12); color: var(--gold); }
+
+  .grouphead {
+    display: flex; align-items: center; gap: 14px;
+    margin: 30px 0 14px; color: var(--gold);
+  }
+  .grouphead:first-child { margin-top: 0; }
+  .grouphead .t { font-family: var(--serif-en); font-size: 15px; letter-spacing: .18em; text-transform: uppercase; font-weight: 600; }
+  .grouphead .zh { font-family: var(--serif-cn); font-size: 13px; color: var(--gold-dim); }
+  .grouphead::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--line-bright), transparent); }
+
+  /* ---------- cards (list view) ---------- */
+  .card {
+    position: relative; display: flex; gap: 16px;
+    background: linear-gradient(180deg, var(--panel), rgba(18,15,11,.85));
+    border: 1px solid var(--line); border-radius: 4px;
+    padding: 16px 18px; margin-bottom: 12px;
+    transition: border-color .25s, box-shadow .25s, transform .25s;
+  }
+  .card:hover { border-color: var(--line-bright); box-shadow: 0 4px 26px rgba(0,0,0,.45), 0 0 18px rgba(201,168,106,.06); transform: translateY(-1px); }
+  .card::before, .card::after { /* corner ticks */
+    content: ""; position: absolute; width: 7px; height: 7px; border-color: var(--gold-dim); border-style: solid; opacity: .55;
+  }
+  .card::before { top: -1px; left: -1px; border-width: 1px 0 0 1px; }
+  .card::after  { bottom: -1px; right: -1px; border-width: 0 1px 1px 0; }
+
+  .icon-frame {
+    flex: none; width: 54px; height: 54px; position: relative; margin-top: 3px; align-self: flex-start;
+    background: radial-gradient(circle at 50% 40%, #241e14, #0c0a07 75%);
+    border: 1px solid var(--line-bright); border-radius: 3px;
+    display: grid; place-items: center;
+    box-shadow: inset 0 0 12px rgba(0,0,0,.8);
+  }
+  .icon-frame img { width: 44px; height: 44px; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,.8)); }
+  .icon-frame.empty::after { content: "◆"; color: var(--line-bright); font-size: 18px; }
+
+  .card .cols { flex: 1; min-width: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 26px; }
+  @media (max-width: 760px) { .card .cols { grid-template-columns: 1fr; } }
+  .nm { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .nm .cnname { font-family: var(--serif-cn); font-weight: 600; font-size: 18px; color: #ead9b0; }
+  .nm .enname { font-family: var(--serif-en); font-weight: 600; font-size: 15.5px; letter-spacing: .04em; color: var(--gold); }
+  .tag {
+    font: 11.5px var(--body); color: var(--accent); letter-spacing: .04em;
+    border: 1px solid rgba(127,176,216,.25); border-radius: 2px; padding: 1px 7px;
+    background: rgba(127,176,216,.06); white-space: nowrap;
+  }
+  .desc { font-size: 14px; color: var(--ink-dim); white-space: pre-line; margin-top: 5px; }
+  .desc .zhd { color: var(--ink); }
+  .reward { font-size: 13px; color: #9dbd92; margin-top: 5px; }
+  .flav { font-style: italic; color: var(--gold-dim); font-size: 13px; margin-top: 5px; }
+  .missing { color: var(--ink-faint); font-style: italic; font-size: 13.5px; }
+
+  details.steps { grid-column: 1 / -1; margin-top: 8px; border-top: 1px dashed var(--line); }
+  details.steps summary {
+    cursor: pointer; padding: 8px 0 2px; color: var(--gold-dim); font-size: 13px; letter-spacing: .05em;
+    list-style: none; user-select: none;
+  }
+  details.steps summary::before { content: "▸ "; }
+  details[open].steps summary::before { content: "▾ "; }
+  details.steps summary:hover { color: var(--gold); }
+  .step { display: grid; grid-template-columns: 26px 1fr 1fr; gap: 2px 18px; padding: 8px 2px; border-top: 1px solid rgba(43,37,25,.6); font-size: 13.5px; }
+  @media (max-width: 760px) { .step { grid-template-columns: 26px 1fr; } .step .en-cell { grid-column: 2; opacity: .85; } }
+  .step .n { color: var(--gold-dim); font-family: var(--serif-en); }
+  .step .sname { color: #e6d6ae; font-weight: 500; }
+  .step .sdesc { color: var(--ink-dim); }
+  .step .area { color: var(--accent); font-size: 12px; white-space: nowrap; }
+
+  /* ---------- grid view ---------- */
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(158px, 1fr)); gap: 10px; }
+  .tile {
+    background: linear-gradient(180deg, var(--panel), rgba(18,15,11,.85));
+    border: 1px solid var(--line); border-radius: 4px; padding: 14px 10px 12px;
+    text-align: center; cursor: pointer;
+    transition: border-color .2s, box-shadow .2s, transform .2s;
+  }
+  .tile:hover { border-color: var(--gold-dim); box-shadow: 0 0 20px rgba(201,168,106,.10); transform: translateY(-2px); }
+  .tile .icon-frame { margin: 0 auto 8px; }
+  .tile .cnname { font-family: var(--serif-cn); font-size: 14.5px; color: #ead9b0; display: block; }
+  .tile .enname { font-family: var(--serif-en); font-size: 11.5px; letter-spacing: .03em; color: var(--gold); display: block; margin-top: 2px; }
+
+  /* ---------- modal ---------- */
+  #modal {
+    position: fixed; inset: 0; z-index: 50; display: none;
+    background: rgba(5,4,3,.72); backdrop-filter: blur(3px);
+    align-items: flex-start; justify-content: center; padding: 8vh 16px;
+  }
+  #modal.open { display: flex; }
+  #modal .card { max-width: 860px; width: 100%; margin: 0; border-color: var(--line-bright); box-shadow: 0 20px 70px rgba(0,0,0,.7), 0 0 40px rgba(201,168,106,.08); max-height: 82vh; overflow-y: auto; }
+
+  .more { text-align: center; padding: 22px; color: var(--ink-faint); font-size: 13px; letter-spacing: .1em; }
+  .empty { text-align: center; padding: 80px 0; color: var(--ink-dim); font-family: var(--serif-en); letter-spacing: .1em; }
+  mark { background: rgba(201,168,106,.28); color: #ffe9b0; border-radius: 2px; padding: 0 1px; }
+
+  footer { text-align: center; color: var(--ink-faint); font-size: 12.5px; padding: 30px 16px 46px; }
+  footer a { color: var(--gold-dim); }
+
+  /* ---------- mobile ---------- */
+  #railtoggle { display: none; }
+  @media (max-width: 980px) {
+    .frame { flex-direction: column; align-items: stretch; }
+    nav.rail { position: static; width: 100%; flex: none; display: flex; flex-wrap: wrap; gap: 2px; padding: 8px; }
+    .rail h3 { flex-basis: 100%; padding: 8px 10px 2px; }
+    .rail button { width: auto; border-left: 0; border: 1px solid transparent; border-radius: 3px; padding: 5px 10px; }
+    .rail button.on { border-color: var(--gold-dim); }
+    .rail button .n { margin-left: 6px; }
+    .rail .foot { display: none; }
+  }
+  ::-webkit-scrollbar { width: 11px; }
+  ::-webkit-scrollbar-thumb { background: #2b2519; border: 3px solid var(--bg); border-radius: 6px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--gold-dim); }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>PATH OF EXILE 2 · CODEX</h1>
+  <div class="zh">流放之路２ 中英对照</div>
+  <div class="flourish">
+    <svg width="26" height="26" viewBox="0 0 100 100"><path d="M50 8 92 50 50 92 8 50Z" fill="none" stroke="#8a744d" stroke-width="4"/><path d="M50 28 72 50 50 72 28 50Z" fill="#c9a86a"/></svg>
+  </div>
+  <div class="searchwrap">
+    <input id="q" type="search" autocomplete="off" spellcheck="false"
+      placeholder="Search Chinese or English · 搜索中文或英文">
+    <kbd>/</kbd>
+  </div>
+</header>
+
+<div class="frame">
+  <nav class="rail" id="rail"></nav>
+  <main>
+    <div class="topbar">
+      <h2 id="cattitle"></h2><span class="zh" id="cattitlezh"></span>
+      <div class="viewtoggle" id="viewtoggle" hidden>
+        <button data-v="list">☰ List</button><button data-v="grid">▦ Grid</button>
+      </div>
+      <span id="count"></span>
+    </div>
+    <div id="list"></div>
+    <div class="more" id="more" hidden>· · ·</div>
+  </main>
+</div>
+
+<div id="modal"><div id="modalcard" class="card"></div></div>
+
+<footer id="foot"></footer>
+
+<script src="data/reference.js"></script>
+<script>
+"use strict";
+/* ---------------- config ---------------- */
+const NAV = [
+  { section: ["Campaign", "战役"], cats: [
+    ["quest", "Quests", "任务"],
+  ]},
+  { section: ["Trials", "试炼"], cats: [
+    ["sekhemas-boon", "Boons", "恩赐"],
+    ["sekhemas-affliction", "Afflictions", "厄难"],
+    ["sekhemas-pledge", "Pledges", "誓约"],
+    ["sekhemas-room", "Rooms", "房间"],
+    ["chaos-mod", "Chaos Trial", "混沌试炼"],
+  ]},
+  { section: ["Endgame", "终局"], cats: [
+    ["atlas-tree", "Atlas Tree", "舆图天赋"],
+    ["genesis-tree", "Genesis Tree", "创世天赋"],
+  ]},
+  { section: ["Character", "角色"], cats: [
+    ["passive-tree", "Passive Tree", "天赋树"],
+  ]},
+];
+const GRID_CATS = new Set(["sekhemas-boon", "sekhemas-affliction", "atlas-tree", "genesis-tree", "passive-tree", "chaos-mod"]);
+const CHUNK = 120;
+
+const DATA = window.POE2REF.entries;
+const CAT_INFO = {};
+for (const s of NAV) for (const [id, en, zh] of s.cats) CAT_INFO[id] = { en, zh };
+
+/* search blobs */
+for (const e of DATA) {
+  const parts = [];
+  for (const side of [e.en, e.cn]) if (side) parts.push(side.name, side.sub, side.desc, side.reward, side.flavour);
+  for (const s of e.steps ?? []) for (const side of [s.en, s.cn]) if (side) parts.push(side.name, side.desc, side.area);
+  e._blob = parts.filter(Boolean).join("\n").toLowerCase();
+}
+
+/* grouping */
+function groupOf(e) {
+  switch (e.cat) {
+    case "quest": return e.act ? [`Act ${e.act}`, `第${e.act}章`] : ["Other", "其他"];
+    case "sekhemas-boon": case "sekhemas-affliction": {
+      const s = e.en.sub || "";
+      return /major/i.test(s) ? ["Major", "主要"] : /minor/i.test(s) ? ["Minor", "次要"] : ["", ""];
+    }
+    case "sekhemas-room": {
+      const f = (e.en.sub || "").match(/Floor: (.+)/);
+      return f ? [f[1].trim(), ""] : ["", ""];
+    }
+    case "atlas-tree": {
+      const seg = (e.en.sub || "").split("·")[0].trim();
+      return [seg || "Core", ""];
+    }
+    case "passive-tree": {
+      const s = e.en.sub || "";
+      const asc = s.match(/Ascendancy: ([^·]+)/);
+      if (asc) return [asc[1].trim(), "升华"];
+      if (/Keystone/.test(s)) return ["Keystones", "基石"];
+      if (/Notable/.test(s)) return ["Notables", "核心天赋"];
+      return ["Small Passives", "小天赋"];
+    }
+    case "genesis-tree": {
+      const s = e.en.sub || "";
+      if (/Keystone/.test(s)) return ["Keystones", "基石"];
+      if (/Notable/.test(s)) return ["Notables", "核心天赋"];
+      return ["Small Passives", "小天赋"];
+    }
+    default: return ["", ""];
+  }
+}
+const GROUP_ORDER = ["Keystones", "Notables", "Small Passives"];
+
+/* ---------------- state ---------------- */
+let cat = "quest";
+let query = "";
+let view = "list";
+let shown = 0;
+let currentItems = [];
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => (s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const hl = (s) => {
+  const e = esc(s);
+  if (!query) return e;
+  try { return e.replace(new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi"), (m) => `<mark>${m}</mark>`); }
+  catch { return e; }
+};
+
+/* ---------------- rendering ---------------- */
+function iconHtml(e, always) {
+  if (!e.icon && !always) return "";
+  return `<div class="icon-frame${e.icon ? "" : " empty"}">${e.icon ? `<img loading="lazy" src="${esc(e.icon)}" onerror="this.parentElement.classList.add('empty');this.remove()">` : ""}</div>`;
+}
+
+function sideHtml(side, lang) {
+  if (!side) return `<div class="missing">not in ${lang === "cn" ? "CN client data · 国服暂无" : "EN data"}</div>`;
+  return `
+    ${side.desc ? `<div class="desc${lang === "cn" ? " zhd" : ""}">${hl(side.desc)}</div>` : ""}
+    ${side.reward ? `<div class="reward">${hl(side.reward)}</div>` : ""}
+    ${side.flavour ? `<div class="flav">${hl(side.flavour)}</div>` : ""}`;
+}
+
+function stepsHtml(e) {
+  const steps = (e.steps ?? []).filter((s) => s.en?.name || s.en?.desc || s.cn?.name || s.cn?.desc);
+  if (!steps.length) return "";
+  const open = query && steps.some((s) => JSON.stringify(s).toLowerCase().includes(query));
+  const cell = (x) => x
+    ? `<div>${x.name ? `<span class="sname">${hl(x.name)}</span> ` : ""}<span class="sdesc">${hl(x.desc)}</span>${x.area ? ` <span class="area">◈ ${hl(x.area)}</span>` : ""}</div>`
+    : "<div class='sdesc'>—</div>";
+  return `<details class="steps"${open ? " open" : ""}><summary>Objectives · 任务目标 (${steps.length})</summary>
+    ${steps.map((s) => `<div class="step"><div class="n">${esc(s.n)}</div><div>${cell(s.cn)}</div><div class="en-cell">${cell(s.en)}</div></div>`).join("")}
+  </details>`;
+}
+
+function cardHtml(e) {
+  const sub = e.en.sub || e.cn?.sub || "";
+  return `<div class="card">
+    ${iconHtml(e)}
+    <div class="cols">
+      <div class="nm" style="grid-column:1/-1">
+        ${e.cn ? `<span class="cnname">${hl(e.cn.name)}</span>` : ""}
+        <span class="enname">${hl(e.en.name)}</span>
+        ${sub ? `<span class="tag">${hl(sub)}</span>` : ""}
+      </div>
+      <div>${sideHtml(e.cn, "cn")}</div>
+      <div>${sideHtml(e.en, "en")}</div>
+      ${stepsHtml(e)}
+    </div>
+  </div>`;
+}
+
+function tileHtml(e, idx) {
+  return `<div class="tile" data-i="${idx}">
+    ${iconHtml(e, true)}
+    <span class="cnname">${e.cn ? hl(e.cn.name) : "—"}</span>
+    <span class="enname">${hl(e.en.name)}</span>
+  </div>`;
+}
+
+function renderChunk() {
+  const list = $("list");
+  const isGrid = view === "grid";
+  const slice = currentItems.slice(shown, shown + CHUNK);
+  const prevGroup = shown > 0 ? currentItems[shown - 1]._g : null;
+  let html = "";
+  let run = [];
+  let lastGroup = prevGroup;
+  const flushRun = () => {
+    if (!run.length) return;
+    html += isGrid ? `<div class="grid">${run.join("")}</div>` : run.join("");
+    run = [];
+  };
+  for (const e of slice) {
+    if (e._g !== lastGroup && e._g) {
+      flushRun();
+      const [g, gzh] = e._gpair;
+      html += `<div class="grouphead"><span class="t">${esc(g)}</span>${gzh ? `<span class="zh">${esc(gzh)}</span>` : ""}</div>`;
+      lastGroup = e._g;
+    }
+    run.push(isGrid ? tileHtml(e, e._idx) : cardHtml(e));
+  }
+  flushRun();
+  list.insertAdjacentHTML("beforeend", html);
+  shown += slice.length;
+  $("more").hidden = shown >= currentItems.length;
+}
+
+function render() {
+  const q = query;
+  let items = DATA.filter((e) => e.cat === cat && (!q || e._blob.includes(q)));
+  // attach group labels + stable idx
+  for (const e of items) {
+    const pair = groupOf(e);
+    e._gpair = pair; e._g = pair[0];
+  }
+  // group-aware ordering (stable: entries keep source order within a group)
+  if (cat === "quest") {
+    items.sort((a, b) => (parseInt(a.act) || 99) - (parseInt(b.act) || 99));
+  } else if (cat === "passive-tree" || cat === "genesis-tree") {
+    const rank = (g) => { const i = GROUP_ORDER.indexOf(g); return i < 0 ? 10 : i; };
+    items.sort((a, b) => rank(a._g) - rank(b._g) || a._g.localeCompare(b._g) || a.en.name.localeCompare(b.en.name));
+  } else if (cat === "atlas-tree") {
+    items.sort((a, b) => (a._g === "Core" ? "" : a._g).localeCompare(b._g === "Core" ? "" : b._g) || a.en.name.localeCompare(b.en.name));
+  } else if (cat === "sekhemas-boon" || cat === "sekhemas-affliction") {
+    const rank = (g) => (g === "Minor" ? 0 : 1);
+    items.sort((a, b) => rank(a._g) - rank(b._g));
+  } else if (cat === "sekhemas-room") {
+    items.sort((a, b) => a._g.localeCompare(b._g) || a.en.name.localeCompare(b.en.name));
+  }
+  items.forEach((e, i) => (e._idx = DATA.indexOf(e)));
+  currentItems = items;
+  shown = 0;
+  $("list").innerHTML = "";
+  $("list").className = view === "grid" ? "" : "";
+  if (!items.length) {
+    $("list").innerHTML = `<div class="empty">NOTHING FOUND · 没有找到</div>`;
+    $("count").textContent = "";
+    $("more").hidden = true;
+    return;
+  }
+  $("count").textContent = `${items.length}`;
+  renderChunk();
+}
+
+/* ---------------- interactions ---------------- */
+function buildRail() {
+  const counts = {};
+  for (const e of DATA) counts[e.cat] = (counts[e.cat] ?? 0) + 1;
+  let html = "";
+  for (const s of NAV) {
+    const cats = s.cats.filter(([id]) => counts[id]);
+    if (!cats.length) continue;
+    html += `<h3>${esc(s.section[0])} · ${esc(s.section[1])}</h3>`;
+    for (const [id, en, zh] of cats) {
+      html += `<button data-cat="${id}"><span>${esc(en)}</span><span class="zh">${esc(zh)}</span><span class="n">${counts[id]}</span></button>`;
+    }
+  }
+  html += `<div class="foot">Official localized text from both game clients, paired via <a href="https://poe2db.tw" target="_blank" rel="noopener">poe2db.tw</a>.<br>国际服与国服官方文本对照。</div>`;
+  $("rail").innerHTML = html;
+  $("rail").addEventListener("click", (ev) => {
+    const b = ev.target.closest("button[data-cat]");
+    if (!b) return;
+    setCat(b.dataset.cat);
+  });
+}
+
+function setCat(id) {
+  cat = id;
+  document.querySelectorAll(".rail button").forEach((b) => b.classList.toggle("on", b.dataset.cat === id));
+  const info = CAT_INFO[id] ?? { en: id, zh: "" };
+  $("cattitle").textContent = info.en;
+  $("cattitlezh").textContent = info.zh;
+  const gridable = GRID_CATS.has(id);
+  $("viewtoggle").hidden = !gridable;
+  if (!gridable) view = "list";
+  document.querySelectorAll("#viewtoggle button").forEach((b) => b.classList.toggle("on", b.dataset.v === view));
+  render();
+  window.scrollTo({ top: 0 });
+}
+
+$("viewtoggle").addEventListener("click", (ev) => {
+  const b = ev.target.closest("button[data-v]");
+  if (!b) return;
+  view = b.dataset.v;
+  document.querySelectorAll("#viewtoggle button").forEach((x) => x.classList.toggle("on", x === b));
+  render();
+});
+
+$("list").addEventListener("click", (ev) => {
+  const t = ev.target.closest(".tile");
+  if (!t) return;
+  const e = DATA[+t.dataset.i];
+  $("modalcard").innerHTML = cardHtml(e).replace(/^<div class="card">|<\/div>$/g, "");
+  $("modal").classList.add("open");
+});
+$("modal").addEventListener("click", (ev) => { if (ev.target.id === "modal") $("modal").classList.remove("open"); });
+document.addEventListener("keydown", (ev) => {
+  if (ev.key === "Escape") $("modal").classList.remove("open");
+  if (ev.key === "/" && document.activeElement !== $("q")) { ev.preventDefault(); $("q").focus(); }
+});
+
+let debounce;
+$("q").addEventListener("input", (ev) => {
+  clearTimeout(debounce);
+  debounce = setTimeout(() => { query = ev.target.value.trim().toLowerCase(); render(); }, 130);
+});
+
+/* infinite scroll */
+const sentinel = new IntersectionObserver((es) => {
+  if (es.some((x) => x.isIntersecting) && shown < currentItems.length) renderChunk();
+}, { rootMargin: "900px" });
+sentinel.observe($("more"));
+
+/* ---------------- boot ---------------- */
+buildRail();
+$("foot").innerHTML = `Data: <a href="https://poe2db.tw" target="_blank" rel="noopener">poe2db.tw</a> (official client text, both languages) · node lists via maxroll planner data · built ${esc(window.POE2REF.generated.slice(0, 10))} · ${DATA.length} entries<br>The CN client runs an older patch — entries missing there are marked. 国服版本较旧，缺失条目已标注。`;
+setCat("quest");
+</script>
+</body>
+</html>

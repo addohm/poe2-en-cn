@@ -1,0 +1,5 @@
+node_modules/
+cache/
+scrape.log
+.claude/
+icons.log

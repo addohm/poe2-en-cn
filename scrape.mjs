@@ -424,6 +424,79 @@ async function scrapeAtlasMasters() {
   return out;
 }
 
+// ---- Atlas maps ------------------------------------------------------------
+// poe2db /us/Waystones and /cn/Waystones share unlocalized pane ids:
+// #EndGameMaps (map nodes, paired by WorldAreas href slug) and
+// #MapLegends (atlas markers, paired by icon filename).
+
+const MAP_KIND = { AtlasIconContentUniqueMap: "Unique Map", AtlasIconContentTrader: "Trader", AtlasIconContentHideout: "Hideout" };
+
+function parseMapsPage(html) {
+  const $ = cheerio.load(html);
+  const maps = [];
+  $("#EndGameMaps div.d-flex.border-top").each((_, row) => {
+    const $row = $(row);
+    const $img = $row.children(".flex-shrink-0").find("img").first();
+    const $body = $row.children(".flex-grow-1").first();
+    const $a = $body.children("a.WorldAreas").first();
+    const slug = ($a.attr("href") ?? "").split("/").pop();
+    const name = $a.text().trim();
+    if (!slug || !name) return;
+    const info = $body.children("div:not([class])").map((_, d) => cleanText($(d))).get();
+    const mods = $body.children("div.implicitMod, div.explicitMod").map((_, d) => cleanText($(d))).get();
+    const flavour = cleanText($body.children("div.FlavourText").first());
+    maps.push({
+      slug,
+      icon: $img.attr("src") ?? "",
+      kind: MAP_KIND[$img.attr("alt") ?? ""] ?? "Map",
+      name,
+      desc: [...info, ...mods].filter(Boolean).join("\n"),
+      flavour,
+    });
+  });
+  const legends = [];
+  $("#MapLegends div.d-flex.border-top").each((_, row) => {
+    const $row = $(row);
+    const $img = $row.children(".flex-shrink-0").find("img").first();
+    const key = $img.attr("alt") ?? "";
+    const name = $row.children(".flex-grow-1").first().text().replace(/\s+/g, " ").trim();
+    if (!key || !name) return;
+    legends.push({ key, icon: $img.attr("src") ?? "", name });
+  });
+  return { maps, legends };
+}
+
+async function scrapeMaps() {
+  console.log("Atlas maps:");
+  const en = parseMapsPage(await getPage("us", "Waystones"));
+  const cn = parseMapsPage(await getPage("cn", "Waystones"));
+  const cnBySlug = new Map(cn.maps.map((m) => [m.slug, m]));
+  const cnLegend = new Map(cn.legends.map((l) => [l.key, l]));
+  const out = [];
+  for (const m of en.maps) {
+    const c = cnBySlug.get(m.slug) ?? null;
+    out.push({
+      cat: "map",
+      key: `map/${m.slug}`,
+      icon: m.icon,
+      en: { name: m.name, sub: m.kind, desc: m.desc, flavour: m.flavour },
+      cn: c ? { name: c.name, sub: m.kind, desc: c.desc, flavour: c.flavour } : null,
+    });
+  }
+  for (const l of en.legends) {
+    const c = cnLegend.get(l.key) ?? null;
+    out.push({
+      cat: "map",
+      key: `map/legend/${l.key}`,
+      icon: l.icon,
+      en: { name: l.name, sub: "Legend" },
+      cn: c ? { name: c.name, sub: "Legend" } : null,
+    });
+  }
+  console.log(`  maps: ${en.maps.length}, legends: ${en.legends.length}, cn paired: ${out.filter((e) => e.cn).length}/${out.length}`);
+  return out;
+}
+
 // ---- main ------------------------------------------------------------------
 
 await mkdir(CACHE, { recursive: true });
@@ -454,6 +527,7 @@ entries.push(
 
 entries.push(...(await scrapeQuests()));
 entries.push(...(await scrapeAtlasMasters()));
+entries.push(...(await scrapeMaps()));
 entries.push(...(await scrapeTrees()));
 
 // drop unlocalized internal rows (CamelCase key shown as name in both

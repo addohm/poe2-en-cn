@@ -13,6 +13,7 @@ localized text from both game clients — no machine translation.
 | Quests 任务 — all quests with step-by-step objectives, areas, rewards, by act | poe2db |
 | Sekhemas Boons 恩赐 / Afflictions 厄难 / Pledges 誓约 / Rooms 房间 | poe2db |
 | Chaos Trial 混沌试炼 — Trial of Chaos round modifiers | poe2db |
+| Atlas Maps 异界地图 — all endgame map nodes with bosses, area modifiers, flavour text; plus unique maps, traders, hideouts, and atlas legend markers | poe2db `Waystones` page |
 | Atlas Tree 舆图天赋 — core tree, plus each league mechanic sub-tree (Breach 裂隙, Delirium 惊悸迷雾, Ritual 驱灵祭坛, Expedition 先祖秘藏, Abyss 深渊, Incursion 穿越) as its own category | maxroll planner data |
 | Atlas Tree Masters 异界大师 — Doryani's Science, Hilda's Hunting, Jado's Spycraft specialization nodes | poe2db `Atlas_Masters` page |
 | Genesis Tree 创世天赋 | maxroll planner data |

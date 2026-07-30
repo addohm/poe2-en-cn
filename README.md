@@ -19,6 +19,7 @@ localized text from both game clients — no machine translation.
 | Atlas Tree Masters 异界大师 — Doryani's Science, Hilda's Hunting, Jado's Spycraft specialization nodes | poe2db `Atlas_Masters` page |
 | Genesis Tree 创世天赋 | maxroll planner data |
 | Passive Tree 天赋树 — keystones, notables, ascendancies (travel/attribute nodes excluded) | maxroll planner data |
+| Buffs & Debuffs 增益减益 — every player/monster buff, debuff, flask effect, and charge with its status-bar icon and subtype (Aura, Curse, Mark, …) | poe2db `Buff` page |
 
 Localized text and icons all come from [poe2db.tw](https://poe2db.tw)'s `/us`
 and `/cn` pages, paired by language-independent keys (URL slugs, icon

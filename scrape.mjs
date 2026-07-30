@@ -4,7 +4,7 @@
 // Usage: node scrape.mjs            (uses cache/ for previously fetched pages)
 //        node scrape.mjs --fresh    (ignores cache)
 import * as cheerio from "cheerio";
-import { mkdir, readFile, writeFile, access } from "node:fs/promises";
+import { mkdir, readFile, writeFile, access, rm } from "node:fs/promises";
 import path from "node:path";
 
 const ROOT = import.meta.dirname;
@@ -25,15 +25,24 @@ async function getPage(lang, slug) {
       return await readFile(cacheFile, "utf8");
     } catch {}
   }
-  const wait = lastFetch + DELAY_MS - Date.now();
-  if (wait > 0) await sleep(wait);
-  lastFetch = Date.now();
   const url = `https://poe2db.tw/${lang}/${slug}`;
-  const res = await fetch(url, { headers: { "User-Agent": UA } });
-  if (!res.ok) throw new Error(`${res.status} for ${url}`);
-  const html = await res.text();
-  await writeFile(cacheFile, html);
-  return html;
+  for (let attempt = 0; ; attempt++) {
+    const wait = lastFetch + DELAY_MS - Date.now();
+    if (wait > 0) await sleep(wait);
+    lastFetch = Date.now();
+    const res = await fetch(url, { headers: { "User-Agent": UA } });
+    if (res.ok) {
+      const html = await res.text();
+      await writeFile(cacheFile, html);
+      return html;
+    }
+    // poe2db intermittently 503s under load — back off and retry
+    if ((res.status === 503 || res.status === 429) && attempt < 4) {
+      await sleep(3000 * (attempt + 1));
+      continue;
+    }
+    throw new Error(`${res.status} for ${url}`);
+  }
 }
 
 function cleanText($el) {
@@ -515,6 +524,77 @@ async function scrapeMaps() {
   return out;
 }
 
+// ---- Buffs & Debuffs -------------------------------------------------------
+// poe2db /us/Buff and /cn/Buff "#BuffDefinitions" pane: every buff/debuff with
+// its status-bar icon, frame type (Buff/Debuff/Flask/Charges) and subtype
+// label (Aura, Curse, Mark, ...). Paired by the internal BuffDefinitions id.
+
+const BUFF_TYPE_CN = { Buff: "增益", Debuff: "减益", Flask: "药剂", Charges: "充能" };
+
+function parseBuffPage(html) {
+  const $ = cheerio.load(html);
+  const out = [];
+  $("#BuffDefinitions div.d-flex.border-top").each((_, row) => {
+    const $row = $(row);
+    const type = ($row.find(".buff-icon-container").attr("class") ?? "").match(/buff-icon-type__(\w+)/)?.[1] ?? "";
+    const iconUrl = $row.find(".buff-icon-container img").first().attr("src") ?? "";
+    const $body = $row.children(".flex-grow-1").first();
+    const $a = $body.children("a[data-hover]").first();
+    // /us pages carry a readable "?s=Data\BuffDefinitions\<id>" hover; /cn
+    // pages only a hashed URL, so the shared-language href slug is the key
+    const id = decodeURIComponent($a.attr("data-hover") ?? "").match(/BuffDefinitions[\\/]+([^"&]+)$/)?.[1] ?? "";
+    const slug = ($a.attr("href") ?? "").split("/").pop() ?? "";
+    const name = $a.text().replace(/\s+/g, " ").trim();
+    const tail = $body.clone().children("a").remove().end().text().replace(/\s+/g, " ").trim();
+    if (!name || (!id && !slug)) return;
+    if (/DNT|DoNotUse|\[/i.test(name) || /^CTF/.test(tail)) return;
+    out.push({ id, slug, name, type, tail, iconUrl });
+  });
+  return out;
+}
+
+async function scrapeBuffs() {
+  console.log("Buffs & debuffs:");
+  const en = parseBuffPage(await getPage("us", "Buff"));
+  let cn = [];
+  try {
+    cn = parseBuffPage(await getPage("cn", "Buff"));
+  } catch (err) {
+    console.warn(`  ! /cn/Buff unavailable (${err.message}) — CN side empty this run`);
+  }
+  // guard against poe2db's CDN serving stale English content under /cn during
+  // overload: a healthy CN page has mostly-CJK names for common buffs
+  const cjkShare = cn.filter((b) => /[一-鿿]/.test(b.name)).length / (cn.length || 1);
+  if (cn.length && cjkShare < 0.2) {
+    console.warn(`  ! /cn/Buff looks like stale English content (CJK share ${(cjkShare * 100).toFixed(0)}%) — dropping cache, CN side empty this run`);
+    await rm(path.join(CACHE, "cn_Buff.html"), { force: true });
+    cn = [];
+  }
+  // both pages list the same dataset in the same order; pair by index when the
+  // slug agrees, else fall back to first unused entry with the same slug
+  const used = new Set();
+  const findCn = (b, i) => {
+    if (cn[i] && cn[i].slug === b.slug && !used.has(i)) { used.add(i); return cn[i]; }
+    const j = cn.findIndex((c, k) => !used.has(k) && c.slug === b.slug);
+    if (j >= 0) { used.add(j); return cn[j]; }
+    return null;
+  };
+  const out = en.map((b, i) => {
+    const c = findCn(b, i);
+    return {
+      cat: "buff",
+      key: `buff/${b.id || b.slug + "#" + i}`,
+      icon: b.iconUrl,
+      en: { name: b.name, sub: [b.type, b.tail].filter(Boolean).join(" · ") },
+      cn: c
+        ? { name: c.name, sub: [BUFF_TYPE_CN[c.type] ?? c.type, c.tail].filter(Boolean).join(" · ") }
+        : null,
+    };
+  });
+  console.log(`  buffs: ${out.length} (cn paired: ${out.filter((e) => e.cn).length})`);
+  return out;
+}
+
 // ---- main ------------------------------------------------------------------
 
 await mkdir(CACHE, { recursive: true });
@@ -546,6 +626,7 @@ entries.push(
 entries.push(...(await scrapeQuests()));
 entries.push(...(await scrapeAtlasMasters()));
 entries.push(...(await scrapeMaps()));
+entries.push(...(await scrapeBuffs()));
 entries.push(...(await scrapeTrees()));
 
 // drop unlocalized internal rows (CamelCase key shown as name in both

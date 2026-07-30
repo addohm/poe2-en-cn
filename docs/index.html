@@ -309,8 +309,11 @@ const NAV = [
   { section: ["Character", "角色"], cats: [
     ["passive-tree", "Passive Tree", "天赋树"],
   ]},
+  { section: ["Combat", "战斗"], cats: [
+    ["buff", "Buffs & Debuffs", "增益减益"],
+  ]},
 ];
-const GRID_CATS = new Set(["sekhemas-boon", "sekhemas-affliction", "genesis-tree", "passive-tree", "chaos-mod", "atlas-master", "map",
+const GRID_CATS = new Set(["sekhemas-boon", "sekhemas-affliction", "genesis-tree", "passive-tree", "chaos-mod", "atlas-master", "buff", "map",
   "atlas-core", "atlas-breach", "atlas-delirium", "atlas-ritual", "atlas-expedition", "atlas-abyss", "atlas-incursion"]);
 const CHUNK = 120;
 // virtual categories: id -> [real cat, atlas sub-tree]
@@ -352,6 +355,13 @@ function groupOf(e) {
     case "map": {
       const M = { "Map": ["Maps", "地图"], "Unique Map": ["Unique Maps", "传奇地图"], "Trader": ["Traders", "商人"], "Hideout": ["Hideouts", "藏身处"], "Legend": ["Atlas Legend", "图例"] };
       return M[e.en.sub] ?? [e.en.sub || "Maps", ""];
+    }
+    case "buff": {
+      const t = (e.en.sub || "").split("·")[0].trim();
+      return [
+        { Buff: "Buffs", Debuff: "Debuffs", Flask: "Flask Effects", Charges: "Charges" }[t] ?? t ?? "Other",
+        { Buff: "增益", Debuff: "减益", Flask: "药剂", Charges: "充能" }[t] ?? "",
+      ];
     }
     case "atlas-master": {
       const g = (e.en.sub || "").replace(/\s*T\d+$/, "").trim();
@@ -502,6 +512,10 @@ function render() {
     items.sort((a, b) => ORDER.indexOf(a._g) - ORDER.indexOf(b._g));
   } else if (cat === "atlas-master") {
     items.sort((a, b) => a._g.localeCompare(b._g) || (a.en.sub || "").localeCompare(b.en.sub || ""));
+  } else if (cat === "buff") {
+    const order = ["Buffs", "Debuffs", "Flask Effects", "Charges"];
+    const rank = (g) => { const i = order.indexOf(g); return i < 0 ? 9 : i; };
+    items.sort((a, b) => rank(a._g) - rank(b._g) || a.en.name.localeCompare(b.en.name));
   } else if (cat === "sekhemas-boon" || cat === "sekhemas-affliction") {
     const rank = (g) => (g === "Minor" ? 0 : 1);
     items.sort((a, b) => rank(a._g) - rank(b._g));

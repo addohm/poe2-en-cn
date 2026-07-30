@@ -179,6 +179,7 @@
   .desc { font-size: 14px; color: var(--ink-dim); white-space: pre-line; margin-top: 5px; }
   .desc .zhd { color: var(--ink); }
   .reward { font-size: 13px; color: #9dbd92; margin-top: 5px; }
+  .biomes { font-size: 13px; color: var(--accent); margin-top: 5px; }
   .flav { font-style: italic; color: var(--gold-dim); font-size: 13px; margin-top: 5px; }
   .missing { color: var(--ink-faint); font-style: italic; font-size: 13.5px; }
 
@@ -335,7 +336,7 @@ for (const s of NAV) for (const [id, en, zh] of s.cats) CAT_INFO[id] = { en, zh 
 /* search blobs */
 for (const e of DATA) {
   const parts = [];
-  for (const side of [e.en, e.cn]) if (side) parts.push(side.name, side.sub, side.desc, side.reward, side.flavour);
+  for (const side of [e.en, e.cn]) if (side) parts.push(side.name, side.sub, side.desc, side.reward, side.flavour, side.biomes);
   for (const s of e.steps ?? []) for (const side of [s.en, s.cn]) if (side) parts.push(side.name, side.desc, side.area);
   e._blob = parts.filter(Boolean).join("\n").toLowerCase();
 }
@@ -412,6 +413,7 @@ function sideHtml(side, lang) {
   if (!side) return `<div class="missing">not in ${lang === "cn" ? "CN client data · 国服暂无" : "EN data"}</div>`;
   return `
     ${side.desc ? `<div class="desc${lang === "cn" ? " zhd" : ""}">${hl(side.desc)}</div>` : ""}
+    ${side.biomes ? `<div class="biomes">${lang === "cn" ? "地貌" : "Biomes"} · ${hl(side.biomes)}</div>` : ""}
     ${side.reward ? `<div class="reward">${hl(side.reward)}</div>` : ""}
     ${side.flavour ? `<div class="flav">${hl(side.flavour)}</div>` : ""}`;
 }

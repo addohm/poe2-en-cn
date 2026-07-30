@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-29T06:38:40.789Z",
+ "generated": "2026-07-30T00:59:25.837Z",
  "source": "poe2db.tw (/us and /cn)",
  "entries": [
   {
@@ -26853,13 +26853,15 @@
     "name": "Castaway",
     "sub": "Unique Map",
     "desc": "Island Rumours: All that glitters...\nBoss Fights: Torrek of the Drowned Fleet\n(500—1000)% increased Gold found in this Area\nContains buried treasure\nAll items dropped are converted to Gold",
-    "flavour": "Hulls crash and splinter upon the shores."
+    "flavour": "Hulls crash and splinter upon the shores.",
+    "biomes": "Water, Ocean"
    },
    "cn": {
     "name": "颠沛领域",
     "sub": "Unique Map",
     "desc": "岛上流言: 所有闪闪发光之物……\n首领战: 沉溺舰队的托雷克\n在此区域中可找到的金币数量提高 (500—1000)%\n地图含有埋葬的宝藏\n所有掉落物品转化为金币",
-    "flavour": "船体撞击海岸，碎裂四散。"
+    "flavour": "船体撞击海岸，碎裂四散。",
+    "biomes": "水域, 海洋"
    }
   },
   {
@@ -26870,13 +26872,15 @@
     "name": "Untainted Paradise",
     "sub": "Unique Map",
     "desc": "Island Rumours: Almost paradise.\n(200—400)% increased Experience gain\nMonsters drop no items",
-    "flavour": "Life grows strong in this realm of plenty."
+    "flavour": "Life grows strong in this realm of plenty.",
+    "biomes": "Water, Ocean"
    },
    "cn": {
     "name": "纯净乐园",
     "sub": "Unique Map",
     "desc": "岛上流言: 近乎天堂。\n获得的经验值提高 (200—400)%\n怪物不会掉落物品",
-    "flavour": "生命在这片丰饶之地茁壮成长。"
+    "flavour": "生命在这片丰饶之地茁壮成长。",
+    "biomes": "水域, 海洋"
    }
   },
   {
@@ -26887,13 +26891,15 @@
     "name": "Vaults of Kamasa",
     "sub": "Unique Map",
     "desc": "map item drop rarity +% [100,200]\nAll Chests are Magic or Rare",
-    "flavour": "By that era, Kamasa was just a name. Gold was their true god."
+    "flavour": "By that era, Kamasa was just a name. Gold was their true god.",
+    "biomes": "Vaal City"
    },
    "cn": {
     "name": "卡马萨的宝库",
     "sub": "Unique Map",
     "desc": "map item drop rarity +% [100,200]\n所有宝箱为魔法或稀有",
-    "flavour": "那个时代，卡马萨不过是一个名字。黄金才是他们真正的神。"
+    "flavour": "那个时代，卡马萨不过是一个名字。黄金才是他们真正的神。",
+    "biomes": "瓦尔城市"
    }
   },
   {
@@ -26904,13 +26910,15 @@
     "name": "The Viridian Wildwood",
     "sub": "Unique Map",
     "desc": "Shrouded in Darkness Contains Omen Altars",
-    "flavour": "As separate worlds draw ever closer, the Nameless gather at the edge of existence."
+    "flavour": "As separate worlds draw ever closer, the Nameless gather at the edge of existence.",
+    "biomes": "Island, Forest, Swamp"
    },
    "cn": {
     "name": "翠绿荒林",
     "sub": "Unique Map",
     "desc": "黑暗笼罩包含预兆之坛",
-    "flavour": "随着诸界日益临近，无名者聚于存在的边缘。"
+    "flavour": "随着诸界日益临近，无名者聚于存在的边缘。",
+    "biomes": "岛屿, 森林, 沼泽"
    }
   },
   {
@@ -26921,13 +26929,15 @@
     "name": "The Silent Cave",
     "sub": "Unique Map",
     "desc": "Contains many Rare Monsters trapped in Essences Contains an Imprisoned Boss that absorbs Essences from Rare Monsters",
-    "flavour": "The prismatic patterns of Time shimmer and coalesce in vast geodes hidden from sight."
+    "flavour": "The prismatic patterns of Time shimmer and coalesce in vast geodes hidden from sight.",
+    "biomes": "Island, Mountain, Desert"
    },
    "cn": {
     "name": "寂静窟",
     "sub": "Unique Map",
     "desc": "包含许多困在精华中的稀有怪物包含一个被禁锢的首领，它会吸收稀有怪物的精华",
-    "flavour": "时间的虹彩在隐秘的巨型晶洞中闪烁凝聚。"
+    "flavour": "时间的虹彩在隐秘的巨型晶洞中闪烁凝聚。",
+    "biomes": "岛屿, 高山, 沙漠"
    }
   },
   {
@@ -26938,13 +26948,15 @@
     "name": "The Fractured Lake",
     "sub": "Unique Map",
     "desc": "Island Rumours: Reflective waters...\nRare Monsters Are Mirrored\n(150—300)% increased number of Rare Monsters\nContains the Fragmented Mirror",
-    "flavour": "A mirror is a perfect prison for one's sense of self... until it cracks."
+    "flavour": "A mirror is a perfect prison for one's sense of self... until it cracks.",
+    "biomes": "Water, Ocean"
    },
    "cn": {
     "name": "千裂泽",
     "sub": "Unique Map",
     "desc": "岛上流言: 倒映的水面……\n稀有怪物被复制\n稀有怪物的数量提高(150—300)%\n包含碎裂的魔镜",
-    "flavour": "镜子是自我意识的完美牢笼……直到它碎裂。"
+    "flavour": "镜子是自我意识的完美牢笼……直到它碎裂。",
+    "biomes": "水域, 海洋"
    }
   },
   {
@@ -26955,13 +26967,15 @@
     "name": "Merchant's Campsite",
     "sub": "Trader",
     "desc": "",
-    "flavour": "A travelling merchant offers wares in perilous times."
+    "flavour": "A travelling merchant offers wares in perilous times.",
+    "biomes": "Forest, Swamp"
    },
    "cn": {
     "name": "商旅营地",
     "sub": "Trader",
     "desc": "",
-    "flavour": "游商于危难之际，贩卖货物。"
+    "flavour": "游商于危难之际，贩卖货物。",
+    "biomes": "森林, 沼泽"
    }
   },
   {
@@ -26972,13 +26986,15 @@
     "name": "Merchant's Campsite",
     "sub": "Trader",
     "desc": "",
-    "flavour": "A travelling merchant offers wares in perilous times."
+    "flavour": "A travelling merchant offers wares in perilous times.",
+    "biomes": "Forest, Swamp"
    },
    "cn": {
     "name": "商旅营地",
     "sub": "Trader",
     "desc": "",
-    "flavour": "游商于危难之际，贩卖货物。"
+    "flavour": "游商于危难之际，贩卖货物。",
+    "biomes": "森林, 沼泽"
    }
   },
   {
@@ -26989,13 +27005,15 @@
     "name": "Merchant's Campsite",
     "sub": "Trader",
     "desc": "",
-    "flavour": "A travelling merchant offers wares in perilous times."
+    "flavour": "A travelling merchant offers wares in perilous times.",
+    "biomes": "Forest, Swamp"
    },
    "cn": {
     "name": "商旅营地",
     "sub": "Trader",
     "desc": "",
-    "flavour": "游商于危难之际，贩卖货物。"
+    "flavour": "游商于危难之际，贩卖货物。",
+    "biomes": "森林, 沼泽"
    }
   },
   {
@@ -27006,13 +27024,15 @@
     "name": "Merchant's Campsite",
     "sub": "Trader",
     "desc": "",
-    "flavour": "A travelling merchant offers wares in perilous times."
+    "flavour": "A travelling merchant offers wares in perilous times.",
+    "biomes": "Forest, Swamp"
    },
    "cn": {
     "name": "商旅营地",
     "sub": "Trader",
     "desc": "",
-    "flavour": "游商于危难之际，贩卖货物。"
+    "flavour": "游商于危难之际，贩卖货物。",
+    "biomes": "森林, 沼泽"
    }
   },
   {
@@ -27023,13 +27043,15 @@
     "name": "Moment of Zen",
     "sub": "Trader",
     "desc": "",
-    "flavour": "A travelling merchant offers wares in perilous times."
+    "flavour": "A travelling merchant offers wares in perilous times.",
+    "biomes": "Island"
    },
    "cn": {
     "name": "顿悟时刻",
     "sub": "Trader",
     "desc": "",
-    "flavour": "游商于危难之际，贩卖货物。"
+    "flavour": "游商于危难之际，贩卖货物。",
+    "biomes": "岛屿"
    }
   },
   {
@@ -27040,13 +27062,15 @@
     "name": "Moment of Zen",
     "sub": "Trader",
     "desc": "Island Rumours: A good fellow...",
-    "flavour": "A travelling merchant offers wares in perilous times."
+    "flavour": "A travelling merchant offers wares in perilous times.",
+    "biomes": "Island"
    },
    "cn": {
     "name": "顿悟时刻",
     "sub": "Trader",
     "desc": "",
-    "flavour": "游商于危难之际，贩卖货物。"
+    "flavour": "游商于危难之际，贩卖货物。",
+    "biomes": "岛屿"
    }
   },
   {
@@ -27057,13 +27081,15 @@
     "name": "Moment of Zen",
     "sub": "Trader",
     "desc": "",
-    "flavour": "A travelling merchant offers wares in perilous times."
+    "flavour": "A travelling merchant offers wares in perilous times.",
+    "biomes": "Island"
    },
    "cn": {
     "name": "顿悟时刻",
     "sub": "Trader",
     "desc": "",
-    "flavour": "游商于危难之际，贩卖货物。"
+    "flavour": "游商于危难之际，贩卖货物。",
+    "biomes": "岛屿"
    }
   },
   {
@@ -27074,13 +27100,15 @@
     "name": "Felled Hideout",
     "sub": "Hideout",
     "desc": "",
-    "flavour": "A fortress of fallen wood."
+    "flavour": "A fortress of fallen wood.",
+    "biomes": "Island, Forest"
    },
    "cn": {
     "name": "藏身处：伐木场",
     "sub": "Hideout",
     "desc": "",
-    "flavour": "由朽木筑成的堡垒。"
+    "flavour": "由朽木筑成的堡垒。",
+    "biomes": "岛屿, 森林"
    }
   },
   {
@@ -27091,13 +27119,15 @@
     "name": "Limestone Hideout",
     "sub": "Hideout",
     "desc": "",
-    "flavour": "A forgotten grotto, lost to the world."
+    "flavour": "A forgotten grotto, lost to the world.",
+    "biomes": "Water, Ocean"
    },
    "cn": {
     "name": "藏身处：灰岩洞窟",
     "sub": "Hideout",
     "desc": "",
-    "flavour": "一处被世界遗忘的幽僻洞穴。"
+    "flavour": "一处被世界遗忘的幽僻洞穴。",
+    "biomes": "水域, 海洋"
    }
   },
   {
@@ -27108,13 +27138,15 @@
     "name": "Shrine Hideout",
     "sub": "Hideout",
     "desc": "",
-    "flavour": "A fragment of a glorious past."
+    "flavour": "A fragment of a glorious past.",
+    "biomes": "Desert"
    },
    "cn": {
     "name": "藏身处：堂皇大殿",
     "sub": "Hideout",
     "desc": "",
-    "flavour": "辉煌往昔的碎片。"
+    "flavour": "辉煌往昔的碎片。",
+    "biomes": "沙漠"
    }
   },
   {
@@ -27125,13 +27157,15 @@
     "name": "Canal Hideout",
     "sub": "Hideout",
     "desc": "",
-    "flavour": "A moment in time, on the eve of the end."
+    "flavour": "A moment in time, on the eve of the end.",
+    "biomes": "Grass"
    },
    "cn": {
     "name": "藏身处：运河",
     "sub": "Hideout",
     "desc": "",
-    "flavour": "终结前夕的瞬间。"
+    "flavour": "终结前夕的瞬间。",
+    "biomes": "草原"
    }
   },
   {
@@ -27142,13 +27176,15 @@
     "name": "The Ziggurat Refuge",
     "sub": "Map",
     "desc": "",
-    "flavour": "There is no failure. Only shifting definitions of success."
+    "flavour": "There is no failure. Only shifting definitions of success.",
+    "biomes": "Forest, Swamp, Desert, Grass"
    },
    "cn": {
     "name": "金字塔避难所",
     "sub": "Map",
     "desc": "",
-    "flavour": "失败并不存在，只是成功的定义变化无常。"
+    "flavour": "失败并不存在，只是成功的定义变化无常。",
+    "biomes": "森林, 沼泽, 沙漠, 草原"
    }
   },
   {
@@ -27159,13 +27195,15 @@
     "name": "Blooming Field",
     "sub": "Map",
     "desc": "Boss Fights: The Black Crow\nmap block ritual at boss area [1]",
-    "flavour": "Bright colours hide the rot beneath."
+    "flavour": "Bright colours hide the rot beneath.",
+    "biomes": "Island, Forest, Grass"
    },
    "cn": {
     "name": "兴荣原野",
     "sub": "Map",
     "desc": "首领战: 黑鸦\nmap block ritual at boss area [1]",
-    "flavour": "明艳的色彩掩盖了底下的腐朽。"
+    "flavour": "明艳的色彩掩盖了底下的腐朽。",
+    "biomes": "岛屿, 森林, 草原"
    }
   },
   {
@@ -27176,13 +27214,15 @@
     "name": "Savannah",
     "sub": "Map",
     "desc": "Boss Fights: Caedron, the Hyena Lord",
-    "flavour": "Wild lands spurn those who claim to rule them."
+    "flavour": "Wild lands spurn those who claim to rule them.",
+    "biomes": "Island, Desert, Grass, Breach Stronghold"
    },
    "cn": {
     "name": "广袤草原",
     "sub": "Map",
     "desc": "首领战: 凯德隆，土狼之王",
-    "flavour": "荒芜之地唾弃那些自诩为统治者的人。"
+    "flavour": "荒芜之地唾弃那些自诩为统治者的人。",
+    "biomes": "岛屿, 沙漠, 草原, 裂隙要塞"
    }
   },
   {
@@ -27193,13 +27233,15 @@
     "name": "Fortress",
     "sub": "Map",
     "desc": "Boss Fights: Pirasha, the Forgotten Prisoner",
-    "flavour": "Time overwhelms even the sturdiest walls."
+    "flavour": "Time overwhelms even the sturdiest walls.",
+    "biomes": "Island, Desert, Breach Stronghold"
    },
    "cn": {
     "name": "上古堡垒",
     "sub": "Map",
     "desc": "首领战: 皮拉夏，遗忘的囚徒",
-    "flavour": "时光终将淹没最坚固的城墙。"
+    "flavour": "时光终将淹没最坚固的城墙。",
+    "biomes": "岛屿, 沙漠, 裂隙要塞"
    }
   },
   {
@@ -27210,13 +27252,15 @@
     "name": "Penitentiary",
     "sub": "Map",
     "desc": "Boss Fights: Incarnation of Death",
-    "flavour": "Restless prisoners yearn for freedom."
+    "flavour": "Restless prisoners yearn for freedom.",
+    "biomes": "Island, Ezomyte City, Grass, Breach Stronghold"
    },
    "cn": {
     "name": "悔罪监牢",
     "sub": "Map",
     "desc": "首领战: 死亡的化身",
-    "flavour": "不安的囚徒渴望着自由。"
+    "flavour": "不安的囚徒渴望着自由。",
+    "biomes": "岛屿, 艾兹麦城市, 草原, 裂隙要塞"
    }
   },
   {
@@ -27227,13 +27271,15 @@
     "name": "Lost Towers",
     "sub": "Map",
     "desc": "Boss Fights: Chetza, the Feathered Plague",
-    "flavour": "The grandest of monuments, standing proudly before an audience of none."
+    "flavour": "The grandest of monuments, standing proudly before an audience of none.",
+    "biomes": "Island, Forest"
    },
    "cn": {
     "name": "失落高塔",
     "sub": "Map",
     "desc": "首领战: 切扎，飞羽灾疫",
-    "flavour": "最宏伟的纪念碑，傲然矗立在没有观众的舞台上。"
+    "flavour": "最宏伟的纪念碑，傲然矗立在没有观众的舞台上。",
+    "biomes": "岛屿, 森林"
    }
   },
   {
@@ -27244,13 +27290,15 @@
     "name": "Sandspit",
     "sub": "Map",
     "desc": "Boss Fights: The Sandstrider",
-    "flavour": "A haven for seabirds. A hazard for sailors."
+    "flavour": "A haven for seabirds. A hazard for sailors.",
+    "biomes": "Water, Ocean"
    },
    "cn": {
     "name": "流沙海岬",
     "sub": "Map",
     "desc": "首领战: 流沙行者",
-    "flavour": "海鸟的庇护所，水手的险途。"
+    "flavour": "海鸟的庇护所，水手的险途。",
+    "biomes": "水域, 海洋"
    }
   },
   {
@@ -27261,13 +27309,15 @@
     "name": "Forge",
     "sub": "Map",
     "desc": "Boss Fights: Vastweld, the Colossal Guardian",
-    "flavour": "No living hands ever stoked these flames."
+    "flavour": "No living hands ever stoked these flames.",
+    "biomes": "Mountain, Desert"
    },
    "cn": {
     "name": "铸铁熔炉",
     "sub": "Map",
     "desc": "首领战: 瓦斯韦德，巨像守护者",
-    "flavour": "从无活人的手曾为这些火焰添薪。"
+    "flavour": "从无活人的手曾为这些火焰添薪。",
+    "biomes": "高山, 沙漠"
    }
   },
   {
@@ -27278,13 +27328,15 @@
     "name": "Sulphuric Caverns",
     "sub": "Map",
     "desc": "Boss Fights: The Bone Colossus, Lord of the Pit",
-    "flavour": "Beasts of many kinds sought shelter one final time."
+    "flavour": "Beasts of many kinds sought shelter one final time.",
+    "biomes": "Island, Swamp, Desert, Breach Stronghold"
    },
    "cn": {
     "name": "硝硫洞窟",
     "sub": "Map",
     "desc": "首领战: 骸骨巨像, 深坑主宰",
-    "flavour": "百兽最后一次在此寻求庇护。"
+    "flavour": "百兽最后一次在此寻求庇护。",
+    "biomes": "岛屿, 沼泽, 沙漠, 裂隙要塞"
    }
   },
   {
@@ -27295,13 +27347,15 @@
     "name": "Mire",
     "sub": "Map",
     "desc": "Boss Fights: Riona, Winter's Cackle",
-    "flavour": "These waters devour the same souls they feed."
+    "flavour": "These waters devour the same souls they feed.",
+    "biomes": "Island, Forest, Swamp"
    },
    "cn": {
     "name": "泥沼",
     "sub": "Map",
     "desc": "首领战: 莉奥娜，凛冬笑语",
-    "flavour": "这片水域既滋养灵魂，也吞噬灵魂。"
+    "flavour": "这片水域既滋养灵魂，也吞噬灵魂。",
+    "biomes": "岛屿, 森林, 沼泽"
    }
   },
   {
@@ -27312,13 +27366,15 @@
     "name": "Woodland",
     "sub": "Map",
     "desc": "Boss Fights: Murtagh, the Engorged, Colm, the Rancorous",
-    "flavour": "The woods give their leaves to the seasons. Man takes the rest."
+    "flavour": "The woods give their leaves to the seasons. Man takes the rest.",
+    "biomes": "Island, Forest, Breach Stronghold"
    },
    "cn": {
     "name": "葱郁林荫",
     "sub": "Map",
     "desc": "首领战: 默塔格，暴食者, 科尔姆，怨恨者",
-    "flavour": "树林随季节更迭献出叶片，其余则尽归人类之手。"
+    "flavour": "树林随季节更迭献出叶片，其余则尽归人类之手。",
+    "biomes": "岛屿, 森林, 裂隙要塞"
    }
   },
   {
@@ -27329,13 +27385,15 @@
     "name": "Sump",
     "sub": "Map",
     "desc": "Boss Fights: Brakka, the Withered Crone",
-    "flavour": "Humanity trapped within a cage of desperation and agony."
+    "flavour": "Humanity trapped within a cage of desperation and agony.",
+    "biomes": "Island, Swamp, Breach Stronghold"
    },
    "cn": {
     "name": "污水深坑",
     "sub": "Map",
     "desc": "首领战: 芭卡拉，凋零老妪",
-    "flavour": "人类被困于绝望与痛苦的牢笼之中。"
+    "flavour": "人类被困于绝望与痛苦的牢笼之中。",
+    "biomes": "岛屿, 沼泽, 裂隙要塞"
    }
   },
   {
@@ -27346,13 +27404,15 @@
     "name": "Willow",
     "sub": "Map",
     "desc": "Boss Fights: Connal, the Tormented",
-    "flavour": "Leaves cling to trees as souls cling to life."
+    "flavour": "Leaves cling to trees as souls cling to life.",
+    "biomes": "Island, Forest, Breach Stronghold"
    },
    "cn": {
     "name": "柳木密林",
     "sub": "Map",
     "desc": "首领战: 柯纳尔，磨难者",
-    "flavour": "叶附于枝，如魂恋于生。"
+    "flavour": "叶附于枝，如魂恋于生。",
+    "biomes": "岛屿, 森林, 裂隙要塞"
    }
   },
   {
@@ -27363,13 +27423,15 @@
     "name": "Headland",
     "sub": "Map",
     "desc": "Boss Fights: Hask, the Fallen Son",
-    "flavour": "Sturdy walls held out an armada, but not the famine it brought."
+    "flavour": "Sturdy walls held out an armada, but not the famine it brought.",
+    "biomes": "Island, Mountain, Desert, Faridun City, Breach Stronghold"
    },
    "cn": {
     "name": "海角天涯",
     "sub": "Map",
     "desc": "首领战: 哈斯克，陨落之子",
-    "flavour": "坚固的城墙抵御了舰队，却未能抵挡随之而来的饥荒。"
+    "flavour": "坚固的城墙抵御了舰队，却未能抵挡随之而来的饥荒。",
+    "biomes": "岛屿, 高山, 沙漠, 法里顿城市, 裂隙要塞"
    }
   },
   {
@@ -27380,13 +27442,15 @@
     "name": "Lofty Summit",
     "sub": "Map",
     "desc": "Boss Fights: Oloton, the Remorseless",
-    "flavour": "The last vestiges of earth, lost beyond the sky."
+    "flavour": "The last vestiges of earth, lost beyond the sky.",
+    "biomes": "Island, Mountain"
    },
    "cn": {
     "name": "巍峨顶峰",
     "sub": "Map",
     "desc": "首领战: 奥罗顿，无情者",
-    "flavour": "大地最后的残迹，迷失于苍穹之外。"
+    "flavour": "大地最后的残迹，迷失于苍穹之外。",
+    "biomes": "岛屿, 高山"
    }
   },
   {
@@ -27397,13 +27461,15 @@
     "name": "Necropolis",
     "sub": "Map",
     "desc": "Boss Fights: Tycho, the Black Praetor",
-    "flavour": "Silent stones mark ancient graves and forgotten sorrows."
+    "flavour": "Silent stones mark ancient graves and forgotten sorrows.",
+    "biomes": "Forest, Ezomyte City, Breach Stronghold"
    },
    "cn": {
     "name": "魔影古园",
     "sub": "Map",
     "desc": "首领战: 泰柯，黑暗执政官",
-    "flavour": "沉默的石头标记着古老的坟墓与被遗忘的哀伤。"
+    "flavour": "沉默的石头标记着古老的坟墓与被遗忘的哀伤。",
+    "biomes": "森林, 艾兹麦城市, 裂隙要塞"
    }
   },
   {
@@ -27414,13 +27480,15 @@
     "name": "Crypt",
     "sub": "Map",
     "desc": "Boss Fights: Meltwax, Mockery of Faith",
-    "flavour": "Those killed in battle do not rest peacefully."
+    "flavour": "Those killed in battle do not rest peacefully.",
+    "biomes": "Desert, Grass"
    },
    "cn": {
     "name": "寂静地窟",
     "sub": "Map",
     "desc": "首领战: 熔蜡，信念的嘲弄",
-    "flavour": "战死沙场者，不得安息。"
+    "flavour": "战死沙场者，不得安息。",
+    "biomes": "沙漠, 草原"
    }
   },
   {
@@ -27431,13 +27499,15 @@
     "name": "Steaming Springs",
     "sub": "Map",
     "desc": "Boss Fights: Manassa, the Serpent Queen",
-    "flavour": "The tears of a ravaged earth."
+    "flavour": "The tears of a ravaged earth.",
+    "biomes": "Island, Forest, Grass, Breach Stronghold"
    },
    "cn": {
     "name": "蒸腾清泉",
     "sub": "Map",
     "desc": "首领战: 玛娜萨，毒蛇女王",
-    "flavour": "饱受摧残的大地流下的泪水。"
+    "flavour": "饱受摧残的大地流下的泪水。",
+    "biomes": "岛屿, 森林, 草原, 裂隙要塞"
    }
   },
   {
@@ -27448,13 +27518,15 @@
     "name": "Seepage",
     "sub": "Map",
     "desc": "Boss Fights: The Fungus Behemoth",
-    "flavour": "The fetid home of foul generations."
+    "flavour": "The fetid home of foul generations.",
+    "biomes": "Forest, Swamp, Grass"
    },
    "cn": {
     "name": "渗流之地",
     "sub": "Map",
     "desc": "首领战: 真菌巨兽",
-    "flavour": "污秽世代的恶臭家园。"
+    "flavour": "污秽世代的恶臭家园。",
+    "biomes": "森林, 沼泽, 草原"
    }
   },
   {
@@ -27465,13 +27537,15 @@
     "name": "Riverside",
     "sub": "Map",
     "desc": "Boss Fights: Zekoa, the Headcrusher",
-    "flavour": "Rushing waters threaten to move the earth."
+    "flavour": "Rushing waters threaten to move the earth.",
+    "biomes": "Forest, Breach Stronghold"
    },
    "cn": {
     "name": "危机河畔",
     "sub": "Map",
     "desc": "首领战: 泽廓尔，碾压者",
-    "flavour": "湍急的流水誓要撼动大地。"
+    "flavour": "湍急的流水誓要撼动大地。",
+    "biomes": "森林, 裂隙要塞"
    }
   },
   {
@@ -27482,13 +27556,15 @@
     "name": "Steppe",
     "sub": "Map",
     "desc": "Boss Fights: Gozen, Rebellious Rustlord",
-    "flavour": "Even the sparse vegetation does not linger here long."
+    "flavour": "Even the sparse vegetation does not linger here long.",
+    "biomes": "Island, Grass, Breach Stronghold"
    },
    "cn": {
     "name": "干燥草原",
     "sub": "Map",
     "desc": "首领战: 戈赞，锈污义军领主",
-    "flavour": "连稀疏的植被也不会在此久留。"
+    "flavour": "连稀疏的植被也不会在此久留。",
+    "biomes": "岛屿, 草原, 裂隙要塞"
    }
   },
   {
@@ -27499,13 +27575,15 @@
     "name": "Slick",
     "sub": "Map",
     "desc": "Boss Fights: Vorrik, The Infernal Engineer",
-    "flavour": "Stagnant oils mix to form a deadly concoction."
+    "flavour": "Stagnant oils mix to form a deadly concoction.",
+    "biomes": "Desert, Grass, Breach Stronghold"
    },
    "cn": {
     "name": "华彩之地",
     "sub": "Map",
     "desc": "首领战: 沃里克，火域工程师",
-    "flavour": "停滞的油料混合成致命的毒剂。"
+    "flavour": "停滞的油料混合成致命的毒剂。",
+    "biomes": "沙漠, 草原, 裂隙要塞"
    }
   },
   {
@@ -27516,13 +27594,15 @@
     "name": "Spider Woods",
     "sub": "Map",
     "desc": "Boss Fights: Rootgrasp, the Hateful Forest",
-    "flavour": "Vast lairs of silk span the treetops."
+    "flavour": "Vast lairs of silk span the treetops.",
+    "biomes": "Island, Forest, Breach Stronghold"
    },
    "cn": {
     "name": "蜘蛛林地",
     "sub": "Map",
     "desc": "首领战: 根攫，仇恨森林",
-    "flavour": "巨大的丝巢横跨树梢。"
+    "flavour": "巨大的丝巢横跨树梢。",
+    "biomes": "岛屿, 森林, 裂隙要塞"
    }
   },
   {
@@ -27533,13 +27613,15 @@
     "name": "Marrow",
     "sub": "Map",
     "desc": "Boss Fights: Zar Wali, the Bone Tyrant",
-    "flavour": "Darkness enshrouds these endless chasms."
+    "flavour": "Darkness enshrouds these endless chasms.",
+    "biomes": "Desert, Grass"
    },
    "cn": {
     "name": "朽髓之地",
     "sub": "Map",
     "desc": "首领战: 扎瓦里，高塔暴君",
-    "flavour": "黑暗笼罩着无尽深渊。"
+    "flavour": "黑暗笼罩着无尽深渊。",
+    "biomes": "沙漠, 草原"
    }
   },
   {
@@ -27550,13 +27632,15 @@
     "name": "Vaal City",
     "sub": "Map",
     "desc": "Boss Fights: Viper Napuatzi",
-    "flavour": "Hubris convinces men they can survive the mistakes of their forebears."
+    "flavour": "Hubris convinces men they can survive the mistakes of their forebears.",
+    "biomes": "Swamp, Vaal City"
    },
    "cn": {
     "name": "瓦尔城市",
     "sub": "Map",
     "desc": "首领战: 蝰蛇娜帕齐",
-    "flavour": "狂妄使人相信，自己能逃脱先辈错误的覆辙。"
+    "flavour": "狂妄使人相信，自己能逃脱先辈错误的覆辙。",
+    "biomes": "沼泽, 瓦尔城市"
    }
   },
   {
@@ -27567,13 +27651,15 @@
     "name": "Bloodwood",
     "sub": "Map",
     "desc": "Boss Fights: Gorian, the Moving Earth",
-    "flavour": "Poisoned trees bear pestilent fruits."
+    "flavour": "Poisoned trees bear pestilent fruits.",
+    "biomes": "Island, Forest, Breach Stronghold"
    },
    "cn": {
     "name": "赤染危林",
     "sub": "Map",
     "desc": "首领战: 高利安，活化的大地",
-    "flavour": "毒树结恶果。"
+    "flavour": "毒树结恶果。",
+    "biomes": "岛屿, 森林, 裂隙要塞"
    }
   },
   {
@@ -27584,13 +27670,15 @@
     "name": "Cenotes",
     "sub": "Map",
     "desc": "Boss Fights: Bahlak, the Sky Seer",
-    "flavour": "The ground shifts underfoot with disturbing ease."
+    "flavour": "The ground shifts underfoot with disturbing ease.",
+    "biomes": "Island, Swamp, Mountain, Desert"
    },
    "cn": {
     "name": "地下暗河",
     "sub": "Map",
     "desc": "首领战: 巴赫拉克，苍穹先知",
-    "flavour": "脚下的大地轻易便会松动。"
+    "flavour": "脚下的大地轻易便会松动。",
+    "biomes": "岛屿, 沼泽, 高山, 沙漠"
    }
   },
   {
@@ -27601,13 +27689,15 @@
     "name": "Hidden Grotto",
     "sub": "Map",
     "desc": "Boss Fights: Zar Wali, the Bone Tyrant",
-    "flavour": "Shafts of light raise life where they fall."
+    "flavour": "Shafts of light raise life where they fall.",
+    "biomes": "Island, Forest, Swamp, Grass"
    },
    "cn": {
     "name": "隐世洞窟",
     "sub": "Map",
     "desc": "首领战: 扎瓦里，高塔暴君",
-    "flavour": "光束落处，生命萌发。"
+    "flavour": "光束落处，生命萌发。",
+    "biomes": "岛屿, 森林, 沼泽, 草原"
    }
   },
   {
@@ -27618,13 +27708,15 @@
     "name": "Ravine",
     "sub": "Map",
     "desc": "Boss Fights: Tetzcatl, the Blazing Guardian",
-    "flavour": "A wound carved into the world, never to heal."
+    "flavour": "A wound carved into the world, never to heal.",
+    "biomes": "Island, Forest, Mountain"
    },
    "cn": {
     "name": "幽林溪谷",
     "sub": "Map",
     "desc": "首领战: 泰兹卡塔，焰光守护者",
-    "flavour": "刻在世上的伤口，永远无法愈合。"
+    "flavour": "刻在世上的伤口，永远无法愈合。",
+    "biomes": "岛屿, 森林, 高山"
    }
   },
   {
@@ -27635,13 +27727,15 @@
     "name": "Alpine Ridge",
     "sub": "Map",
     "desc": "Boss Fights: Ignatia, the Flame-Sworn, Gelida, the Frost-Tongue",
-    "flavour": "The path grows treacherous as the world falls away."
+    "flavour": "The path grows treacherous as the world falls away.",
+    "biomes": "Mountain, Ezomyte City"
    },
    "cn": {
     "name": "严寒高岭",
     "sub": "Map",
     "desc": "首领战: 伊格娜提亚，焰誓者, 格莉达，霜咒之舌",
-    "flavour": "随着世界分崩离析，前路也变得险恶。"
+    "flavour": "随着世界分崩离析，前路也变得险恶。",
+    "biomes": "高山, 艾兹麦城市"
    }
   },
   {
@@ -27652,13 +27746,15 @@
     "name": "Augury",
     "sub": "Map",
     "desc": "Boss Fights: Gressor-Kul, the Apex",
-    "flavour": "They watched the birds to foretell what any fool could see."
+    "flavour": "They watched the birds to foretell what any fool could see.",
+    "biomes": "Forest, Swamp, Grass"
    },
    "cn": {
     "name": "预兆之地",
     "sub": "Map",
     "desc": "首领战: 格瑞索库尔，至高兽主",
-    "flavour": "他们观测鸟类的预兆，而愚者一目了然之事，他们却视而不见。"
+    "flavour": "他们观测鸟类的预兆，而愚者一目了然之事，他们却视而不见。",
+    "biomes": "森林, 沼泽, 草原"
    }
   },
   {
@@ -27669,13 +27765,15 @@
     "name": "Bastille",
     "sub": "Map",
     "desc": "Boss Fights: Veynar, the Frostbane",
-    "flavour": "The final court for aristocrats no longer deemed fit to rule."
+    "flavour": "The final court for aristocrats no longer deemed fit to rule.",
+    "biomes": "Island, Forest, Grass, Breach Stronghold"
    },
    "cn": {
     "name": "幽闭监牢",
     "sub": "Map",
     "desc": "首领战: 维纳尔，霜祸",
-    "flavour": "贵族们最后的法庭，他们已不再被认为适合统治。"
+    "flavour": "贵族们最后的法庭，他们已不再被认为适合统治。",
+    "biomes": "岛屿, 森林, 草原, 裂隙要塞"
    }
   },
   {
@@ -27686,13 +27784,15 @@
     "name": "Creek",
     "sub": "Map",
     "desc": "Boss Fights: Tierney, the Hateful",
-    "flavour": "Dark energies congeal the lifeblood of the forest."
+    "flavour": "Dark energies congeal the lifeblood of the forest.",
+    "biomes": "Island, Forest, Breach Stronghold"
    },
    "cn": {
     "name": "奔流溪涧",
     "sub": "Map",
     "desc": "首领战: 提尔内，憎恨者",
-    "flavour": "黑暗的能量凝结成森林的命脉。"
+    "flavour": "黑暗的能量凝结成森林的命脉。",
+    "biomes": "岛屿, 森林, 裂隙要塞"
    }
   },
   {
@@ -27703,13 +27803,15 @@
     "name": "Crimson Shores",
     "sub": "Map",
     "desc": "Boss Fights: Volkhar, the Emberborn",
-    "flavour": "Fishermen once reaped a rich bounty here."
+    "flavour": "Fishermen once reaped a rich bounty here.",
+    "biomes": "Water, Ocean"
    },
    "cn": {
     "name": "猩红海岸",
     "sub": "Map",
     "desc": "首领战: 余烬之子沃卡",
-    "flavour": "渔民曾在此收获丰饶。"
+    "flavour": "渔民曾在此收获丰饶。",
+    "biomes": "水域, 海洋"
    }
   },
   {
@@ -27720,13 +27822,15 @@
     "name": "Decay",
     "sub": "Map",
     "desc": "Boss Fights: The Fungus Behemoth",
-    "flavour": "Spores dance through the air in search of new hosts."
+    "flavour": "Spores dance through the air in search of new hosts.",
+    "biomes": "Island, Forest, Swamp, Grass, Breach Stronghold"
    },
    "cn": {
     "name": "腐朽死地",
     "sub": "Map",
     "desc": "首领战: 真菌巨兽",
-    "flavour": "孢子在空中舞动，寻觅新的宿主。"
+    "flavour": "孢子在空中舞动，寻觅新的宿主。",
+    "biomes": "岛屿, 森林, 沼泽, 草原, 裂隙要塞"
    }
   },
   {
@@ -27737,13 +27841,15 @@
     "name": "Deserted",
     "sub": "Map",
     "desc": "Boss Fights: Lord of the Pit",
-    "flavour": "A city ravaged by time and sands."
+    "flavour": "A city ravaged by time and sands.",
+    "biomes": "Desert, Breach Stronghold"
    },
    "cn": {
     "name": "荒凉废土",
     "sub": "Map",
     "desc": "首领战: 深坑主宰",
-    "flavour": "被时光与黄沙摧残的城市。"
+    "flavour": "被时光与黄沙摧残的城市。",
+    "biomes": "沙漠, 裂隙要塞"
    }
   },
   {
@@ -27754,13 +27860,15 @@
     "name": "Grimhaven",
     "sub": "Map",
     "desc": "Boss Fights: Saphira, The Dread Consort",
-    "flavour": "Avarice in the conqueror builds contempt among the conquered."
+    "flavour": "Avarice in the conqueror builds contempt among the conquered.",
+    "biomes": "Ezomyte City, Grass, Breach Stronghold"
    },
    "cn": {
     "name": "阴霾湾",
     "sub": "Map",
     "desc": "首领战: 萨菲拉，惊魂王妃",
-    "flavour": "征服者的贪婪，在被征服者心中种下仇恨。"
+    "flavour": "征服者的贪婪，在被征服者心中种下仇恨。",
+    "biomes": "艾兹麦城市, 草原, 裂隙要塞"
    }
   },
   {
@@ -27771,13 +27879,15 @@
     "name": "Hive",
     "sub": "Map",
     "desc": "Boss Fights: The Fungus Behemoth",
-    "flavour": "The work of an invisible empire."
+    "flavour": "The work of an invisible empire.",
+    "biomes": "Desert, Breach Stronghold"
    },
    "cn": {
     "name": "抚育之巢",
     "sub": "Map",
     "desc": "首领战: 真菌巨兽",
-    "flavour": "一个无形帝国的手笔。"
+    "flavour": "一个无形帝国的手笔。",
+    "biomes": "沙漠, 裂隙要塞"
    }
   },
   {
@@ -27788,13 +27898,15 @@
     "name": "Inferno",
     "sub": "Map",
     "desc": "Boss Fights: [DNT-UNUSED] Dog Trader",
-    "flavour": "Embers swirl as bark crackles and sparks."
+    "flavour": "Embers swirl as bark crackles and sparks.",
+    "biomes": "Forest"
    },
    "cn": {
     "name": "光火之狱",
     "sub": "Map",
     "desc": "首领战: [DNT-UNUSED] Dog Trader",
-    "flavour": "余烬飞舞，树皮爆裂，火星四溅。"
+    "flavour": "余烬飞舞，树皮爆裂，火星四溅。",
+    "biomes": "森林"
    }
   },
   {
@@ -27805,13 +27917,15 @@
     "name": "Mineshaft",
     "sub": "Map",
     "desc": "Boss Fights: Vorrik, The Infernal Engineer",
-    "flavour": "A dark labyrinth of steel and stone."
+    "flavour": "A dark labyrinth of steel and stone.",
+    "biomes": "Island, Mountain, Desert, Faridun City"
    },
    "cn": {
     "name": "矿井",
     "sub": "Map",
     "desc": "首领战: 沃里克，火域工程师",
-    "flavour": "钢铁与岩石构筑的黑暗迷宫。"
+    "flavour": "钢铁与岩石构筑的黑暗迷宫。",
+    "biomes": "岛屿, 高山, 沙漠, 法里顿城市"
    }
   },
   {
@@ -27822,13 +27936,15 @@
     "name": "Oasis",
     "sub": "Map",
     "desc": "Boss Fights: Ishtaroth, the Perennial",
-    "flavour": "Hidden amongst sunbleached wastes lies a mockery of paradise."
+    "flavour": "Hidden amongst sunbleached wastes lies a mockery of paradise.",
+    "biomes": "Island, Desert, Faridun City"
    },
    "cn": {
     "name": "荒漠绿洲",
     "sub": "Map",
     "desc": "首领战: 伊什塔洛斯，永恒者",
-    "flavour": "隐匿于日光炙烤的废土之中，是对天堂的嘲弄。"
+    "flavour": "隐匿于日光炙烤的废土之中，是对天堂的嘲弄。",
+    "biomes": "岛屿, 沙漠, 法里顿城市"
    }
   },
   {
@@ -27839,13 +27955,15 @@
     "name": "Outlands",
     "sub": "Map",
     "desc": "",
-    "flavour": "Stone shelters brace against the doom of the desert."
+    "flavour": "Stone shelters brace against the doom of the desert.",
+    "biomes": "Faridun City"
    },
    "cn": {
     "name": "偏僻外境",
     "sub": "Map",
     "desc": "",
-    "flavour": "石质掩体抵御着沙漠的毁灭之力。"
+    "flavour": "石质掩体抵御着沙漠的毁灭之力。",
+    "biomes": "法里顿城市"
    }
   },
   {
@@ -27856,13 +27974,15 @@
     "name": "Rockpools",
     "sub": "Map",
     "desc": "Boss Fights: Brughor, the Insatiable",
-    "flavour": "Life abounds on the shells of its dead ancestors."
+    "flavour": "Life abounds on the shells of its dead ancestors.",
+    "biomes": "Water, Ocean, Island"
    },
    "cn": {
     "name": "蓄潮水潭",
     "sub": "Map",
     "desc": "首领战: 布拉霍尔，贪噬者",
-    "flavour": "生命在其死去先祖的壳上蓬勃生长。"
+    "flavour": "生命在其死去先祖的壳上蓬勃生长。",
+    "biomes": "水域, 海洋, 岛屿"
    }
   },
   {
@@ -27873,13 +27993,15 @@
     "name": "Sinking Spire",
     "sub": "Map",
     "desc": "Boss Fights: Stormgore, the Guardian",
-    "flavour": "This Vaal structure is not lost in the jungle. Not yet."
+    "flavour": "This Vaal structure is not lost in the jungle. Not yet.",
+    "biomes": "Swamp, Vaal City"
    },
    "cn": {
     "name": "沉没高塔",
     "sub": "Map",
     "desc": "首领战: 风暴血魔，守护者",
-    "flavour": "这座瓦尔建筑尚未被丛林吞没，尚未。"
+    "flavour": "这座瓦尔建筑尚未被丛林吞没，尚未。",
+    "biomes": "沼泽, 瓦尔城市"
    }
   },
   {
@@ -27890,13 +28012,15 @@
     "name": "The Iron Citadel",
     "sub": "Map",
     "desc": "Boss Fights: Count Geonor, Geonor, the Putrid Wolf",
-    "flavour": "A heart of corruption, borne of steel."
+    "flavour": "A heart of corruption, borne of steel.",
+    "biomes": "Ezomyte City"
    },
    "cn": {
     "name": "钢铁城塞",
     "sub": "Map",
     "desc": "首领战: 吉恩诺伯爵, 吉恩诺，腐败恶狼",
-    "flavour": "腐化的心脏，由钢铁所生。"
+    "flavour": "腐化的心脏，由钢铁所生。",
+    "biomes": "艾兹麦城市"
    }
   },
   {
@@ -27907,13 +28031,15 @@
     "name": "The Stone Citadel",
     "sub": "Map",
     "desc": "Boss Fights: Doryani, Royal Thaumaturge, Doryani's Triumph",
-    "flavour": "A heart of corruption, borne of stone."
+    "flavour": "A heart of corruption, borne of stone.",
+    "biomes": "Vaal City"
    },
    "cn": {
     "name": "磐石城塞",
     "sub": "Map",
     "desc": "首领战: 多里亚尼，皇家奇术师, 多里亚尼的杰作",
-    "flavour": "腐化的心脏，由岩石所生。"
+    "flavour": "腐化的心脏，由岩石所生。",
+    "biomes": "瓦尔城市"
    }
   },
   {
@@ -27924,13 +28050,15 @@
     "name": "The Copper Citadel",
     "sub": "Map",
     "desc": "Boss Fights: Jamanra, the Abomination\nmap block ritual at boss area [1]",
-    "flavour": "A heart of corruption, borne of copper."
+    "flavour": "A heart of corruption, borne of copper.",
+    "biomes": "Faridun City"
    },
    "cn": {
     "name": "古铜城塞",
     "sub": "Map",
     "desc": "首领战: 亚曼拉，厌恶之躯\nmap block ritual at boss area [1]",
-    "flavour": "腐化的心脏，由古铜所生。"
+    "flavour": "腐化的心脏，由古铜所生。",
+    "biomes": "法里顿城市"
    }
   },
   {
@@ -27941,13 +28069,15 @@
     "name": "Jado's Campsite",
     "sub": "Map",
     "desc": "",
-    "flavour": "A travelling merchant offers wares in perilous times."
+    "flavour": "A travelling merchant offers wares in perilous times.",
+    "biomes": "Desert"
    },
    "cn": {
     "name": "贾多营地",
     "sub": "Map",
     "desc": "",
-    "flavour": "游商于危难之际，贩卖货物。"
+    "flavour": "游商于危难之际，贩卖货物。",
+    "biomes": "沙漠"
    }
   },
   {
@@ -27958,13 +28088,15 @@
     "name": "Hilda's Campsite",
     "sub": "Map",
     "desc": "",
-    "flavour": "The hunt never ends... but it does pause for rests."
+    "flavour": "The hunt never ends... but it does pause for rests.",
+    "biomes": "Forest, Swamp"
    },
    "cn": {
     "name": "希尔达营地",
     "sub": "Map",
     "desc": "",
-    "flavour": "狩猎永无止境……但确实也会歇歇脚。"
+    "flavour": "狩猎永无止境……但确实也会歇歇脚。",
+    "biomes": "森林, 沼泽"
    }
   },
   {
@@ -27975,13 +28107,15 @@
     "name": "Vaal Village",
     "sub": "Map",
     "desc": "Boss Fights: [DNT-UNUSED] Dog Trader",
-    "flavour": "Vice wears a mask of simplicity."
+    "flavour": "Vice wears a mask of simplicity.",
+    "biomes": "Swamp, Vaal City"
    },
    "cn": {
     "name": "瓦尔村落",
     "sub": "Map",
     "desc": "首领战: [DNT-UNUSED] Dog Trader",
-    "flavour": "恶习戴着朴素的面具。"
+    "flavour": "恶习戴着朴素的面具。",
+    "biomes": "沼泽, 瓦尔城市"
    }
   },
   {
@@ -27992,13 +28126,15 @@
     "name": "Rustbowl",
     "sub": "Map",
     "desc": "Boss Fights: Gozen, Rebellious Rustlord",
-    "flavour": "Aeons of wear have rotted steel to its core."
+    "flavour": "Aeons of wear have rotted steel to its core.",
+    "biomes": "Island, Desert, Breach Stronghold"
    },
    "cn": {
     "name": "锈蚀地带",
     "sub": "Map",
     "desc": "首领战: 戈赞，锈污义军领主",
-    "flavour": "万古侵蚀，钢铁已然朽烂。"
+    "flavour": "万古侵蚀，钢铁已然朽烂。",
+    "biomes": "岛屿, 沙漠, 裂隙要塞"
    }
   },
   {
@@ -28009,13 +28145,15 @@
     "name": "Backwash",
     "sub": "Map",
     "desc": "Boss Fights: Yaota, the Loathsome",
-    "flavour": "Humid air chokes and twists everything it touches."
+    "flavour": "Humid air chokes and twists everything it touches.",
+    "biomes": "Island, Forest, Swamp, Breach Stronghold"
    },
    "cn": {
     "name": "逆流水道",
     "sub": "Map",
     "desc": "首领战: 夭尔塔，可憎之女",
-    "flavour": "潮湿的空气令人窒息，扭曲其所触及的一切。"
+    "flavour": "潮湿的空气令人窒息，扭曲其所触及的一切。",
+    "biomes": "岛屿, 森林, 沼泽, 裂隙要塞"
    }
   },
   {
@@ -28026,13 +28164,15 @@
     "name": "Burial Bog",
     "sub": "Map",
     "desc": "Boss Fights: Grudgelash, Vile Thorn",
-    "flavour": "The land returns the dead as easily as it received them."
+    "flavour": "The land returns the dead as easily as it received them.",
+    "biomes": "Swamp, Breach Stronghold"
    },
    "cn": {
     "name": "沉沦深沼",
     "sub": "Map",
     "desc": "首领战: 怨恨鞭藤，恶毒荆棘",
-    "flavour": "大地接纳亡者，一如来时那般轻易。"
+    "flavour": "大地接纳亡者，一如来时那般轻易。",
+    "biomes": "沼泽, 裂隙要塞"
    }
   },
   {
@@ -28043,13 +28183,15 @@
     "name": "Wetlands",
     "sub": "Map",
     "desc": "Boss Fights: Caedron, the Hyena Lord",
-    "flavour": "Mud and air seethes with warped life."
+    "flavour": "Mud and air seethes with warped life.",
+    "biomes": "Island, Swamp, Breach Stronghold"
    },
    "cn": {
     "name": "湿地",
     "sub": "Map",
     "desc": "首领战: 凯德隆，土狼之王",
-    "flavour": "泥泞与空气中翻涌着扭曲的生命。"
+    "flavour": "泥泞与空气中翻涌着扭曲的生命。",
+    "biomes": "岛屿, 沼泽, 裂隙要塞"
    }
   },
   {
@@ -28060,13 +28202,15 @@
     "name": "Sun Temple",
     "sub": "Map",
     "desc": "Boss Fights: Tonqui, Seer of the Sun",
-    "flavour": "Wet stone emanates an inner warmth. Vaal brilliance lies in wait."
+    "flavour": "Wet stone emanates an inner warmth. Vaal brilliance lies in wait.",
+    "biomes": "Swamp, Vaal City"
    },
    "cn": {
     "name": "太阳大殿",
     "sub": "Map",
     "desc": "首领战: 唐奎尔，烈阳先知",
-    "flavour": "潮湿的岩石，内在的温热，都是瓦尔的智慧。"
+    "flavour": "潮湿的岩石，内在的温热，都是瓦尔的智慧。",
+    "biomes": "沼泽, 瓦尔城市"
    }
   },
   {
@@ -28077,13 +28221,15 @@
     "name": "Channel",
     "sub": "Map",
     "desc": "Boss Fights: Hask, the Fallen Son",
-    "flavour": "The waters have returned, but no empire remains to greet them."
+    "flavour": "The waters have returned, but no empire remains to greet them.",
+    "biomes": "Desert, Faridun City"
    },
    "cn": {
     "name": "通水渠道",
     "sub": "Map",
     "desc": "首领战: 哈斯克，陨落之子",
-    "flavour": "潮水已归，却再无帝国相迎。"
+    "flavour": "潮水已归，却再无帝国相迎。",
+    "biomes": "沙漠, 法里顿城市"
    }
   },
   {
@@ -28094,13 +28240,15 @@
     "name": "Molten Vault",
     "sub": "Map",
     "desc": "Boss Fights: Gulzal, the Living Furnace\nmap block ritual at boss area [1]",
-    "flavour": "The cult of Kamasa exploited Utzaal long before its fall."
+    "flavour": "The cult of Kamasa exploited Utzaal long before its fall.",
+    "biomes": "Vaal City, Mountain, Desert"
    },
    "cn": {
     "name": "熔火宝库",
     "sub": "Map",
     "desc": "首领战: 古尔扎尔，活体熔炉\nmap block ritual at boss area [1]",
-    "flavour": "早在乌扎尔陷落之前，卡马萨邪教便已在此盘踞。"
+    "flavour": "早在乌扎尔陷落之前，卡马萨邪教便已在此盘踞。",
+    "biomes": "瓦尔城市, 高山, 沙漠"
    }
   },
   {
@@ -28111,13 +28259,15 @@
     "name": "The Assembly",
     "sub": "Map",
     "desc": "Boss Fights: Tetzcatl, the Blazing Guardian",
-    "flavour": "Remnants of Vaal artifice still remain."
+    "flavour": "Remnants of Vaal artifice still remain.",
+    "biomes": "Vaal City, Grass, Breach Stronghold"
    },
    "cn": {
     "name": "集会所",
     "sub": "Map",
     "desc": "首领战: 泰兹卡塔，焰光守护者",
-    "flavour": "瓦尔的神奇技艺依然留存着只鳞片爪。"
+    "flavour": "瓦尔的神奇技艺依然留存着只鳞片爪。",
+    "biomes": "瓦尔城市, 草原, 裂隙要塞"
    }
   },
   {
@@ -28128,13 +28278,15 @@
     "name": "Mesa",
     "sub": "Map",
     "desc": "Boss Fights: Karash, The Dune Dweller",
-    "flavour": "Bleak heights overlook a devastated land."
+    "flavour": "Bleak heights overlook a devastated land.",
+    "biomes": "Desert, Faridun City"
    },
    "cn": {
     "name": "赤红山地",
     "sub": "Map",
     "desc": "首领战: 卡拉什，沙丘住民",
-    "flavour": "荒凉的高地俯瞰着满目疮痍的大地。"
+    "flavour": "荒凉的高地俯瞰着满目疮痍的大地。",
+    "biomes": "沙漠, 法里顿城市"
    }
   },
   {
@@ -28145,13 +28297,15 @@
     "name": "Bluff",
     "sub": "Map",
     "desc": "Boss Fights: Gressor-Kul, the Apex",
-    "flavour": "Life still clings to the highest places."
+    "flavour": "Life still clings to the highest places.",
+    "biomes": "Island, Grass"
    },
    "cn": {
     "name": "峭壁",
     "sub": "Map",
     "desc": "首领战: 格瑞索库尔，至高兽主",
-    "flavour": "生命仍在至高处顽强存续。"
+    "flavour": "生命仍在至高处顽强存续。",
+    "biomes": "岛屿, 草原"
    }
   },
   {
@@ -28162,13 +28316,15 @@
     "name": "The Ezomyte Megaliths",
     "sub": "Map",
     "desc": "Contains a Powerful Boss Encounter",
-    "flavour": "{\"Sons from foreign shores}\n{Took refuge from the storm}\n{Bringing knowledge of runes}\n{Our fate was carved soon.\"}\n- Ezomyte Folklore"
+    "flavour": "{\"Sons from foreign shores}\n{Took refuge from the storm}\n{Bringing knowledge of runes}\n{Our fate was carved soon.\"}\n- Ezomyte Folklore",
+    "biomes": "Island, Forest, Grass"
    },
    "cn": {
     "name": "艾兹麦巨石碑",
     "sub": "Map",
     "desc": "包含一场强大的首领遭遇战",
-    "flavour": "{“异邦之子远渡重洋}\n{避风暴之灾殃}\n{携符文之智识}\n{铸吾等之命章。\"}\n——艾兹麦民谣"
+    "flavour": "{“异邦之子远渡重洋}\n{避风暴之灾殃}\n{携符文之智识}\n{铸吾等之命章。\"}\n——艾兹麦民谣",
+    "biomes": "岛屿, 森林, 草原"
    }
   },
   {
@@ -28179,13 +28335,15 @@
     "name": "Azmerian Ranges",
     "sub": "Map",
     "desc": "Boss Fights: Morwyn, the Kinslayer",
-    "flavour": "The Spirit guides the mountain-born."
+    "flavour": "The Spirit guides the mountain-born.",
+    "biomes": "Forest, Mountain"
    },
    "cn": {
     "name": "阿兹莫里山区",
     "sub": "Map",
     "desc": "首领战: 灭亲者莫尔温",
-    "flavour": "万灵指引着山岳之子。"
+    "flavour": "万灵指引着山岳之子。",
+    "biomes": "森林, 高山"
    }
   },
   {
@@ -28196,13 +28354,15 @@
     "name": "Frozen Falls",
     "sub": "Map",
     "desc": "Boss Fights: Thraeven, Wing of Winter",
-    "flavour": "Beware a chill colder than death itself."
+    "flavour": "Beware a chill colder than death itself.",
+    "biomes": "Island, Mountain"
    },
    "cn": {
     "name": "冰封瀑布",
     "sub": "Map",
     "desc": "首领战: 斯拉文，寒冬之翼",
-    "flavour": "当心比死亡本身更冰冷的寒意。"
+    "flavour": "当心比死亡本身更冰冷的寒意。",
+    "biomes": "岛屿, 高山"
    }
   },
   {
@@ -28213,13 +28373,15 @@
     "name": "Trenches",
     "sub": "Map",
     "desc": "Boss Fights: Gorian, the Moving Earth",
-    "flavour": "The Cataclysm tore the land asunder."
+    "flavour": "The Cataclysm tore the land asunder.",
+    "biomes": "Island, Forest, Swamp"
    },
    "cn": {
     "name": "激战壕沟",
     "sub": "Map",
     "desc": "首领战: 高利安，活化的大地",
-    "flavour": "灾变将大地撕裂。"
+    "flavour": "灾变将大地撕裂。",
+    "biomes": "岛屿, 森林, 沼泽"
    }
   },
   {
@@ -28230,13 +28392,15 @@
     "name": "Farmlands Hideout",
     "sub": "Map",
     "desc": "",
-    "flavour": "A rare enclave of fertile earth."
+    "flavour": "A rare enclave of fertile earth.",
+    "biomes": "Grass"
    },
    "cn": {
     "name": "藏身处：农田",
     "sub": "Map",
     "desc": "",
-    "flavour": "一处罕见的沃土飞地。"
+    "flavour": "一处罕见的沃土飞地。",
+    "biomes": "草原"
    }
   },
   {
@@ -28247,13 +28411,15 @@
     "name": "Prison Hideout",
     "sub": "Map",
     "desc": "",
-    "flavour": "A refuge from the villains it once contained."
+    "flavour": "A refuge from the villains it once contained.",
+    "biomes": "Swamp"
    },
    "cn": {
     "name": "藏身处：监狱",
     "sub": "Map",
     "desc": "",
-    "flavour": "曾囚恶徒之所，今成其避难之地。"
+    "flavour": "曾囚恶徒之所，今成其避难之地。",
+    "biomes": "沼泽"
    }
   },
   {
@@ -28264,13 +28430,15 @@
     "name": "The Jade Isles",
     "sub": "Map",
     "desc": "Island Rumours: Crazed Chieftain...\nBoss Fights: Manoki, the Chosen, Manoki, the Fevered, Manoki, the Defiled\nmap block ritual at boss area [1]",
-    "flavour": "Valako kept them here, to perfect their skills for war... but the Blood Fever consumed them."
+    "flavour": "Valako kept them here, to perfect their skills for war... but the Blood Fever consumed them.",
+    "biomes": "Water, Ocean"
    },
    "cn": {
     "name": "青玉群岛",
     "sub": "Map",
     "desc": "岛上流言: 疯狂的酋长……\n首领战: 马诺基，天命者, 马诺基，热狂者, 马诺基，渎神者\nmap block ritual at boss area [1]",
-    "flavour": "瓦拉克将他们留于此地，精进战技……但血热病吞噬了他们。"
+    "flavour": "瓦拉克将他们留于此地，精进战技……但血热病吞噬了他们。",
+    "biomes": "水域, 海洋"
    }
   },
   {
@@ -28281,13 +28449,15 @@
     "name": "Sacred Reservoir",
     "sub": "Map",
     "desc": "Boss Fights: Zahmir, the Blade Sovereign",
-    "flavour": "The Temporal's tongue captures the ear of those vying for power."
+    "flavour": "The Temporal's tongue captures the ear of those vying for power.",
+    "biomes": "Desert"
    },
    "cn": {
     "name": "神圣水库",
     "sub": "Map",
     "desc": "首领战: 扎米尔，刀锋之主",
-    "flavour": "时空之舌攫住了那些争权夺利者的耳朵。"
+    "flavour": "时空之舌攫住了那些争权夺利者的耳朵。",
+    "biomes": "沙漠"
    }
   },
   {
@@ -28298,13 +28468,15 @@
     "name": "Derelict Mansion",
     "sub": "Map",
     "desc": "Boss Fights: Varloch, the Ashen Lord, Avelyne, the Withered Rose",
-    "flavour": "Darkness always finds its way into the minds of the weak."
+    "flavour": "Darkness always finds its way into the minds of the weak.",
+    "biomes": "Forest, Swamp, Grass"
    },
    "cn": {
     "name": "遗弃宅邸",
     "sub": "Map",
     "desc": "首领战: 瓦洛克，灰烬领主, 艾芙琳，凋零玫瑰",
-    "flavour": "黑暗总能侵入弱者的心智。"
+    "flavour": "黑暗总能侵入弱者的心智。",
+    "biomes": "森林, 沼泽, 草原"
    }
   },
   {
@@ -28315,13 +28487,15 @@
     "name": "Sealed Vault",
     "sub": "Map",
     "desc": "Boss Fights: Ytzara, Blood Oracle, Maztli, Flesh-Shaper",
-    "flavour": "The Vaal who survived the Cataclysm must now survive each other."
+    "flavour": "The Vaal who survived the Cataclysm must now survive each other.",
+    "biomes": "Mountain"
    },
    "cn": {
     "name": "封印宝库",
     "sub": "Map",
     "desc": "首领战: 伊察拉，鲜血神谕者, 玛兹特里，血肉塑造者",
-    "flavour": "在灾变中幸存的瓦尔人，如今必须在彼此之间求存。"
+    "flavour": "在灾变中幸存的瓦尔人，如今必须在彼此之间求存。",
+    "biomes": "高山"
    }
   },
   {
@@ -28332,13 +28506,15 @@
     "name": "Confluence",
     "sub": "Map",
     "desc": "Boss Fights: Manassa, the Serpent Queen",
-    "flavour": "Where nomads share tales of a time before drought."
+    "flavour": "Where nomads share tales of a time before drought.",
+    "biomes": "Desert, Breach Stronghold"
    },
    "cn": {
     "name": "汇流处",
     "sub": "Map",
     "desc": "首领战: 玛娜萨，毒蛇女王",
-    "flavour": "游牧民在此讲述干旱之前的故事。"
+    "flavour": "游牧民在此讲述干旱之前的故事。",
+    "biomes": "沙漠, 裂隙要塞"
    }
   },
   {
@@ -28349,13 +28525,15 @@
     "name": "Overgrown",
     "sub": "Map",
     "desc": "Boss Fights: Tetzcatl, the Blazing Guardian",
-    "flavour": "A garden bereft of its gardener still grows as it pleases."
+    "flavour": "A garden bereft of its gardener still grows as it pleases.",
+    "biomes": "Island, Forest, Breach Stronghold"
    },
    "cn": {
     "name": "蔓林遗迹",
     "sub": "Map",
     "desc": "首领战: 泰兹卡塔，焰光守护者",
-    "flavour": "失去园丁的花园，依旧肆意生长。"
+    "flavour": "失去园丁的花园，依旧肆意生长。",
+    "biomes": "岛屿, 森林, 裂隙要塞"
    }
   },
   {
@@ -28366,13 +28544,15 @@
     "name": "Stronghold",
     "sub": "Map",
     "desc": "Boss Fights: The Shackled Horror",
-    "flavour": "Merchants and pirates alike need a safe port to peddle their wares."
+    "flavour": "Merchants and pirates alike need a safe port to peddle their wares.",
+    "biomes": "Water, Ocean"
    },
    "cn": {
     "name": "强固据点",
     "sub": "Map",
     "desc": "首领战: 被束缚的恐惧",
-    "flavour": "商贾与海盗皆需一处安全的港口兜售货物。"
+    "flavour": "商贾与海盗皆需一处安全的港口兜售货物。",
+    "biomes": "水域, 海洋"
    }
   },
   {
@@ -28383,13 +28563,15 @@
     "name": "Rupture",
     "sub": "Map",
     "desc": "Boss Fights: Zekoa, the Headcrusher",
-    "flavour": "In the end, the river will always conquer the dam."
+    "flavour": "In the end, the river will always conquer the dam.",
+    "biomes": "Island, Swamp, Breach Stronghold"
    },
    "cn": {
     "name": "破裂之境",
     "sub": "Map",
     "desc": "首领战: 泽廓尔，碾压者",
-    "flavour": "河流终将征服堤坝。"
+    "flavour": "河流终将征服堤坝。",
+    "biomes": "岛屿, 沼泽, 裂隙要塞"
    }
   },
   {
@@ -28400,13 +28582,15 @@
     "name": "Spring",
     "sub": "Map",
     "desc": "Boss Fights: Manassa, the Serpent Queen",
-    "flavour": "In these lands, a pure water source is the most valuable treasure."
+    "flavour": "In these lands, a pure water source is the most valuable treasure.",
+    "biomes": "Desert, Breach Stronghold"
    },
    "cn": {
     "name": "泛滥温泉",
     "sub": "Map",
     "desc": "首领战: 玛娜萨，毒蛇女王",
-    "flavour": "在这片土地上，纯净的水源便是最珍贵的宝藏。"
+    "flavour": "在这片土地上，纯净的水源便是最珍贵的宝藏。",
+    "biomes": "沙漠, 裂隙要塞"
    }
   },
   {
@@ -28417,13 +28601,15 @@
     "name": "Wayward Isle",
     "sub": "Map",
     "desc": "Boss Fights: Lord of the Pit",
-    "flavour": "The bones of marooned wanderers assemble here."
+    "flavour": "The bones of marooned wanderers assemble here.",
+    "biomes": "Water, Ocean"
    },
    "cn": {
     "name": "遁世小岛",
     "sub": "Map",
     "desc": "首领战: 深坑主宰",
-    "flavour": "被困于此的流浪者，骸骨在此汇聚。"
+    "flavour": "被困于此的流浪者，骸骨在此汇聚。",
+    "biomes": "水域, 海洋"
    }
   },
   {
@@ -28434,13 +28620,15 @@
     "name": "Epitaph",
     "sub": "Map",
     "desc": "Boss Fights: Saphira, The Dread Consort",
-    "flavour": "We know the minds of generations past only by the works they left behind."
+    "flavour": "We know the minds of generations past only by the works they left behind.",
+    "biomes": "Forest, Mountain, Grass"
    },
    "cn": {
     "name": "纪念庭园",
     "sub": "Map",
     "desc": "首领战: 萨菲拉，惊魂王妃",
-    "flavour": "我们对先辈思想的了解，仅来自他们留下的作品。"
+    "flavour": "我们对先辈思想的了解，仅来自他们留下的作品。",
+    "biomes": "森林, 高山, 草原"
    }
   },
   {
@@ -28451,13 +28639,15 @@
     "name": "Cliffside",
     "sub": "Map",
     "desc": "Boss Fights: Brakkus, the Juggernaut",
-    "flavour": "The grandest sculptures are carved with neither hammer nor chisel."
+    "flavour": "The grandest sculptures are carved with neither hammer nor chisel.",
+    "biomes": "Water, Ocean, Island"
    },
    "cn": {
     "name": "崖际岛",
     "sub": "Map",
     "desc": "首领战: 布拉库斯，主宰者",
-    "flavour": "最宏伟的雕塑，并非以锤凿雕就。"
+    "flavour": "最宏伟的雕塑，并非以锤凿雕就。",
+    "biomes": "水域, 海洋, 岛屿"
    }
   },
   {
@@ -28468,13 +28658,15 @@
     "name": "Sinkhole",
     "sub": "Map",
     "desc": "Boss Fights: Yama The White",
-    "flavour": "Spirits gather where the world falls away."
+    "flavour": "Spirits gather where the world falls away.",
+    "biomes": "Water, Ocean"
    },
    "cn": {
     "name": "天坑",
     "sub": "Map",
     "desc": "首领战: 白之雅玛",
-    "flavour": "灵魂在世界分崩离析之处聚集。"
+    "flavour": "灵魂在世界分崩离析之处聚集。",
+    "biomes": "水域, 海洋"
    }
   },
   {
@@ -28485,13 +28677,15 @@
     "name": "Caldera",
     "sub": "Map",
     "desc": "Boss Fights: The Ravenous Fang",
-    "flavour": "An undrinkable lagoon girt in unbreathable air."
+    "flavour": "An undrinkable lagoon girt in unbreathable air.",
+    "biomes": "Water, Ocean, Island"
    },
    "cn": {
     "name": "寂灵之渊",
     "sub": "Map",
     "desc": "首领战: 饥噬獠牙",
-    "flavour": "一片无法饮用的环礁湖，环绕着令人窒息的空气。"
+    "flavour": "一片无法饮用的环礁湖，环绕着令人窒息的空气。",
+    "biomes": "水域, 海洋, 岛屿"
    }
   },
   {
@@ -28502,13 +28696,15 @@
     "name": "Flotsam",
     "sub": "Map",
     "desc": "Boss Fights: Malgor, the Nautilord",
-    "flavour": "Violent seas and hungry shores devour vessels, crew and all."
+    "flavour": "Violent seas and hungry shores devour vessels, crew and all.",
+    "biomes": "Water, Ocean, Island, Forest, Grass, Breach Stronghold"
    },
    "cn": {
     "name": "漂流物",
     "sub": "Map",
     "desc": "首领战: 玛尔戈，深海领主",
-    "flavour": "狂暴的海洋与饥渴的海岸，吞噬着船只与船员。"
+    "flavour": "狂暴的海洋与饥渴的海岸，吞噬着船只与船员。",
+    "biomes": "水域, 海洋, 岛屿, 森林, 草原, 裂隙要塞"
    }
   },
   {
@@ -28519,13 +28715,15 @@
     "name": "Hive Fortress",
     "sub": "Map",
     "desc": "Breach Monsters in Area do not drop Splinters\nmap drop no league tablets [1]",
-    "flavour": "Our world is becoming... their world."
+    "flavour": "Our world is becoming... their world.",
+    "biomes": "Breach Stronghold"
    },
    "cn": {
     "name": "裂隙要塞",
     "sub": "Map",
     "desc": "区域内的裂隙怪物不掉落碎片\nmap drop no league tablets [1]",
-    "flavour": "我们的世界正在变成……他们的世界。"
+    "flavour": "我们的世界正在变成……他们的世界。",
+    "biomes": "裂隙要塞"
    }
   },
   {
@@ -28536,13 +28734,15 @@
     "name": "Hive Colony",
     "sub": "Map",
     "desc": "Boss Fights: It That Was Tul, It That Was Esh\nBreach Monsters in Area do not drop Splinters\nmap drop no league tablets [1]",
-    "flavour": "A rare chance to strike back at the horde..."
+    "flavour": "A rare chance to strike back at the horde...",
+    "biomes": "Breach Stronghold"
    },
    "cn": {
     "name": "裂隙据点",
     "sub": "Map",
     "desc": "首领战: 曾为托沃之物, 曾为艾许之物\n区域内的裂隙怪物不掉落碎片\nmap drop no league tablets [1]",
-    "flavour": "反击虫群的良机难得一遇……"
+    "flavour": "反击虫群的良机难得一遇……",
+    "biomes": "裂隙要塞"
    }
   },
   {
@@ -28553,13 +28753,15 @@
     "name": "Western Gateway",
     "sub": "Map",
     "desc": "Boss Fights: Precursor Separator\nmap is quest area [1]",
-    "flavour": "Silent and imposing, it dominates the landscape."
+    "flavour": "Silent and imposing, it dominates the landscape.",
+    "biomes": ""
    },
    "cn": {
     "name": "西方通道",
     "sub": "Map",
     "desc": "首领战: 先驱解离者\nmap is quest area [1]",
-    "flavour": "它沉默而威严，主宰着这片大地。"
+    "flavour": "它沉默而威严，主宰着这片大地。",
+    "biomes": ""
    }
   },
   {
@@ -28570,13 +28772,15 @@
     "name": "Ancient Gateway",
     "sub": "Map",
     "desc": "map is quest area [1]",
-    "flavour": "Long lost secrets lie buried beyond."
+    "flavour": "Long lost secrets lie buried beyond.",
+    "biomes": ""
    },
    "cn": {
     "name": "远古通道",
     "sub": "Map",
     "desc": "map is quest area [1]",
-    "flavour": "久远的秘密埋藏在彼岸。"
+    "flavour": "久远的秘密埋藏在彼岸。",
+    "biomes": ""
    }
   },
   {
@@ -28587,13 +28791,15 @@
     "name": "Eastern Gateway",
     "sub": "Map",
     "desc": "Boss Fights: Precursor Refiner\nmap is quest area [1]",
-    "flavour": "What kind of people could have built such a thing?"
+    "flavour": "What kind of people could have built such a thing?",
+    "biomes": ""
    },
    "cn": {
     "name": "东方通道",
     "sub": "Map",
     "desc": "首领战: 先驱精炼者\nmap is quest area [1]",
-    "flavour": "什么样的人才能造出这样的东西？"
+    "flavour": "什么样的人才能造出这样的东西？",
+    "biomes": ""
    }
   },
   {
@@ -28604,13 +28810,15 @@
     "name": "The Origin Tower",
     "sub": "Map",
     "desc": "Boss Fights: The Arbiter of Divinity\nPlayers cannot gain or lose experiencemap contains powerful map boss [0]\nmap pinnacle boss difficulty + [0]map pinnacle boss drops X corrupted rare tablets [1]map pinnacle boss rare socket currency chance % [5]map pinnacle boss special gem drop chance % [10]\nmap is quest area [1]\nArea allows unlimited Revivals",
-    "flavour": "Perhaps the truth of history may be found within."
+    "flavour": "Perhaps the truth of history may be found within.",
+    "biomes": ""
    },
    "cn": {
     "name": "起源之塔",
     "sub": "Map",
     "desc": "首领战: 神圣仲裁官\n玩家无法获得或失去经验值map contains powerful map boss [0]\nmap pinnacle boss difficulty + [0]map pinnacle boss drops X corrupted rare tablets [1]map pinnacle boss rare socket currency chance % [5]map pinnacle boss special gem drop chance % [10]\nmap is quest area [1]\n区域内允许无限复活",
-    "flavour": "或许，历史的真相就藏于其中。"
+    "flavour": "或许，历史的真相就藏于其中。",
+    "biomes": ""
    }
   },
   {
@@ -28621,13 +28829,15 @@
     "name": "The Patriarch Halls",
     "sub": "Map",
     "desc": "Boss Fights: Phyx, Sentinel of the Spark",
-    "flavour": "One cannot create life without the power to take it."
+    "flavour": "One cannot create life without the power to take it.",
+    "biomes": "Forest, Swamp, Desert, Grass"
    },
    "cn": {
     "name": "长老殿堂",
     "sub": "Map",
     "desc": "首领战: 菲克斯，火花哨兵\nmap is quest area [1]",
-    "flavour": "若无夺取生命之力，便无法创造生命。"
+    "flavour": "若无夺取生命之力，便无法创造生命。",
+    "biomes": "森林, 沼泽, 沙漠, 草原"
    }
   },
   {
@@ -28638,13 +28848,15 @@
     "name": "The Matriarch Halls",
     "sub": "Map",
     "desc": "Boss Fights: Phya, Sentinel of the Cradle",
-    "flavour": "One cannot take life without the power to create it."
+    "flavour": "One cannot take life without the power to create it.",
+    "biomes": "Forest, Swamp, Desert, Grass"
    },
    "cn": {
     "name": "主母殿堂",
     "sub": "Map",
     "desc": "首领战: 菲亚，摇篮哨兵\nmap is quest area [1]",
-    "flavour": "若无创造生命之力，便无法夺取生命。"
+    "flavour": "若无创造生命之力，便无法夺取生命。",
+    "biomes": "森林, 沼泽, 沙漠, 草原"
    }
   },
   {
@@ -28655,13 +28867,15 @@
     "name": "The Burning Monolith",
     "sub": "Map",
     "desc": "Boss Fights: The Arbiter of Ash\nPlayers cannot gain or lose experiencemap contains powerful map boss [0]\nmap pinnacle boss difficulty + [0]map pinnacle boss drops X corrupted rare tablets [1]map pinnacle boss rare socket currency chance % [5]map pinnacle boss special gem drop chance % [10]\nmap is quest area [1]\nArea allows unlimited Revivals",
-    "flavour": "Within lies power beyond comprehension."
+    "flavour": "Within lies power beyond comprehension.",
+    "biomes": ""
    },
    "cn": {
     "name": "燃石巨塔",
     "sub": "Map",
     "desc": "首领战: 灰烬仲裁官\n玩家无法获得或失去经验值map contains powerful map boss [0]\nmap pinnacle boss difficulty + [0]map pinnacle boss drops X corrupted rare tablets [1]map pinnacle boss rare socket currency chance % [5]map pinnacle boss special gem drop chance % [10]\nmap is quest area [1]\n区域内允许无限复活",
-    "flavour": "其中蕴藏着超乎认知的力量。"
+    "flavour": "其中蕴藏着超乎认知的力量。",
+    "biomes": ""
    }
   },
   {
@@ -28672,13 +28886,15 @@
     "name": "Western Enigma Chamber",
     "sub": "Map",
     "desc": "Boss Fights: Count Geonor, Geonor, the Putrid Wolf\nmap is quest area [1]",
-    "flavour": "Where reality begins and ends is uncertain."
+    "flavour": "Where reality begins and ends is uncertain.",
+    "biomes": "Ezomyte City"
    },
    "cn": {
     "name": "西方谜题大厅",
     "sub": "Map",
     "desc": "首领战: 吉恩诺伯爵, 吉恩诺，腐败恶狼\nmap is quest area [1]",
-    "flavour": "现实始于何处、终于何处，无人知晓。"
+    "flavour": "现实始于何处、终于何处，无人知晓。",
+    "biomes": "艾兹麦城市"
    }
   },
   {
@@ -28689,13 +28905,15 @@
     "name": "Eastern Enigma Chamber",
     "sub": "Map",
     "desc": "Boss Fights: Doryani, Royal Thaumaturge, Doryani's Triumph\nmap is quest area [1]",
-    "flavour": "Your eyes betray you at every turn."
+    "flavour": "Your eyes betray you at every turn.",
+    "biomes": "Faridun City"
    },
    "cn": {
     "name": "东方谜题大厅",
     "sub": "Map",
     "desc": "首领战: 多里亚尼，皇家奇术师, 多里亚尼的杰作\nmap is quest area [1]",
-    "flavour": "你的双眼处处都在背叛你。"
+    "flavour": "你的双眼处处都在背叛你。",
+    "biomes": "法里顿城市"
    }
   },
   {
@@ -28706,13 +28924,15 @@
     "name": "Snowfall",
     "sub": "Map",
     "desc": "Boss Fights: Thariel, the Umbral Wraith",
-    "flavour": "There is no bleaker tundra than a city at night."
+    "flavour": "There is no bleaker tundra than a city at night.",
+    "biomes": "Island, Mountain"
    },
    "cn": {
     "name": "永雪冰域",
     "sub": "Map",
     "desc": "首领战: 萨里埃尔，冥影幽魂",
-    "flavour": "没有比夜晚的城市更阴冷的荒原了。"
+    "flavour": "没有比夜晚的城市更阴冷的荒原了。",
+    "biomes": "岛屿, 高山"
    }
   },
   {
@@ -28723,13 +28943,15 @@
     "name": "Greenhouse",
     "sub": "Map",
     "desc": "Boss Fights: Rootgrasp, the Hateful Forest",
-    "flavour": "Fell blooms and grasping roots grow in shadow."
+    "flavour": "Fell blooms and grasping roots grow in shadow.",
+    "biomes": "Forest, Swamp"
    },
    "cn": {
     "name": "温室",
     "sub": "Map",
     "desc": "首领战: 根攫，仇恨森林",
-    "flavour": "邪恶的花朵与攫取的根须在阴影中滋生。"
+    "flavour": "邪恶的花朵与攫取的根须在阴影中滋生。",
+    "biomes": "森林, 沼泽"
    }
   },
   {
@@ -28740,13 +28962,15 @@
     "name": "Chasm",
     "sub": "Map",
     "desc": "Boss Fights: Diamora, Song of Death",
-    "flavour": "Haunting echoes carry a song of sorrow..."
+    "flavour": "Haunting echoes carry a song of sorrow...",
+    "biomes": "Water, Ocean, Island, Mountain"
    },
    "cn": {
     "name": "裂口",
     "sub": "Map",
     "desc": "首领战: 葬歌之声戴娅摩菈",
-    "flavour": "萦绕的回声传唱着哀伤的歌谣……"
+    "flavour": "萦绕的回声传唱着哀伤的歌谣……",
+    "biomes": "水域, 海洋, 岛屿, 高山"
    }
   },
   {
@@ -28757,13 +28981,15 @@
     "name": "Pit",
     "sub": "Map",
     "desc": "Boss Fights: Brakkus, the Juggernaut",
-    "flavour": "They scrabble and dig; they know not why..."
+    "flavour": "They scrabble and dig; they know not why...",
+    "biomes": "Island, Mountain, Desert, Faridun City, Breach Stronghold"
    },
    "cn": {
     "name": "巨坑",
     "sub": "Map",
     "desc": "首领战: 布拉库斯，主宰者",
-    "flavour": "他们胡乱扒挖，却不知为何……"
+    "flavour": "他们胡乱扒挖，却不知为何……",
+    "biomes": "岛屿, 高山, 沙漠, 法里顿城市, 裂隙要塞"
    }
   },
   {
@@ -28774,13 +29000,15 @@
     "name": "Port",
     "sub": "Map",
     "desc": "Boss Fights: Malgor, the Nautilord",
-    "flavour": "The sea returns everything eventually. Even the dead."
+    "flavour": "The sea returns everything eventually. Even the dead.",
+    "biomes": "Water, Ocean, Island, Grass"
    },
    "cn": {
     "name": "中转码头",
     "sub": "Map",
     "desc": "首领战: 玛尔戈，深海领主",
-    "flavour": "大海终将归还一切，甚至死者。"
+    "flavour": "大海终将归还一切，甚至死者。",
+    "biomes": "水域, 海洋, 岛屿, 草原"
    }
   },
   {
@@ -28791,13 +29019,15 @@
     "name": "Arid Plains",
     "sub": "Map",
     "desc": "Boss Fights: Akthi, the Final Sting, Anundr, the Sandworm",
-    "flavour": "Cruel time and change, now plains only in name."
+    "flavour": "Cruel time and change, now plains only in name.",
+    "biomes": "Desert, Breach Stronghold"
    },
    "cn": {
     "name": "干渴荒漠",
     "sub": "Map",
     "desc": "首领战: 阿克西，终命毒刺, 阿农德，沙虫",
-    "flavour": "无情的时光与变迁，如今平原徒有其名。"
+    "flavour": "无情的时光与变迁，如今平原徒有其名。",
+    "biomes": "沙漠, 裂隙要塞"
    }
   },
   {
@@ -28808,13 +29038,15 @@
     "name": "Bazaar",
     "sub": "Map",
     "desc": "Boss Fights: Viper Napuatzi",
-    "flavour": "Live by the power of Corruption... die by madness."
+    "flavour": "Live by the power of Corruption... die by madness.",
+    "biomes": "Vaal City"
    },
    "cn": {
     "name": "集市",
     "sub": "Map",
     "desc": "首领战: 蝰蛇娜帕齐",
-    "flavour": "借腐化之力而生……终将因疯狂而死。"
+    "flavour": "借腐化之力而生……终将因疯狂而死。",
+    "biomes": "瓦尔城市"
    }
   },
   {
@@ -28825,13 +29057,15 @@
     "name": "Sinter Rift",
     "sub": "Map",
     "desc": "Boss Fights: Brughor, the Insatiable",
-    "flavour": "The air is acrid. The skin burns. No doubt... sulphite."
+    "flavour": "The air is acrid. The skin burns. No doubt... sulphite.",
+    "biomes": "Island, Mountain, Desert, Breach Stronghold"
    },
    "cn": {
     "name": "熔渣裂隙",
     "sub": "Map",
     "desc": "首领战: 布拉霍尔，贪噬者",
-    "flavour": "空气刺鼻，皮肤灼烧。毫无疑问……是亚硫酸。"
+    "flavour": "空气刺鼻，皮肤灼烧。毫无疑问……是亚硫酸。",
+    "biomes": "岛屿, 高山, 沙漠, 裂隙要塞"
    }
   },
   {
@@ -28842,13 +29076,15 @@
     "name": "Reservoir",
     "sub": "Map",
     "desc": "Boss Fights: Grudgelash, Vile Thorn",
-    "flavour": "It's always raining, but the channels never fill..."
+    "flavour": "It's always raining, but the channels never fill...",
+    "biomes": "Island, Forest, Swamp"
    },
    "cn": {
     "name": "储水区",
     "sub": "Map",
     "desc": "首领战: 怨恨鞭藤，恶毒荆棘",
-    "flavour": "雨一直下，但沟渠永远填不满……"
+    "flavour": "雨一直下，但沟渠永远填不满……",
+    "biomes": "岛屿, 森林, 沼泽"
    }
   },
   {
@@ -28859,13 +29095,15 @@
     "name": "Slash",
     "sub": "Map",
     "desc": "Boss Fights: The Black Crow",
-    "flavour": "Calm, bleak twilight holds only despair."
+    "flavour": "Calm, bleak twilight holds only despair.",
+    "biomes": "Island, Forest, Breach Stronghold"
    },
    "cn": {
     "name": "沼泽低地",
     "sub": "Map",
     "desc": "首领战: 黑鸦",
-    "flavour": "平静、阴郁的暮色只带来绝望。"
+    "flavour": "平静、阴郁的暮色只带来绝望。",
+    "biomes": "岛屿, 森林, 裂隙要塞"
    }
   },
   {
@@ -28876,13 +29114,15 @@
     "name": "Plantation",
     "sub": "Map",
     "desc": "Boss Fights: Varloch, the Ashen Lord",
-    "flavour": "A mad Thane rules over ruin."
+    "flavour": "A mad Thane rules over ruin.",
+    "biomes": "Island, Grass, Breach Stronghold"
    },
    "cn": {
     "name": "种植园",
     "sub": "Map",
     "desc": "首领战: 瓦洛克，灰烬领主",
-    "flavour": "一个疯癫的领主统治着废墟。"
+    "flavour": "一个疯癫的领主统治着废墟。",
+    "biomes": "岛屿, 草原, 裂隙要塞"
    }
   },
   {
@@ -28893,13 +29133,15 @@
     "name": "Orbala's Crossing",
     "sub": "Map",
     "desc": "Boss Fights: Serath, the Scaled One",
-    "flavour": "Follow in her footsteps... if you dare."
+    "flavour": "Follow in her footsteps... if you dare.",
+    "biomes": "Mountain, Desert"
    },
    "cn": {
     "name": "欧巴拉渡口",
     "sub": "Map",
     "desc": "首领战: 塞拉斯，覆鳞者",
-    "flavour": "跟随她的足迹……如果你敢。"
+    "flavour": "跟随她的足迹……如果你敢。",
+    "biomes": "高山, 沙漠"
    }
   },
   {
@@ -28910,13 +29152,15 @@
     "name": "The Monument",
     "sub": "Map",
     "desc": "",
-    "flavour": "It continues still, its purpose unknown."
+    "flavour": "It continues still, its purpose unknown.",
+    "biomes": "Island, Swamp, Grass"
    },
    "cn": {
     "name": "纪念碑",
     "sub": "Map",
     "desc": "",
-    "flavour": "它仍在运转，目的不明。"
+    "flavour": "它仍在运转，目的不明。",
+    "biomes": "岛屿, 沼泽, 草原"
    }
   },
   {
@@ -28927,13 +29171,15 @@
     "name": "Sanctuary",
     "sub": "Map",
     "desc": "Boss Fights: Pirasha, the Forgotten Prisoner",
-    "flavour": "When does protection become a prison?"
+    "flavour": "When does protection become a prison?",
+    "biomes": "Island, Desert"
    },
    "cn": {
     "name": "避难所",
     "sub": "Map",
     "desc": "首领战: 皮拉夏，遗忘的囚徒",
-    "flavour": "保护何时会变成囚笼？"
+    "flavour": "保护何时会变成囚笼？",
+    "biomes": "岛屿, 沙漠"
    }
   },
   {
@@ -28944,13 +29190,15 @@
     "name": "Swarm",
     "sub": "Map",
     "desc": "Boss Fights: Volkhar, the Emberborn",
-    "flavour": "Something rumbles in the lava-lit gloom."
+    "flavour": "Something rumbles in the lava-lit gloom.",
+    "biomes": "Desert, Grass"
    },
    "cn": {
     "name": "群集聚落",
     "sub": "Map",
     "desc": "首领战: 余烬之子沃卡",
-    "flavour": "有什么在熔岩照亮的幽暗中隆隆作响。"
+    "flavour": "有什么在熔岩照亮的幽暗中隆隆作响。",
+    "biomes": "沙漠, 草原"
    }
   },
   {
@@ -28961,13 +29209,15 @@
     "name": "Deforestation",
     "sub": "Map",
     "desc": "Boss Fights: Morwyn, the Kinslayer",
-    "flavour": "The felling continues, unto insanity."
+    "flavour": "The felling continues, unto insanity.",
+    "biomes": "Island, Forest, Breach Stronghold"
    },
    "cn": {
     "name": "毁坏的林场",
     "sub": "Map",
     "desc": "首领战: 灭亲者莫尔温",
-    "flavour": "砍伐仍在继续，直至疯狂。"
+    "flavour": "砍伐仍在继续，直至疯狂。",
+    "biomes": "岛屿, 森林, 裂隙要塞"
    }
   },
   {
@@ -28978,13 +29228,15 @@
     "name": "Precipice",
     "sub": "Map",
     "desc": "Boss Fights: Morvak, the Infernal",
-    "flavour": "This cavern burns hot and deadly."
+    "flavour": "This cavern burns hot and deadly.",
+    "biomes": "Island, Forest, Mountain, Grass"
    },
    "cn": {
     "name": "危崖峭壁",
     "sub": "Map",
     "desc": "首领战: 莫瓦克，炼狱之怒",
-    "flavour": "这座洞穴炽热而致命。"
+    "flavour": "这座洞穴炽热而致命。",
+    "biomes": "岛屿, 森林, 高山, 草原"
    }
   },
   {
@@ -28995,13 +29247,15 @@
     "name": "Simulacrum of Delusion",
     "sub": "Map",
     "desc": "map no arrow terrain attachment in area [1]\nmap drop no league tablets [1]",
-    "flavour": "Exactly as you remember it..."
+    "flavour": "Exactly as you remember it...",
+    "biomes": "Forest, Swamp, Desert, Grass"
    },
    "cn": {
     "name": "梦魇拟像幻境",
     "sub": "Map",
     "desc": "map no arrow terrain attachment in area [1]\nmap drop no league tablets [1]",
-    "flavour": "“痛苦……\n与死亡的妄想。”"
+    "flavour": "“痛苦……\n与死亡的妄想。”",
+    "biomes": "森林, 沼泽, 沙漠, 草原"
    }
   },
   {
@@ -29012,13 +29266,15 @@
     "name": "Barren Atoll",
     "sub": "Map",
     "desc": "Island Rumours: Somethin' fishy...",
-    "flavour": "This lonely island lay untouched for centuries."
+    "flavour": "This lonely island lay untouched for centuries.",
+    "biomes": "Ocean"
    },
    "cn": {
     "name": "贫瘠环礁",
     "sub": "Map",
     "desc": "岛上流言: 有点可疑……",
-    "flavour": "这座孤岛数个世纪以来无人踏足。"
+    "flavour": "这座孤岛数个世纪以来无人踏足。",
+    "biomes": "海洋"
    }
   },
   {
@@ -29029,13 +29285,15 @@
     "name": "Simulacrum of Delusion",
     "sub": "Map",
     "desc": "map no arrow terrain attachment in area [1]\nmap drop no league tablets [1]",
-    "flavour": "Delusions of suffering...\nand death."
+    "flavour": "Delusions of suffering...\nand death.",
+    "biomes": "Forest, Swamp, Desert, Grass"
    },
    "cn": {
     "name": "梦魇拟像幻境",
     "sub": "Map",
     "desc": "map no arrow terrain attachment in area [1]\nmap drop no league tablets [1]",
-    "flavour": "“痛苦……\n与死亡的妄想。”"
+    "flavour": "“痛苦……\n与死亡的妄想。”",
+    "biomes": "森林, 沼泽, 沙漠, 草原"
    }
   },
   {
@@ -29046,13 +29304,15 @@
     "name": "The Fallen Star",
     "sub": "Map",
     "desc": "",
-    "flavour": "What ruin the sky wreaks..."
+    "flavour": "What ruin the sky wreaks...",
+    "biomes": ""
    },
    "cn": {
     "name": "陨星",
     "sub": "Map",
     "desc": "",
-    "flavour": "天空降下了怎样的灾厄……"
+    "flavour": "天空降下了怎样的灾厄……",
+    "biomes": ""
    }
   },
   {
@@ -29063,13 +29323,15 @@
     "name": "Ruins of Kingsmarch",
     "sub": "Map",
     "desc": "Boss Fights: The Aberration\nPlayers cannot gain or lose experiencemap contains powerful map boss [0]\nmap pinnacle boss difficulty + [0]map pinnacle boss drops X corrupted rare tablets [1]map pinnacle boss rare socket currency chance % [5]map pinnacle boss special gem drop chance % [10]\nmap is quest area [1]\nArea allows unlimited Revivals",
-    "flavour": "And it shall be a legendary battle!"
+    "flavour": "And it shall be a legendary battle!",
+    "biomes": ""
    },
    "cn": {
     "name": "君锋镇废墟",
     "sub": "Map",
     "desc": "首领战: 畸变者\n玩家无法获得或失去经验值map contains powerful map boss [0]\nmap pinnacle boss difficulty + [0]map pinnacle boss drops X corrupted rare tablets [1]map pinnacle boss rare socket currency chance % [5]map pinnacle boss special gem drop chance % [10]\nmap is quest area [1]\n区域内允许无限复活",
-    "flavour": "这将是一场传奇般的战斗！"
+    "flavour": "这将是一场传奇般的战斗！",
+    "biomes": ""
    }
   },
   {
@@ -29080,13 +29342,15 @@
     "name": "Monastery of the Keepers",
     "sub": "Map",
     "desc": "",
-    "flavour": "Through the Dreamer they see their path."
+    "flavour": "Through the Dreamer they see their path.",
+    "biomes": ""
    },
    "cn": {
     "name": "守护者修道院",
     "sub": "Map",
     "desc": "",
-    "flavour": "透过幻梦者，他们看到了自己的道路。"
+    "flavour": "透过幻梦者，他们看到了自己的道路。",
+    "biomes": ""
    }
   },
   {
@@ -29097,13 +29361,15 @@
     "name": "The Chained Beast",
     "sub": "Map",
     "desc": "",
-    "flavour": "Heroes of many different cultures gather to save the world."
+    "flavour": "Heroes of many different cultures gather to save the world.",
+    "biomes": ""
    },
    "cn": {
     "name": "锁缚邪兽",
     "sub": "Map",
     "desc": "",
-    "flavour": "来自不同文化的英雄们齐聚一堂，拯救世界。"
+    "flavour": "来自不同文化的英雄们齐聚一堂，拯救世界。",
+    "biomes": ""
    }
   },
   {
@@ -29114,13 +29380,15 @@
     "name": "Caer Tarth",
     "sub": "Map",
     "desc": "Boss Fights: The Bodach\nPlayers cannot gain or lose experiencemap contains powerful map boss [0]\nmap pinnacle boss difficulty + [0]map pinnacle boss drops X corrupted rare tablets [1]map pinnacle boss rare socket currency chance % [5]map pinnacle boss special gem drop chance % [10]\nmap is quest area [1]\nArea allows unlimited Revivals",
-    "flavour": "Once the heart of Druidic power and culture..."
+    "flavour": "Once the heart of Druidic power and culture...",
+    "biomes": ""
    },
    "cn": {
     "name": "赛尔塔斯",
     "sub": "Map",
     "desc": "首领战: 伯达克\n玩家无法获得或失去经验值map contains powerful map boss [0]\nmap pinnacle boss difficulty + [0]map pinnacle boss drops X corrupted rare tablets [1]map pinnacle boss rare socket currency chance % [5]map pinnacle boss special gem drop chance % [10]\nmap is quest area [1]\n区域内允许无限复活",
-    "flavour": "曾是德鲁伊力量与文化的中心……"
+    "flavour": "曾是德鲁伊力量与文化的中心……",
+    "biomes": ""
    }
   },
   {
@@ -29131,13 +29399,15 @@
     "name": "The Withered Willow",
     "sub": "Map",
     "desc": "Boss Fights: The Raven Trickster\nPlayers cannot gain or lose experiencemap contains powerful map boss [0]\nmap pinnacle boss difficulty + [0]map pinnacle boss drops X corrupted rare tablets [1]map pinnacle boss rare socket currency chance % [5]map pinnacle boss special gem drop chance % [10]\nmap is quest area [1]\nArea allows unlimited Revivals",
-    "flavour": "A gnarled tree reflects a terrifying truth."
+    "flavour": "A gnarled tree reflects a terrifying truth.",
+    "biomes": ""
    },
    "cn": {
     "name": "萎败细柳",
     "sub": "Map",
     "desc": "首领战: 黑鸦欺诈者\n玩家无法获得或失去经验值map contains powerful map boss [0]\nmap pinnacle boss difficulty + [0]map pinnacle boss drops X corrupted rare tablets [1]map pinnacle boss rare socket currency chance % [5]map pinnacle boss special gem drop chance % [10]\nmap is quest area [1]\n区域内允许无限复活",
-    "flavour": "一棵虬结的树，倒映出可怖的真相。"
+    "flavour": "一棵虬结的树，倒映出可怖的真相。",
+    "biomes": ""
    }
   },
   {
@@ -29148,13 +29418,15 @@
     "name": "The Well of Souls",
     "sub": "Map",
     "desc": "Boss Fights: Vessel of Kulemak\nPlayers cannot gain or lose experiencemap contains powerful map boss [0]\nmap force human players when loading in [1]\nmap drop no league tablets [1]",
-    "flavour": "From anywhere, and everywhere, it is... down."
+    "flavour": "From anywhere, and everywhere, it is... down.",
+    "biomes": ""
    },
    "cn": {
     "name": "灵魂之井",
     "sub": "Map",
     "desc": "首领战: 库勒马克之躯\n玩家无法获得或失去经验值map contains powerful map boss [0]\nmap force human players when loading in [1]\nmap drop no league tablets [1]",
-    "flavour": "无论从何处来，往何处去，它终究是……向下。"
+    "flavour": "无论从何处来，往何处去，它终究是……向下。",
+    "biomes": ""
    }
   },
   {
@@ -29165,13 +29437,15 @@
     "name": "Vaal Ruins",
     "sub": "Map",
     "desc": "",
-    "flavour": "The secrets of the Vaal await an intrepid explorer."
+    "flavour": "The secrets of the Vaal await an intrepid explorer.",
+    "biomes": ""
    },
    "cn": {
     "name": "瓦尔遗迹",
     "sub": "Map",
     "desc": "",
-    "flavour": "瓦尔的秘密等待着无畏的探索者。"
+    "flavour": "瓦尔的秘密等待着无畏的探索者。",
+    "biomes": ""
    }
   },
   {
@@ -29182,13 +29456,15 @@
     "name": "The Reliquary Vault",
     "sub": "Map",
     "desc": "map is quest area [1]",
-    "flavour": "Ancient treasures await."
+    "flavour": "Ancient treasures await.",
+    "biomes": ""
    },
    "cn": {
     "name": "圣物宝库",
     "sub": "Map",
     "desc": "map is quest area [1]",
-    "flavour": "上古奇珍，唾手可得。"
+    "flavour": "上古奇珍，唾手可得。",
+    "biomes": ""
    }
   },
   {
@@ -29199,13 +29475,15 @@
     "name": "Garukhan's Tomb",
     "sub": "Map",
     "desc": "map hidden pack size +% [0]\nmap no arrow terrain attachment in area [1]\nPlayers cannot gain or lose experiencemap contains powerful map boss [0]\nmap drop no league tablets [1]",
-    "flavour": "Secrets and shadows..."
+    "flavour": "Secrets and shadows...",
+    "biomes": ""
    },
    "cn": {
     "name": "格鲁坎的安歇处",
     "sub": "Map",
     "desc": "map hidden pack size +% [0]\nmap no arrow terrain attachment in area [1]\n玩家无法获得或失去经验值map contains powerful map boss [0]\nmap drop no league tablets [1]",
-    "flavour": "秘密与阴影……"
+    "flavour": "秘密与阴影……",
+    "biomes": ""
    }
   },
   {
@@ -29216,13 +29494,15 @@
     "name": "Sunken Pyramid",
     "sub": "Map",
     "desc": "map hidden pack size +% [0]\nmap no arrow terrain attachment in area [1]\nPlayers cannot gain or lose experiencemap contains powerful map boss [0]\nmap drop no league tablets [1]",
-    "flavour": "Drown in the black waters of nightmare..."
+    "flavour": "Drown in the black waters of nightmare...",
+    "biomes": ""
    },
    "cn": {
     "name": "沉没的金字塔",
     "sub": "Map",
     "desc": "map hidden pack size +% [0]\nmap no arrow terrain attachment in area [1]\n玩家无法获得或失去经验值map contains powerful map boss [0]\nmap drop no league tablets [1]",
-    "flavour": "沉溺于梦魇的黑水之中……"
+    "flavour": "沉溺于梦魇的黑水之中……",
+    "biomes": ""
    }
   },
   {
@@ -29233,13 +29513,15 @@
     "name": "[DNT-UNUSED] Vastiri Outpost",
     "sub": "Map",
     "desc": "map hidden pack size +% [0]\nmap no arrow terrain attachment in area [1]\nPlayers cannot gain or lose experiencemap contains powerful map boss [0]\nmap drop no league tablets [1]",
-    "flavour": "Madness has no home."
+    "flavour": "Madness has no home.",
+    "biomes": ""
    },
    "cn": {
     "name": "[DNT-UNUSED] Vastiri Outpost",
     "sub": "Map",
     "desc": "map hidden pack size +% [0]\nmap no arrow terrain attachment in area [1]\n玩家无法获得或失去经验值map contains powerful map boss [0]\nmap drop no league tablets [1]",
-    "flavour": "疯狂无处为家。"
+    "flavour": "疯狂无处为家。",
+    "biomes": ""
    }
   },
   {
@@ -29250,13 +29532,15 @@
     "name": "Sprawling Jungle",
     "sub": "Map",
     "desc": "Island Rumours: End of the circle...\nBoss Fights: Medved, the Fallen Seer\nPlayers cannot gain or lose experiencemap contains powerful map boss [0]\nmap contains powerful map boss [1]",
-    "flavour": "What once was, shall be again."
+    "flavour": "What once was, shall be again.",
+    "biomes": "Ocean"
    },
    "cn": {
     "name": "蔓生丛林",
     "sub": "Map",
     "desc": "岛上流言: 循环的尽头……\n首领战: 梅德维德，堕落先知\n玩家无法获得或失去经验值map contains powerful map boss [0]\nmap contains powerful map boss [1]",
-    "flavour": "过去曾有的，必将再次降临。"
+    "flavour": "过去曾有的，必将再次降临。",
+    "biomes": "海洋"
    }
   },
   {
@@ -29267,13 +29551,15 @@
     "name": "Mournful Cliffside",
     "sub": "Map",
     "desc": "Island Rumours: The last to fall...\nBoss Fights: Vorana, Last to Fall\nPlayers cannot gain or lose experiencemap contains powerful map boss [0]\nmap contains powerful map boss [1]",
-    "flavour": "Her one-woman crusade continues still."
+    "flavour": "Her one-woman crusade continues still.",
+    "biomes": "Ocean"
    },
    "cn": {
     "name": "恸哭悬崖",
     "sub": "Map",
     "desc": "岛上流言: 最后一个倒下……\n首领战: 沃拉娜，死战者\n玩家无法获得或失去经验值map contains powerful map boss [0]\nmap contains powerful map boss [1]",
-    "flavour": "她孤身一人的圣战仍在继续。"
+    "flavour": "她孤身一人的圣战仍在继续。",
+    "biomes": "海洋"
    }
   },
   {
@@ -29284,13 +29570,15 @@
     "name": "Secluded Temple",
     "sub": "Map",
     "desc": "Island Rumours: Stardrinker...\nBoss Fights: Uhtred, the Stardrinker\nPlayers cannot gain or lose experiencemap contains powerful map boss [0]\nmap contains powerful map boss [1]",
-    "flavour": "What lies beyond the limits of mortal understanding?"
+    "flavour": "What lies beyond the limits of mortal understanding?",
+    "biomes": "Ocean"
    },
    "cn": {
     "name": "静谧神庙",
     "sub": "Map",
     "desc": "岛上流言: 吞星者……\n首领战: 乌崔德，吞星者\n玩家无法获得或失去经验值map contains powerful map boss [0]\nmap contains powerful map boss [1]",
-    "flavour": "凡人的理解之外究竟有何物？"
+    "flavour": "凡人的理解之外究竟有何物？",
+    "biomes": "海洋"
    }
   },
   {
@@ -29301,13 +29589,15 @@
     "name": "Obscure Island",
     "sub": "Map",
     "desc": "Island Rumours: Origin of the fall...\nBoss Fights: Olroth, Origin of the Fall\nPlayers cannot gain or lose experiencemap contains powerful map boss [0]\nmap contains powerful map boss [1]",
-    "flavour": "The truth lies somewhere between light and shadow."
+    "flavour": "The truth lies somewhere between light and shadow.",
+    "biomes": "Ocean"
    },
    "cn": {
     "name": "无名之岛",
     "sub": "Map",
     "desc": "岛上流言: 陨落的源头……\n首领战: 欧罗什，堕落之源\n玩家无法获得或失去经验值map contains powerful map boss [0]\nmap contains powerful map boss [1]",
-    "flavour": "真相潜藏于光与影之间。"
+    "flavour": "真相潜藏于光与影之间。",
+    "biomes": "海洋"
    }
   },
   {
@@ -29318,13 +29608,15 @@
     "name": "Precursor Tower",
     "sub": "Map",
     "desc": "Boss Fights: Precursor Displacer, Precursor Extractor",
-    "flavour": "There is no how, or why, or when. Only awe."
+    "flavour": "There is no how, or why, or when. Only awe.",
+    "biomes": "Desert"
    },
    "cn": {
     "name": "先驱高塔",
     "sub": "Map",
     "desc": "首领战: 卡拉什，沙丘住民",
-    "flavour": ""
+    "flavour": "",
+    "biomes": "沙漠"
    }
   },
   {
@@ -29335,13 +29627,15 @@
     "name": "Precursor Tower",
     "sub": "Map",
     "desc": "Boss Fights: Precursor Displacer, Precursor Extractor",
-    "flavour": "There is no how, or why, or when. Only awe."
+    "flavour": "There is no how, or why, or when. Only awe.",
+    "biomes": "Desert"
    },
    "cn": {
     "name": "先驱高塔",
     "sub": "Map",
     "desc": "首领战: 卡拉什，沙丘住民",
-    "flavour": ""
+    "flavour": "",
+    "biomes": "沙漠"
    }
   },
   {
@@ -29352,13 +29646,15 @@
     "name": "Precursor Tower",
     "sub": "Map",
     "desc": "Boss Fights: Precursor Displacer, Precursor Extractor",
-    "flavour": "There is no how, or why, or when. Only awe."
+    "flavour": "There is no how, or why, or when. Only awe.",
+    "biomes": "Desert"
    },
    "cn": {
     "name": "先驱高塔",
     "sub": "Map",
     "desc": "首领战: 卡拉什，沙丘住民",
-    "flavour": ""
+    "flavour": "",
+    "biomes": "沙漠"
    }
   },
   {
@@ -29369,13 +29665,15 @@
     "name": "Precursor Tower",
     "sub": "Map",
     "desc": "Boss Fights: Precursor Displacer, Precursor Extractor",
-    "flavour": "There is no how, or why, or when. Only awe."
+    "flavour": "There is no how, or why, or when. Only awe.",
+    "biomes": "Desert"
    },
    "cn": {
     "name": "先驱高塔",
     "sub": "Map",
     "desc": "首领战: 卡拉什，沙丘住民",
-    "flavour": ""
+    "flavour": "",
+    "biomes": "沙漠"
    }
   },
   {
@@ -29386,13 +29684,15 @@
     "name": "Precursor Tower",
     "sub": "Map",
     "desc": "Boss Fights: Precursor Displacer, Precursor Extractor",
-    "flavour": "There is no how, or why, or when. Only awe."
+    "flavour": "There is no how, or why, or when. Only awe.",
+    "biomes": "Desert"
    },
    "cn": {
     "name": "先驱高塔",
     "sub": "Map",
     "desc": "首领战: 卡拉什，沙丘住民",
-    "flavour": ""
+    "flavour": "",
+    "biomes": "沙漠"
    }
   },
   {
@@ -29403,13 +29703,15 @@
     "name": "Crux of Nothingness",
     "sub": "Map",
     "desc": "Boss Fights: The King in the Mists, The King in the Mists\nPlayers cannot gain or lose experiencemap contains powerful map boss [0]",
-    "flavour": "On the crumbling edge of meaning, He awaits."
+    "flavour": "On the crumbling edge of meaning, He awaits.",
+    "biomes": ""
    },
    "cn": {
     "name": "虚无之症",
     "sub": "Map",
     "desc": "首领战: 迷雾之王, 迷雾之王\n玩家无法获得或失去经验值map contains powerful map boss [0]",
-    "flavour": "在意义崩解的边缘，他等待着。"
+    "flavour": "在意义崩解的边缘，他等待着。",
+    "biomes": ""
    }
   },
   {
@@ -29420,13 +29722,15 @@
     "name": "Stagnant Basin",
     "sub": "Map",
     "desc": "Island Rumours: Nothin' to drink...",
-    "flavour": "The crumbling landscape reveals what lies beneath..."
+    "flavour": "The crumbling landscape reveals what lies beneath...",
+    "biomes": "Ocean"
    },
    "cn": {
     "name": "死水盆地",
     "sub": "Map",
     "desc": "岛上流言: 没东西喝……",
-    "flavour": "崩裂的大地露出了底下的东西……"
+    "flavour": "崩裂的大地露出了底下的东西……",
+    "biomes": "海洋"
    }
   },
   {
@@ -29437,13 +29741,15 @@
     "name": "Exhumed Ruins",
     "sub": "Map",
     "desc": "Island Rumours: Unknown ruins...",
-    "flavour": "You will find what they did not."
+    "flavour": "You will find what they did not.",
+    "biomes": "Ocean"
    },
    "cn": {
     "name": "掘尸遗迹",
     "sub": "Map",
     "desc": "岛上流言: 未知的废墟……",
-    "flavour": "你会找到他们未能发现之物。"
+    "flavour": "你会找到他们未能发现之物。",
+    "biomes": "海洋"
    }
   },
   {
@@ -29454,13 +29760,15 @@
     "name": "Sloughed Gully",
     "sub": "Map",
     "desc": "Island Rumours: It's dry at least...",
-    "flavour": "The past lies piled under dirt and rot."
+    "flavour": "The past lies piled under dirt and rot.",
+    "biomes": "Ocean"
    },
    "cn": {
     "name": "脱落沟壑",
     "sub": "Map",
     "desc": "岛上流言: 至少很干燥……",
-    "flavour": "过去掩埋于尘土与腐烂之下。"
+    "flavour": "过去掩埋于尘土与腐烂之下。",
+    "biomes": "海洋"
    }
   },
   {
@@ -29471,13 +29779,15 @@
     "name": "Moor of Fallen Skies",
     "sub": "Map",
     "desc": "Island Rumours: Fallen stars...",
-    "flavour": "Traces of history remain."
+    "flavour": "Traces of history remain.",
+    "biomes": "Ocean"
    },
    "cn": {
     "name": "天陨荒原",
     "sub": "Map",
     "desc": "岛上流言: 坠落的星辰……",
-    "flavour": "历史的痕迹依然留存。"
+    "flavour": "历史的痕迹依然留存。",
+    "biomes": "海洋"
    }
   },
   {
@@ -29488,13 +29798,15 @@
     "name": "Craggy Peninsula",
     "sub": "Map",
     "desc": "Island Rumours: Endless cliffs...",
-    "flavour": "On the edge of the sea, the dead are closest to home."
+    "flavour": "On the edge of the sea, the dead are closest to home.",
+    "biomes": "Ocean"
    },
    "cn": {
     "name": "乱石半岛",
     "sub": "Map",
     "desc": "岛上流言: 无尽的悬崖……",
-    "flavour": "在海的边缘，亡者离故乡最近。"
+    "flavour": "在海的边缘，亡者离故乡最近。",
+    "biomes": "海洋"
    }
   },
   {
@@ -29505,13 +29817,15 @@
     "name": "Grazed Prairie",
     "sub": "Map",
     "desc": "Island Rumours: Warm but risky...",
-    "flavour": "The land has forgotten what came before."
+    "flavour": "The land has forgotten what came before.",
+    "biomes": "Ocean"
    },
    "cn": {
     "name": "牧野荒原",
     "sub": "Map",
     "desc": "岛上流言: 温暖但危险……",
-    "flavour": "这片土地已遗忘了往昔。"
+    "flavour": "这片土地已遗忘了往昔。",
+    "biomes": "海洋"
    }
   },
   {
@@ -29522,13 +29836,15 @@
     "name": "Bleached Shoals",
     "sub": "Map",
     "desc": "Island Rumours: Bleak and awful...",
-    "flavour": "They came by ship... and they never left."
+    "flavour": "They came by ship... and they never left.",
+    "biomes": "Ocean"
    },
    "cn": {
     "name": "褪色浅滩",
     "sub": "Map",
     "desc": "岛上流言: 荒凉而可怕……",
-    "flavour": "他们乘船而来……却再未离去。"
+    "flavour": "他们乘船而来……却再未离去。",
+    "biomes": "海洋"
    }
   },
   {
@@ -29539,13 +29855,15 @@
     "name": "Lush Isle",
     "sub": "Map",
     "desc": "Island Rumours: Wild roaming free...",
-    "flavour": "Life roils over layers of bones."
+    "flavour": "Life roils over layers of bones.",
+    "biomes": "Ocean"
    },
    "cn": {
     "name": "笼葱海岛",
     "sub": "Map",
     "desc": "岛上流言: 肆意奔走的野性……",
-    "flavour": "生命在层层骸骨之上翻涌。"
+    "flavour": "生命在层层骸骨之上翻涌。",
+    "biomes": "海洋"
    }
   },
   {
@@ -29556,13 +29874,15 @@
     "name": "Frigid Bluffs",
     "sub": "Map",
     "desc": "Island Rumours: Cold as ice...",
-    "flavour": "This place was not always so bleak."
+    "flavour": "This place was not always so bleak.",
+    "biomes": "Ocean"
    },
    "cn": {
     "name": "凛风悬崖",
     "sub": "Map",
     "desc": "岛上流言: 寒冷如冰……",
-    "flavour": "此地并非一直如此荒凉。"
+    "flavour": "此地并非一直如此荒凉。",
+    "biomes": "海洋"
    }
   },
   {
@@ -29573,13 +29893,15 @@
     "name": "Scorched Cay",
     "sub": "Map",
     "desc": "Island Rumours: Sulphite!",
-    "flavour": "The past lies untouched where the living dare not tread."
+    "flavour": "The past lies untouched where the living dare not tread.",
+    "biomes": "Ocean"
    },
    "cn": {
     "name": "焦灼小岛",
     "sub": "Map",
     "desc": "岛上流言: 亚硫酸！",
-    "flavour": "生者不敢踏足之处，过去安然沉睡。"
+    "flavour": "生者不敢踏足之处，过去安然沉睡。",
+    "biomes": "海洋"
    }
   },
   {
@@ -29590,13 +29912,15 @@
     "name": "Digsite",
     "sub": "Map",
     "desc": "Boss Fights: Aurelian, the Grand Adjudicator",
-    "flavour": "They dig not to discover, but to escape."
+    "flavour": "They dig not to discover, but to escape.",
+    "biomes": "Island, Desert, Grass, Breach Stronghold"
    },
    "cn": {
     "name": "挖掘遗址",
     "sub": "Map",
     "desc": "首领战: 奥瑞利安，大裁决者",
-    "flavour": "他们挖掘不是为了发现，而是为了逃离。"
+    "flavour": "他们挖掘不是为了发现，而是为了逃离。",
+    "biomes": "岛屿, 沙漠, 草原, 裂隙要塞"
    }
   },
   {
@@ -29607,13 +29931,15 @@
     "name": "Ice Cave",
     "sub": "Map",
     "desc": "Boss Fights: The Frostborn Fiend",
-    "flavour": "The chill is second only to the stench."
+    "flavour": "The chill is second only to the stench.",
+    "biomes": "Island, Mountain"
    },
    "cn": {
     "name": "冰霜洞穴",
     "sub": "Map",
     "desc": "首领战: 霜生劣魔",
-    "flavour": "寒意仅次于恶臭。"
+    "flavour": "寒意仅次于恶臭。",
+    "biomes": "岛屿, 高山"
    }
   },
   {
@@ -29624,13 +29950,15 @@
     "name": "Razed Fields",
     "sub": "Map",
     "desc": "Boss Fights: Elvara, the Savage Flame, Rael, the Frost Hand",
-    "flavour": "Strife and terror rule the night."
+    "flavour": "Strife and terror rule the night.",
+    "biomes": "Island, Grass"
    },
    "cn": {
     "name": "燃烧废野",
     "sub": "Map",
     "desc": "首领战: 艾尔瓦拉，狂焰, 拉尔，霜手",
-    "flavour": "纷争与恐惧统治着黑夜。"
+    "flavour": "纷争与恐惧统治着黑夜。",
+    "biomes": "岛屿, 草原"
    }
   },
   {
@@ -29641,13 +29969,15 @@
     "name": "Riverhold",
     "sub": "Map",
     "desc": "Boss Fights: Thariel, the Umbral Wraith",
-    "flavour": "Only the shadow of death lives here now."
+    "flavour": "Only the shadow of death lives here now.",
+    "biomes": "Forest, Grass"
    },
    "cn": {
     "name": "河流要塞",
     "sub": "Map",
     "desc": "首领战: 萨里埃尔，冥影幽魂",
-    "flavour": "如今只有死亡的阴影居住于此。"
+    "flavour": "如今只有死亡的阴影居住于此。",
+    "biomes": "森林, 草原"
    }
   },
   {
@@ -29658,13 +29988,15 @@
     "name": "Rugosa",
     "sub": "Map",
     "desc": "Boss Fights: Syvora, Daughter of the Deep",
-    "flavour": "There is beauty to be found in the depths."
+    "flavour": "There is beauty to be found in the depths.",
+    "biomes": "Water, Ocean"
    },
    "cn": {
     "name": "鲁戈萨",
     "sub": "Map",
     "desc": "首领战: 西芙拉，深渊之女",
-    "flavour": "在深处也能发现美。"
+    "flavour": "在深处也能发现美。",
+    "biomes": "水域, 海洋"
    }
   },
   {
@@ -29675,13 +30007,15 @@
     "name": "Mortuary",
     "sub": "Map",
     "desc": "Boss Fights: Micata, the Remade",
-    "flavour": "These halls weren't meant for you..."
+    "flavour": "These halls weren't meant for you...",
+    "biomes": "Swamp, Grass"
    },
    "cn": {
     "name": "停尸间",
     "sub": "Map",
     "desc": "首领战: 米卡塔，再塑者",
-    "flavour": "这些殿堂并非为你而设……"
+    "flavour": "这些殿堂并非为你而设……",
+    "biomes": "沼泽, 草原"
    }
   },
   {
@@ -29692,13 +30026,15 @@
     "name": "The Patriarch Halls",
     "sub": "Map",
     "desc": "Boss Fights: Phyx, Sentinel of the Spark\nmap is quest area [1]",
-    "flavour": "One cannot create life without the power to take it."
+    "flavour": "One cannot create life without the power to take it.",
+    "biomes": "Forest, Swamp, Desert, Grass"
    },
    "cn": {
     "name": "长老殿堂",
     "sub": "Map",
     "desc": "首领战: 菲克斯，火花哨兵\nmap is quest area [1]",
-    "flavour": "若无夺取生命之力，便无法创造生命。"
+    "flavour": "若无夺取生命之力，便无法创造生命。",
+    "biomes": "森林, 沼泽, 沙漠, 草原"
    }
   },
   {
@@ -29709,13 +30045,15 @@
     "name": "The Matriarch Halls",
     "sub": "Map",
     "desc": "Boss Fights: Phya, Sentinel of the Cradle\nmap is quest area [1]",
-    "flavour": "One cannot take life without the power to create it."
+    "flavour": "One cannot take life without the power to create it.",
+    "biomes": "Forest, Swamp, Desert, Grass"
    },
    "cn": {
     "name": "主母殿堂",
     "sub": "Map",
     "desc": "首领战: 菲亚，摇篮哨兵\nmap is quest area [1]",
-    "flavour": "若无创造生命之力，便无法夺取生命。"
+    "flavour": "若无创造生命之力，便无法夺取生命。",
+    "biomes": "森林, 沼泽, 沙漠, 草原"
    }
   },
   {
@@ -29726,13 +30064,15 @@
     "name": "Precursor Tower",
     "sub": "Map",
     "desc": "Boss Fights: Karash, The Dune Dweller",
-    "flavour": ""
+    "flavour": "",
+    "biomes": "Desert"
    },
    "cn": {
     "name": "先驱高塔",
     "sub": "Map",
     "desc": "首领战: 卡拉什，沙丘住民",
-    "flavour": ""
+    "flavour": "",
+    "biomes": "沙漠"
    }
   },
   {
@@ -29743,13 +30083,15 @@
     "name": "Site of the Chosen",
     "sub": "Map",
     "desc": "map is quest area [1]",
-    "flavour": "Selfless ancients gave themselves to save tomorrow."
+    "flavour": "Selfless ancients gave themselves to save tomorrow.",
+    "biomes": ""
    },
    "cn": {
     "name": "选召之地",
     "sub": "Map",
     "desc": "map is quest area [1]",
-    "flavour": "无私的先祖献出自身，只为拯救未来。"
+    "flavour": "无私的先祖献出自身，只为拯救未来。",
+    "biomes": ""
    }
   },
   {
@@ -29760,13 +30102,15 @@
     "name": "Canyon",
     "sub": "Map",
     "desc": "Boss Fights: Morvak, the Infernal",
-    "flavour": "These gates have facilitated many trades. Silks, spices, and now horrors."
+    "flavour": "These gates have facilitated many trades. Silks, spices, and now horrors.",
+    "biomes": "Mountain, Desert, Breach Stronghold"
    },
    "cn": {
     "name": "炙阳峡谷",
     "sub": "Map",
     "desc": "首领战: 莫瓦克，炼狱之怒",
-    "flavour": "这些大门曾促成无数交易。丝绸，香料，如今则是恐惧。"
+    "flavour": "这些大门曾促成无数交易。丝绸，香料，如今则是恐惧。",
+    "biomes": "高山, 沙漠, 裂隙要塞"
    }
   },
   {
@@ -29777,13 +30121,15 @@
     "name": "Ornate Chambers",
     "sub": "Map",
     "desc": "Boss Fights: Serath, the Scaled One",
-    "flavour": "A sanctuary for the unsanctified."
+    "flavour": "A sanctuary for the unsanctified.",
+    "biomes": "Mountain, Desert"
    },
    "cn": {
     "name": "华丽密室",
     "sub": "Map",
     "desc": "首领战: 塞拉斯，覆鳞者",
-    "flavour": "不洁者的避难所。"
+    "flavour": "不洁者的避难所。",
+    "biomes": "高山, 沙漠"
    }
   },
   {

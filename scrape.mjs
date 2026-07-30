@@ -466,6 +466,18 @@ function parseMapsPage(html) {
   return { maps, legends };
 }
 
+// "Biomes: Forest, Swamp" property on map detail pages (label is untranslated
+// on /cn pages; values are localized)
+function extractBiomes(html) {
+  const $ = cheerio.load(html);
+  let out = "";
+  $("div.property").each((_, p) => {
+    const m = $(p).text().match(/Biomes:\s*(.+)/);
+    if (m && !out) out = m[1].replace(/\s+/g, " ").trim();
+  });
+  return out;
+}
+
 async function scrapeMaps() {
   console.log("Atlas maps:");
   const en = parseMapsPage(await getPage("us", "Waystones"));
@@ -473,15 +485,21 @@ async function scrapeMaps() {
   const cnBySlug = new Map(cn.maps.map((m) => [m.slug, m]));
   const cnLegend = new Map(cn.legends.map((l) => [l.key, l]));
   const out = [];
+  let i = 0;
   for (const m of en.maps) {
     const c = cnBySlug.get(m.slug) ?? null;
+    let enBiomes = "";
+    let cnBiomes = "";
+    try { enBiomes = extractBiomes(await getPage("us", m.slug)); } catch {}
+    try { cnBiomes = extractBiomes(await getPage("cn", m.slug)); } catch {}
     out.push({
       cat: "map",
       key: `map/${m.slug}`,
       icon: m.icon,
-      en: { name: m.name, sub: m.kind, desc: m.desc, flavour: m.flavour },
-      cn: c ? { name: c.name, sub: m.kind, desc: c.desc, flavour: c.flavour } : null,
+      en: { name: m.name, sub: m.kind, desc: m.desc, flavour: m.flavour, biomes: enBiomes },
+      cn: c ? { name: c.name, sub: m.kind, desc: c.desc, flavour: c.flavour, biomes: cnBiomes } : null,
     });
+    if (++i % 40 === 0) console.log(`  ${i}/${en.maps.length} map detail pages...`);
   }
   for (const l of en.legends) {
     const c = cnLegend.get(l.key) ?? null;

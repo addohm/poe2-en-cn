@@ -132,6 +132,17 @@
   }
   .viewtoggle button.on { background: rgba(201,168,106,.12); color: var(--gold); }
 
+  .srcbar { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 18px; }
+  .srcbar button {
+    background: linear-gradient(180deg, var(--panel), rgba(18,15,11,.85));
+    border: 1px solid var(--line); border-radius: 20px;
+    color: var(--ink-dim); font: 13.5px var(--body); padding: 5px 14px; cursor: pointer;
+    transition: color .2s, border-color .2s;
+  }
+  .srcbar button:hover { color: var(--ink); border-color: var(--line-bright); }
+  .srcbar button.on { color: var(--gold-bright); border-color: var(--gold-dim); background: linear-gradient(180deg, #211c11, rgba(33,28,17,.7)); }
+  .srcbar button .n { opacity: .55; margin-left: 5px; font-size: 12px; }
+
   .grouphead {
     display: flex; align-items: center; gap: 14px;
     margin: 30px 0 14px; color: var(--gold);
@@ -270,6 +281,7 @@
       </div>
       <span id="count"></span>
     </div>
+    <div class="srcbar" id="srcbar" hidden></div>
     <div id="list"></div>
     <div class="more" id="more" hidden>· · ·</div>
   </main>
@@ -286,6 +298,7 @@
 const NAV = [
   { section: ["Campaign", "战役"], cats: [
     ["quest", "Quests", "任务"],
+    ["story-reward", "Story Rewards", "剧情奖励"],
   ]},
   { section: ["Trials", "试炼"], cats: [
     ["sekhemas-boon", "Boons", "恩赐"],
@@ -313,7 +326,7 @@ const NAV = [
     ["buff", "Buffs & Debuffs", "增益减益"],
   ]},
 ];
-const GRID_CATS = new Set(["sekhemas-boon", "sekhemas-affliction", "genesis-tree", "passive-tree", "chaos-mod", "atlas-master", "buff", "map",
+const GRID_CATS = new Set(["sekhemas-boon", "sekhemas-affliction", "genesis-tree", "passive-tree", "chaos-mod", "atlas-master", "story-reward", "buff", "map",
   "atlas-core", "atlas-breach", "atlas-delirium", "atlas-ritual", "atlas-expedition", "atlas-abyss", "atlas-incursion"]);
 const CHUNK = 120;
 // virtual categories: id -> [real cat, atlas sub-tree]
@@ -347,7 +360,7 @@ for (const e of DATA) {
 /* grouping */
 function groupOf(e) {
   switch (e.cat) {
-    case "quest": return e.act ? [`Act ${e.act}`, `第${e.act}章`] : ["Other", "其他"];
+    case "quest": case "story-reward": return e.act ? [`Act ${e.act}`, `第${e.act}章`] : ["Other", "其他"];
     case "sekhemas-boon": case "sekhemas-affliction": {
       const s = e.en.sub || "";
       return /major/i.test(s) ? ["Major", "主要"] : /minor/i.test(s) ? ["Minor", "次要"] : ["", ""];
@@ -403,14 +416,43 @@ let query = "";
 let view = "list";
 let shown = 0;
 let currentItems = [];
+let srcFilter = "all";
+const SRC_DEFS = [
+  ["all", "All", "全部"],
+  ["skills", "Skills", "技能"],
+  ["gear", "Gear", "装备"],
+  ["passives", "Passives", "天赋"],
+  ["monsters", "Monsters", "怪物"],
+  ["other", "Other", "其他"],
+];
+const matchesSrc = (e) =>
+  srcFilter === "all" ||
+  (srcFilter === "other" ? !(e.src && e.src.length) : e.src?.includes(srcFilter));
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => (s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+// search accepts PoE-style regex (e.g. "Rupture|Riverside"); plain text when
+// the query has no regex metacharacters or fails to compile
+let matcher = { test: () => true, re: null };
+function makeMatcher(q) {
+  if (!q) return { test: () => true, re: null };
+  if (/[|\\^$*+?()[\]{}]/.test(q)) {
+    try {
+      const re = new RegExp(q, "i");
+      return { test: (b) => re.test(b), re: new RegExp(q, "gi") };
+    } catch {}
+  }
+  const lq = q.toLowerCase();
+  return { test: (b) => b.includes(lq), re: null };
+}
 const hl = (s) => {
   const e = esc(s);
   if (!query) return e;
-  try { return e.replace(new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi"), (m) => `<mark>${m}</mark>`); }
-  catch { return e; }
+  try {
+    const re = matcher.re ?? new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi");
+    return e.replace(re, (m) => (m ? `<mark>${m}</mark>` : m));
+  } catch { return e; }
 };
 
 /* ---------------- rendering ---------------- */
@@ -431,7 +473,7 @@ function sideHtml(side, lang) {
 function stepsHtml(e) {
   const steps = (e.steps ?? []).filter((s) => s.en?.name || s.en?.desc || s.cn?.name || s.cn?.desc);
   if (!steps.length) return "";
-  const open = query && steps.some((s) => JSON.stringify(s).toLowerCase().includes(query));
+  const open = query && steps.some((s) => matcher.test(JSON.stringify(s).toLowerCase()));
   const cell = (x) => x
     ? `<div>${x.name ? `<span class="sname">${hl(x.name)}</span> ` : ""}<span class="sdesc">${hl(x.desc)}</span>${x.area ? ` <span class="area">◈ ${hl(x.area)}</span>` : ""}</div>`
     : "<div class='sdesc'>—</div>";
@@ -495,14 +537,14 @@ function renderChunk() {
 
 function render() {
   const q = query;
-  let items = DATA.filter((e) => inCat(e, cat) && (!q || e._blob.includes(q)));
+  let items = DATA.filter((e) => inCat(e, cat) && (!q || matcher.test(e._blob)) && (cat !== "buff" || matchesSrc(e)));
   // attach group labels + stable idx
   for (const e of items) {
     const pair = groupOf(e);
     e._gpair = pair; e._g = pair[0];
   }
   // group-aware ordering (stable: entries keep source order within a group)
-  if (cat === "quest") {
+  if (cat === "quest" || cat === "story-reward") {
     items.sort((a, b) => (parseInt(a.act) || 99) - (parseInt(b.act) || 99));
   } else if (cat === "passive-tree" || cat === "genesis-tree" || VIRT[cat]) {
     const rank = (g) => { const i = GROUP_ORDER.indexOf(g); return i < 0 ? 10 : i; };
@@ -559,8 +601,32 @@ function buildRail() {
   });
 }
 
+function buildSrcbar() {
+  const buffs = DATA.filter((e) => e.cat === "buff");
+  const countOf = (s) =>
+    s === "all" ? buffs.length
+    : s === "other" ? buffs.filter((e) => !(e.src && e.src.length)).length
+    : buffs.filter((e) => e.src?.includes(s)).length;
+  $("srcbar").innerHTML = SRC_DEFS.filter(([s]) => countOf(s) > 0)
+    .map(
+      ([s, en, zh]) =>
+        `<button data-src="${s}"${s === srcFilter ? ' class="on"' : ""}>${en} ${zh}<span class="n">${countOf(s)}</span></button>`,
+    )
+    .join("");
+}
+$("srcbar").addEventListener("click", (ev) => {
+  const b = ev.target.closest("button[data-src]");
+  if (!b) return;
+  srcFilter = b.dataset.src;
+  document.querySelectorAll("#srcbar button").forEach((x) => x.classList.toggle("on", x === b));
+  render();
+});
+
 function setCat(id) {
   cat = id;
+  srcFilter = "all";
+  $("srcbar").hidden = id !== "buff";
+  if (id === "buff") buildSrcbar();
   document.querySelectorAll(".rail button").forEach((b) => b.classList.toggle("on", b.dataset.cat === id));
   const info = CAT_INFO[id] ?? { en: id, zh: "" };
   $("cattitle").textContent = info.en;
@@ -597,7 +663,11 @@ document.addEventListener("keydown", (ev) => {
 let debounce;
 $("q").addEventListener("input", (ev) => {
   clearTimeout(debounce);
-  debounce = setTimeout(() => { query = ev.target.value.trim().toLowerCase(); render(); }, 130);
+  debounce = setTimeout(() => {
+    query = ev.target.value.trim();
+    matcher = makeMatcher(query);
+    render();
+  }, 130);
 });
 
 /* infinite scroll */

@@ -386,6 +386,64 @@ async function scrapeTrees() {
   return out;
 }
 
+// ---- Story rewards ---------------------------------------------------------
+// Selectable permanent campaign boons are quest items with "Grants ..." stat
+// mods (Venom Draughts, Tattoos, medallions, ...), listed with full mod text
+// in the Quest page's Quest Items pane. Passive/atlas point books excluded.
+
+function parseQuestItemsPane(html) {
+  const $ = cheerio.load(html);
+  const pane = $("[id='QuestItem'], [id='任务物品']").first();
+  const out = [];
+  pane.find("div.d-flex.border-top").each((_, row) => {
+    const $row = $(row);
+    const $a = $row.find("a.questitem").last();
+    const slug = ($a.attr("href") ?? "").split("/").pop();
+    const name = $a.text().trim();
+    const hover = decodeURIComponent($row.find("a.questitem").first().attr("data-hover") ?? "");
+    const act = hover.match(/Act(\d+)/)?.[1] ?? "";
+    const icon = $row.find("img").first().attr("src") ?? "";
+    const mods = $row.find("div.explicitMod").map((_, m) => cleanText($(m))).get();
+    if (slug && name) out.push({ slug, name, act, icon, mods });
+  });
+  return out;
+}
+
+async function scrapeStoryRewards(questEntries) {
+  console.log("Story rewards:");
+  const en = parseQuestItemsPane(await getPage("us", "Quest"));
+  const cn = parseQuestItemsPane(await getPage("cn", "Quest"));
+  const cnBySlug = new Map(cn.map((x) => [x.slug, x]));
+  const isBoon = (x) =>
+    x.mods.some((m) => /^Grants? /i.test(m)) &&
+    !x.mods.some((m) => /(Passive|Atlas|Weapon Set) .*(Skill|Respec) Points?/i.test(m)) &&
+    !/DNT/.test(x.name + x.mods.join(""));
+  const seen = new Set();
+  const out = [];
+  for (const x of en.filter(isBoon)) {
+    if (seen.has(x.slug)) continue;
+    seen.add(x.slug);
+    const c = cnBySlug.get(x.slug) ?? null;
+    // cross-reference the quests that offer this item as a reward
+    const src = questEntries.filter((q) => (q.en.reward ?? "").includes(x.name));
+    const srcEn = src.map((q) => q.en.name + (q.act ? ` (Act ${q.act})` : "")).join(", ");
+    const srcCn = src.map((q) => q.cn?.name).filter(Boolean).join("，");
+    const act = x.act || (src[0]?.act ?? "");
+    out.push({
+      cat: "story-reward",
+      key: `story/${x.slug}`,
+      icon: x.icon,
+      act,
+      en: { name: x.name, sub: act ? `Act ${act}` : "", desc: x.mods.join("\n"), reward: srcEn ? `Quest: ${srcEn}` : "" },
+      cn: c
+        ? { name: c.name, sub: act ? `第 ${act} 章` : "", desc: c.mods.join("\n"), reward: srcCn ? `任务：${srcCn}` : "" }
+        : null,
+    });
+  }
+  console.log(`  story rewards: ${out.length} (cn paired: ${out.filter((e) => e.cn).length})`);
+  return out;
+}
+
 // ---- Atlas Masters ---------------------------------------------------------
 // poe2db /us/Atlas_Masters and /cn/Atlas_Masters list all master specialization
 // nodes (Doryani's Science, Hilda's Hunting, Jado's Spycraft) with a
@@ -557,8 +615,20 @@ function parseBuffPage(html) {
   return out;
 }
 
+// buff ids listed in the /us/Buff page's "Used by monster" tab
+function parseMonsterBuffIds(html) {
+  const $ = cheerio.load(html);
+  const ids = new Set();
+  $("[id='Usedbymonster'] a[data-hover]").each((_, a) => {
+    const id = decodeURIComponent($(a).attr("data-hover") ?? "").match(/BuffDefinitions[\\/]+([^"&]+)$/)?.[1];
+    if (id) ids.add(id);
+  });
+  return ids;
+}
+
 async function scrapeBuffs() {
   console.log("Buffs & debuffs:");
+  const monsterIds = parseMonsterBuffIds(await getPage("us", "Buff"));
   const en = parseBuffPage(await getPage("us", "Buff"));
   let cn = [];
   try {
@@ -583,6 +653,45 @@ async function scrapeBuffs() {
     if (j >= 0) { used.add(j); return cn[j]; }
     return null;
   };
+  // source classification: each buff's EN detail page has "<Name> Ref /N"
+  // sections whose anchors carry typed data-hover ids (UniqueItems, Mods,
+  // GrantedEffects, PassiveSkills, ...) — from these we tag where a buff
+  // comes from (skills / gear / passives / monsters)
+  const SRC_KIND = [
+    [/GrantedEffects|ActiveSkills|GemEffects|SkillGems/i, "skills"],
+    [/UniqueItems|BaseItemTypes|Essences|^Mods$/i, "gear"],
+    [/PassiveSkills/i, "passives"],
+    [/MonsterVarieties|MonsterMods/i, "monsters"],
+  ];
+  const classifyBuffPage = (html) => {
+    const $ = cheerio.load(html);
+    const src = new Set();
+    const headers = $("h5.card-header").map((_, x) => $(x).text().trim()).get();
+    if (headers.some((h) => /^(Supported Gem|Level Effect|From) /.test(h + " "))) src.add("skills");
+    $("div.card").each((_, card) => {
+      const h = $("h5.card-header", card).first().text();
+      if (!/Ref \//.test(h)) return;
+      $("a[data-hover]", card).each((_, a) => {
+        const kind = decodeURIComponent($(a).attr("data-hover") ?? "").match(/Data[\\/]+([A-Za-z]+)/)?.[1];
+        if (!kind) return;
+        for (const [re, tag] of SRC_KIND) if (re.test(kind)) src.add(tag);
+      });
+    });
+    return [...src];
+  };
+  const srcBySlug = new Map();
+  const buffSources = async (slug) => {
+    if (!slug) return [];
+    if (!srcBySlug.has(slug)) {
+      let src = [];
+      try {
+        src = classifyBuffPage(await getPage("us", slug));
+      } catch {}
+      srcBySlug.set(slug, src);
+    }
+    return srcBySlug.get(slug);
+  };
+
   // in-game description text lives in the hover popups: EN via the site's
   // /us/hover?s= endpoint, CN via the cache2 CDN URL embedded in the page
   const hoverDesc = (html) => {
@@ -618,12 +727,19 @@ async function scrapeBuffs() {
       cat: "buff",
       key: `buff/${b.id || b.slug + "#" + i}`,
       icon: b.iconUrl,
+      src: [
+        ...new Set([
+          ...(await buffSources(b.slug)),
+          // the game's own naming marks monster buffs/auras in the internal id
+          ...(monsterIds.has(b.id) || /(^|_)monster/.test(b.id) ? ["monsters"] : []),
+        ]),
+      ],
       en: { name: b.name, sub: [b.type, b.tail].filter(Boolean).join(" · "), desc: enDesc },
       cn: c
         ? { name: c.name, sub: [BUFF_TYPE_CN[c.type] ?? c.type, c.tail].filter(Boolean).join(" · "), desc: cnDesc }
         : null,
     });
-    if (++i % 100 === 0) console.log(`  ${i}/${en.length} buff hovers...`);
+    if (++i % 100 === 0) console.log(`  ${i}/${en.length} buff hovers/pages...`);
   }
   const withDesc = out.filter((e) => e.en.desc).length;
   console.log(`  buffs: ${out.length} (cn paired: ${out.filter((e) => e.cn).length}, with description: ${withDesc})`);
@@ -658,7 +774,9 @@ entries.push(
   }),
 );
 
-entries.push(...(await scrapeQuests()));
+const questEntries = await scrapeQuests();
+entries.push(...questEntries);
+entries.push(...(await scrapeStoryRewards(questEntries)));
 entries.push(...(await scrapeAtlasMasters()));
 entries.push(...(await scrapeMaps()));
 entries.push(...(await scrapeBuffs()));

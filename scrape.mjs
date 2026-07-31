@@ -17,20 +17,20 @@ const DELAY_MS = 400;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 let lastFetch = 0;
 
-async function getPage(lang, slug) {
-  const cacheFile = path.join(CACHE, `${lang}_${slug.replaceAll("/", "_")}.html`);
+async function getUrl(url, cacheName, { fast = false, headers = {} } = {}) {
+  const cacheFile = path.join(CACHE, cacheName);
   if (!FRESH) {
     try {
       await access(cacheFile);
       return await readFile(cacheFile, "utf8");
     } catch {}
   }
-  const url = `https://poe2db.tw/${lang}/${slug}`;
   for (let attempt = 0; ; attempt++) {
-    const wait = lastFetch + DELAY_MS - Date.now();
+    // CDN fetches (fast) are cheap static files; site pages get the full delay
+    const wait = lastFetch + (fast ? 100 : DELAY_MS) - Date.now();
     if (wait > 0) await sleep(wait);
     lastFetch = Date.now();
-    const res = await fetch(url, { headers: { "User-Agent": UA } });
+    const res = await fetch(url, { headers: { "User-Agent": UA, ...headers } });
     if (res.ok) {
       const html = await res.text();
       await writeFile(cacheFile, html);
@@ -43,6 +43,10 @@ async function getPage(lang, slug) {
     }
     throw new Error(`${res.status} for ${url}`);
   }
+}
+
+async function getPage(lang, slug) {
+  return getUrl(`https://poe2db.tw/${lang}/${slug}`, `${lang}_${slug.replaceAll("/", "_")}.html`);
 }
 
 function cleanText($el) {
@@ -548,7 +552,7 @@ function parseBuffPage(html) {
     const tail = $body.clone().children("a").remove().end().text().replace(/\s+/g, " ").trim();
     if (!name || (!id && !slug)) return;
     if (/DNT|DoNotUse|\[/i.test(name) || /^CTF/.test(tail)) return;
-    out.push({ id, slug, name, type, tail, iconUrl });
+    out.push({ id, slug, name, type, tail, iconUrl, hover: $a.attr("data-hover") ?? "" });
   });
   return out;
 }
@@ -579,19 +583,50 @@ async function scrapeBuffs() {
     if (j >= 0) { used.add(j); return cn[j]; }
     return null;
   };
-  const out = en.map((b, i) => {
+  // in-game description text lives in the hover popups: EN via the site's
+  // /us/hover?s= endpoint, CN via the cache2 CDN URL embedded in the page
+  const hoverDesc = (html) => {
+    const $ = cheerio.load(html);
+    return $(".secDescrText")
+      .map((_, d) => cleanText($(d)))
+      .get()
+      .join("\n");
+  };
+  const safe = (s) => s.replace(/[^A-Za-z0-9._-]/g, "_").slice(0, 120);
+  const out = [];
+  let i = 0;
+  for (const b of en) {
     const c = findCn(b, i);
-    return {
+    let enDesc = "";
+    let cnDesc = "";
+    if (b.hover.startsWith("?")) {
+      try {
+        enDesc = hoverDesc(await getUrl(`https://poe2db.tw/us/hover${b.hover}`, `hover_us_${safe(b.id || b.slug)}.html`));
+      } catch {}
+    } else if (b.hover.startsWith("http")) {
+      // some /us rows embed the resolved cache2 CDN hover URL directly
+      try {
+        enDesc = hoverDesc(await getUrl(b.hover, `hover_us_${safe(b.hover.split("/").pop())}.html`, { fast: true, headers: { Referer: "https://poe2db.tw/" } }));
+      } catch {}
+    }
+    if (c?.hover.startsWith("http")) {
+      try {
+        cnDesc = hoverDesc(await getUrl(c.hover, `hover_cn_${safe(c.hover.split("/").pop())}.html`, { fast: true, headers: { Referer: "https://poe2db.tw/" } }));
+      } catch {}
+    }
+    out.push({
       cat: "buff",
       key: `buff/${b.id || b.slug + "#" + i}`,
       icon: b.iconUrl,
-      en: { name: b.name, sub: [b.type, b.tail].filter(Boolean).join(" · ") },
+      en: { name: b.name, sub: [b.type, b.tail].filter(Boolean).join(" · "), desc: enDesc },
       cn: c
-        ? { name: c.name, sub: [BUFF_TYPE_CN[c.type] ?? c.type, c.tail].filter(Boolean).join(" · ") }
+        ? { name: c.name, sub: [BUFF_TYPE_CN[c.type] ?? c.type, c.tail].filter(Boolean).join(" · "), desc: cnDesc }
         : null,
-    };
-  });
-  console.log(`  buffs: ${out.length} (cn paired: ${out.filter((e) => e.cn).length})`);
+    });
+    if (++i % 100 === 0) console.log(`  ${i}/${en.length} buff hovers...`);
+  }
+  const withDesc = out.filter((e) => e.en.desc).length;
+  console.log(`  buffs: ${out.length} (cn paired: ${out.filter((e) => e.cn).length}, with description: ${withDesc})`);
   return out;
 }
 

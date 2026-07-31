@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-31T09:34:12.565Z",
+ "generated": "2026-07-31T10:05:51.572Z",
  "source": "poe2db.tw (/us and /cn)",
  "entries": [
   {
@@ -31030,6 +31030,452 @@
    "cn": {
     "name": "无名先知",
     "sub": "Legend"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/ContainsBreach",
+   "icon": "assets/icons/e584cd_atlasiconcontentbreach.webp",
+   "en": {
+    "name": "Breach",
+    "sub": "Content",
+    "desc": "Breaches allow invaders from another world to access ours.\nUnstable Breaches are a small tear in the fabric that will open for a short time. Kill Breach monsters to keep them open longer.\nOnce enough monsters have been killed, the Breach will stabalise, calling stronger monsters through the portal at the centre.\nKill these monsters in the centre will complete the Unstable Breach, closing the tear.\nA Breach Hive is a tear that has already grown out of control. You will need the help of Ailith to close these.\nWith a blessing from Chayula, burn your way to the centre of the Hive and help Ailith start the process of destorying the centre.\nAs Ailith destroys the Hive, Breach monsters will pour in to try and kill her. Defend Ailith until she has completely destroyed the centre of the hive to remove it from existence.\nIf Ailith dies during this, the Hive will remain."
+   },
+   "cn": {
+    "name": "裂隙",
+    "sub": "Content",
+    "desc": "裂隙的存在，让另一个世界的入侵者得以进入我们的世界。\n不稳定裂隙是维度结构上的微小裂口，只会短暂开启。击杀裂隙怪物可延长其开启时间。\n击杀足够多的怪物后，裂隙将趋于稳定，通过中央传送门召唤更强大的怪物。\n击杀中央的怪物即可完成不稳定裂隙，关闭裂口。\n裂隙巢穴是已失控的裂口。你需要艾利丝的帮助才能关闭它们。\n借助夏乌拉的祝福，一路烧穿，直至虫巢核心，协助艾利丝摧毁核心。\n当艾莉丝摧毁巢穴时，裂隙怪物会蜂拥而入，试图杀死她。保护艾利丝，直至她完全摧毁虫巢核心，将其从存在中抹除。\n若此期间艾利丝死亡，巢穴将继续存在。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/ContainsRitual",
+   "icon": "assets/icons/2ff135_atlasiconcontentritual.webp",
+   "en": {
+    "name": "Ritual",
+    "sub": "Content",
+    "desc": "Ritual Altars are sacrificial sites that absorb the monsters slain within their ritual circles. After an amount of monsters have been slain, the Ritual can be activated.\nActivating the Ritual will resurrect the slain monsters, requiring you slay them once more.\nDefeating these revived monsters earns you Tribute, a resource that you can trade for various Favours from the Ritual Altar.\nThe list of Favours tradable for Tribute can be rerolled, costing Tribute.\nFavours can be deferred, paying a part of their cost but having them appear again later."
+   },
+   "cn": {
+    "name": "驱灵祭坛",
+    "sub": "Content",
+    "desc": "驱灵祭坛是奉献之地，能够吸收法阵范围内被击败的怪物。击败一定数量的怪物后，就可以开启灵坛。\n激活灵坛会复苏被击败的怪物，需要你再一次击败他们。\n击败复苏的怪物能够获得贡品，并用这种资源在驱灵祭坛处换取各种恩典。\n贡品能够交换的恩惠可以刷新，但刷新也需要消耗贡品。\n恩惠可以延期保留，支付相当于价格一定比例的贡品，使它们之后再次出现。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/ContainsDelirium",
+   "icon": "assets/icons/14fc3b_atlasiconcontentdelirium.webp",
+   "en": {
+    "name": "Delirium",
+    "sub": "Content",
+    "desc": "Maps containing a Delirium Mirror can have the mirror walked through to unleash the rolling Delirium fog ring across the current area.\nYou must stay within this fog as it expands to maintain the Delirium or it will disappear.\nMagic monsters are able to gain Delirium specific Modifiers while inside the fog.\nRare or Unique monsters in the fog may manifest Delirium Demons. Manifested Delirium Demons inhabit the monster's body to occasionally use Skills of their own.\nFractured Mirrors may be found within Delirium Fog, summoning extra monsters while Fracturing Mirror Shards are found at set depths, with more varied rewards.\nDefeating Map Bosses has a chance to summon a Grand Mirror on a nearby map."
+   },
+   "cn": {
+    "name": "惊悸迷雾",
+    "sub": "Content",
+    "desc": "地图包含惊悸迷雾之镜时，穿过镜子即可释放出遍及整个区域的滚动的惊悸迷雾之环。\n你必须在这片迷雾扩张时始终留在迷雾中，才能维持惊悸迷雾，否则它就会消散。\n迷雾中的魔法怪物能够获得惊悸迷雾专属的词缀。\n迷雾中的稀有或传奇怪物可能显化出惊悸迷雾恶魔。显化出的惊悸迷雾恶魔会寄宿于怪物体内，并偶尔使用其自身的技能。\n惊悸迷雾中可发现破溃之镜，它们会召唤额外的怪物；而在特定深度可发现破溃之镜碎片，提供更多样的奖励。\n击败地图首领后，有机会在附近地图上召唤出恢宏之镜。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/ContainsExpedition",
+   "icon": "assets/icons/ceed25_atlasiconcontentexpedition.webp",
+   "en": {
+    "name": "Expedition",
+    "sub": "Content",
+    "desc": "Expeditions are Ancient Kalguuran burial sites, with Verisium Remnants and dangers buried beneath the ground.\nSet up a chain of explosives and unearth the treasures, but beware of the dangers that hide in wait. Verisium Remnants apply their Modifiers to Monsters and Chests that are excavated with the same explosive that destroys the Remnant and all subsequent unearthed Monsters and Chests.\nUsing Logbooks on the Atlas can reveal Grand Expeditions which are larger versions of regular Expeditions and can contain special types of Remnants."
+   },
+   "cn": {
+    "name": "先祖秘藏",
+    "sub": "Content",
+    "desc": "先祖秘藏是远古卡古兰人的墓葬遗址，地下埋藏着维残片和各种危机。\n设置一连串炸药，挖掘出宝藏，但要当心其中潜伏的危险。\n在异界图鉴上使用日志可以揭示宏大先祖秘藏，这是普通先祖秘藏的放大版本，可能包含特殊类型的残片。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/ContainsAbyss",
+   "icon": "",
+   "en": {
+    "name": "Abyss",
+    "sub": "Content",
+    "desc": "An Abyss is a pit which leads deep underground with multiple fissures branching from it. Any monsters spawned near an Abyss will be weakened by it.\nDefeating these weakened monsters will cause the fissures to close.\nOnce the fissures have closed all the way to the pit, the pit will activate and spawn a large number of Abyssal monsters. Defeating these monsters will close the pit.\nEach closed pit has a chance to spawn an Abyssal Trove which can grant pieces of Preserved Bone to craft onto your Items. The final Abyss in the area has a chance to instead open an underground dungeon called an Abyssal Depths.\nThere are three separate groups of Abyssal Monsters: the Lightless, the Blackblooded and the Legion of the Pit, each area generally contains one of these groups.\nThe rarity of the monsters spawned depends on the rarity of the slain weakened monsters and the emerging Abyssal will steal some or all of the modifiers from them.\nAny of the modifiers stolen by Rare Abyssal can be upgraded to Abyssal Modifiers."
+   },
+   "cn": {
+    "name": "深渊",
+    "sub": "Content",
+    "desc": "深渊是一座通往地底深处的巨坑，其中有多道分支的裂缝。深渊附近生成的任何怪物会受其弱化。\n击败这些受弱化的怪物会关闭裂缝。\n通往巨坑的所有裂缝都被关闭后，巨坑便会开启，并生成大量的深渊怪物。击败这些怪物将关闭巨坑。\n每个关闭的巨坑有一定几率生成深渊保险箱，可获得遗存颚骨，可用于物品工艺。区域内最后的深渊有几率开启名为绝望深渊的地下城。\n深渊势力怪物有三种不同群体：暗光、黑血之众以及深渊军团。每个区域一般仅含有其中一个群体。\n生成怪物的稀有度取决于击杀弱化怪物的稀有度，而出现的深渊势力会偷取其部分或全部词缀。\n稀有深渊势力偷取的任何词缀可升级为深渊词缀。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/ContainsIncursion",
+   "icon": "https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentincursion.webp",
+   "en": {
+    "name": "Vaal Beacon",
+    "sub": "Content",
+    "desc": "Activating Vaal Beacons Energises Crystals allowing access to Atziri's Temple.\nWithin the Vaal Ruins a Vaal architect's console may be activated to allow the manipulation of the Temple before activating a temporal portal to travel back in time to 400 BIC, during the reign of Queen Atziri."
+   },
+   "cn": {
+    "name": "瓦尔灯塔",
+    "sub": "Content",
+    "desc": "激活瓦尔灯塔可为充能水晶充能，从而进入阿兹里神庙。\n在瓦尔遗迹中，可激活瓦尔建筑师的控制台，以便在开启时空之门回到恒历前 400 年，也就是阿兹里女王统治时期，对神庙进行改造。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/ContainsCorruption",
+   "icon": "assets/icons/484cf4_atlasiconcontentcorruption.webp",
+   "en": {
+    "name": "Corruption",
+    "sub": "Content",
+    "desc": "Contains Corruption, which may add an additional modifier to the area.\nCorrupted Areas cause slain monsters to Coalesce Corruption to manifest powerful monsters."
+   },
+   "cn": {
+    "name": "腐化",
+    "sub": "Content",
+    "desc": "包含腐化，可能为该区域增加一个额外词缀。\n被腐化的区域会使被击败的怪物凝聚腐化，形成强大的怪物。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/ContainsUniqueMap",
+   "icon": "",
+   "en": {
+    "name": "Unique Map",
+    "sub": "Content",
+    "desc": "Contains a Unique Map layout which may contain specialised rewards.\nUnique Maps cannot gain additional content, Essences, Shrines, or Strongboxes."
+   },
+   "cn": {
+    "name": "传奇地图",
+    "sub": "Content",
+    "desc": "包含传奇地图布局，可能含有专门的奖励。\n传奇地图不会具有额外内容、精华、神龛或保险箱。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/ContainsHideout",
+   "icon": "",
+   "en": {
+    "name": "Hideout",
+    "sub": "Content",
+    "desc": "Contains a Hideout that can be fully cleared to unlock the Hideout for personal use.\nAll monsters in the area are at least Magic."
+   },
+   "cn": {
+    "name": "藏身处",
+    "sub": "Content",
+    "desc": "包含一个藏身处，完全清空即可解锁该私人藏身处。\n区域内的所有怪物至少为魔法怪物。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/ContainsWanderingTrader",
+   "icon": "",
+   "en": {
+    "name": "Wandering Trader",
+    "sub": "Content",
+    "desc": "Contains a Wandering Trader who may offer you powerful rewards."
+   },
+   "cn": {
+    "name": "流浪的商人",
+    "sub": "Content",
+    "desc": "包含一个流浪的商人，会为你提供强大的奖励。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/Citadel",
+   "icon": "",
+   "en": {
+    "name": "Citadel",
+    "sub": "Content",
+    "desc": "There are three types of Citadels, each located in different cities throughout Wraeclast.\nCopper Citadels in Faridun Cities, Iron Citadels in Ezomyte Cities and Stone Citadels in Vaal Cities.\nComplete one of each type of Citadel and collect their Crisis Fragments to gain access to The Burning Monolith."
+   },
+   "cn": {
+    "name": "城塞",
+    "sub": "Content",
+    "desc": "瓦尔克拉斯各地散布着三座城塞，分别位于不同族群的城市中。\n法里顿城市中有古铜城塞，艾兹麦城市中有钢铁城塞，瓦尔城市中有磐石城塞。\n完成全部 3 座城塞并收集对应的危机碎片，即可进入燃石巨塔。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/PrecursorTower",
+   "icon": "",
+   "en": {
+    "name": "Precursor Towers",
+    "sub": "Content",
+    "desc": "Precursor Towers are ancient structures that are scattered all throughout the Atlas. Precursor Tower Maps can be completed to reveal a large area around them and to obtain a Tablet.\nCompleting a Precursor Tower requires you to activate the Precursor Beacon at the end of the Map, after defeating the Map Boss."
+   },
+   "cn": {
+    "name": "先驱高塔",
+    "sub": "Content",
+    "desc": "先驱高塔是远古时期的建筑，散落在异界的各地。完成先驱高塔地图可以揭示其周围的大片区域，并获得一个石板。\n完成先驱高塔需要你击败地图首领后，在地图终点时激活先驱灯塔。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/CorruptedNexus",
+   "icon": "",
+   "en": {
+    "name": "Corrupted Nexus",
+    "sub": "Content",
+    "desc": "A Corrupted Nexus is the source of immense corruption, guarded by a powerful Corrupted Boss."
+   },
+   "cn": {
+    "name": "腐化枢纽",
+    "sub": "Content",
+    "desc": "腐化枢纽是强大的腐化源头，有一名强大的腐化首领守卫着这里。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/CorruptedBoss",
+   "icon": "",
+   "en": {
+    "name": "Corrupted Boss",
+    "sub": "Content",
+    "desc": "Each Corrupted Nexus is guarded by a powerful Corrupted Boss. Defeat the Corrupted Boss to cleanse the Nexus."
+   },
+   "cn": {
+    "name": "腐化首领",
+    "sub": "Content",
+    "desc": "每个腐化枢纽都由一名强大的腐化首领守卫。击败腐化首领来扫清枢纽。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/DeadlyMapBoss",
+   "icon": "",
+   "en": {
+    "name": "Deadly Map Boss",
+    "sub": "Content",
+    "desc": "Deadly Map Bosses are specific Powerful Map Bosses that appear in specific Maps and are more difficult and drop better rewards.\nThese rewards are often accompanied by a specific item, usually from a pool of items. For example Unique Items, or Lineage Supports.\nDeadly Map Bosses can also drop items that grant access to Pinnacle Bosses."
+   },
+   "cn": {
+    "name": "危险的地图首领",
+    "sub": "Content",
+    "desc": "危险的地图首领是出现在特定地图中的特殊强力地图首领，难度更高且掉落更好的奖励。\n这些奖励常伴随特定物品，往往选自一个物品池，如传奇物品或血脉辅助。\n危险的地图首领也可能掉落可挑战巅峰首领的物品。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/PowerfulMapBoss",
+   "icon": "",
+   "en": {
+    "name": "Powerful Map Boss",
+    "sub": "Content",
+    "desc": "Powerful Map Bosses are Map Bosses that are even more difficult and drop even better rewards.\nPowerful Map Bosses frequently drop Waystones one Tier higher."
+   },
+   "cn": {
+    "name": "强力地图首领",
+    "sub": "Content",
+    "desc": "强力地图首领是难度更高的地图首领，会掉落更好的奖励。\n强力地图首领经常掉落比当前层级更高一层的引路石。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/CheckpointMaps",
+   "icon": "",
+   "en": {
+    "name": "Checkpoints in Maps",
+    "sub": "Content",
+    "desc": "Once all Checkpoints have been activated and the Map is completed, all remaining unfinished map content will be revealed on the minimap."
+   },
+   "cn": {
+    "name": "地图记录点",
+    "sub": "Content",
+    "desc": "当所有记录点被激活，地图完成时，地图内所有剩余的未完成内容会在小地图上显示。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/EndgameHub",
+   "icon": "",
+   "en": {
+    "name": "Landmark Area",
+    "sub": "Content",
+    "desc": "Landmark Areas in the Atlas may be accessed multiple times and do not require a Waystone to access."
+   },
+   "cn": {
+    "name": "地标区域",
+    "sub": "Content",
+    "desc": "异界图鉴中的地标区域可以多次进入，且无需引路石即可进入。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/NaturalSpawn",
+   "icon": "",
+   "en": {
+    "name": "Naturally Spawning Monsters",
+    "sub": "Content",
+    "desc": "Naturally Spawning Monsters are those who are spawned upon entering an area for the first time. Monsters that spawn from Secondary Mechanics like Strongboxes or Expedition do not count as Naturally Spawning."
+   },
+   "cn": {
+    "name": "源生怪物",
+    "sub": "Content",
+    "desc": "源生怪物是首次进入区域时生成的怪物。从次要机制如保险箱或先祖秘藏生成的怪物不算作自然生成。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/TheBurningMonoilth",
+   "icon": "",
+   "en": {
+    "name": "The Burning Monolith",
+    "sub": "Content",
+    "desc": "The Burning Monolith houses the most dangerous foe in all of Wraeclast.\nAccess to this foe requires three different Crisis Fragments from the Copper, Iron and Stone Citadels."
+   },
+   "cn": null
+  },
+  {
+   "cat": "map",
+   "key": "map/content/Shrine",
+   "icon": "",
+   "en": {
+    "name": "Shrine",
+    "sub": "Content",
+    "desc": "Shrines are Precursor Artifacts that empower monsters with its Presence with various effects.\nDefeat all the monsters Worshipping the Shrine and interact with it to temporarily gain the power for yourself."
+   },
+   "cn": {
+    "name": "神龛",
+    "sub": "Content",
+    "desc": "神龛是先驱者遗物，能够为在场的怪物提供多种效果的强化。\n击败敬拜神龛的怪物并与其互动，就能暂时让这份力量为你所用。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/Strongbox",
+   "icon": "",
+   "en": {
+    "name": "Strongbox",
+    "sub": "Content",
+    "desc": "Strongboxes are locked chests that contain various items.\nAttempting to unlock a Strongbox will unleash Packs of monsters that must be defeated in order to get the items within.\nStrongboxes can be modified to increase the difficulty and reward of the monsters and rewards within respectively."
+   },
+   "cn": {
+    "name": "保险箱",
+    "sub": "Content",
+    "desc": "保险箱是上锁的箱子，其中含有多件物品。\n尝试打开保险箱会释放出成群的怪物，只有击败它们才能获得其中的物品。\n保险箱可以添加词缀，提升遭遇怪物的难度和提供的奖励，以及保险箱本身的奖励。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/Essence",
+   "icon": "",
+   "en": {
+    "name": "Essence",
+    "sub": "Content",
+    "desc": "Essence monsters are powerful monsters trapped in crystallised corruption.\nBreaking these monsters free allows them to be defeated, dropping the Essence that can then be used to modify equipment.\nAny monsters with Essences Modifiers drop an additional Essence of that type."
+   },
+   "cn": {
+    "name": "精华",
+    "sub": "Content",
+    "desc": "精华怪物是被结晶的腐化所困的强力怪物。\n让这些怪物挣脱束缚并击败它们，就能掉落精华物品，可以为装备添加词缀。\n任何带有精华词缀的怪物会额外掉落一个同类型的精华。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/RogueExile",
+   "icon": "",
+   "en": {
+    "name": "Rogue Exile",
+    "sub": "Content",
+    "desc": "Rogue Exiles are dangerous foes that wander Wraeclast and Maps.\nThey have access to the same Skills, Items, and Uniques that you do. This can make them very formidable opponents - however, if they can be defeated they will drop a full set of gear, including any Unique equipment that they were using in combat.\nIf any Rogue Exile manages to defeat you, they will portal away, taking their equipment with them."
+   },
+   "cn": {
+    "name": "盗贼流放者",
+    "sub": "Content",
+    "desc": "盗贼流放者是游荡于瓦尔克拉斯与地图中的危险敌人。\n他们拥有与你相同的技能、物品与传奇物品，因此极具威胁性——但若你击败他们，他们将掉落一整套装备，包括他们战斗时所使用的任何传奇装备。\n若任何盗贼流放者击败你，他们将开启传送门，并携带他们的装备逃走。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/AzmeriSpirit",
+   "icon": "",
+   "en": {
+    "name": "Azmeri Spirit",
+    "sub": "Content",
+    "desc": "Azmeri Spirits are the spirits of various Azmeri Animal Guardians.\nAzmeri Spirits appear as wisps that flee as you approach them. Normal or Magic Monsters the Spirit comes into contact with become Spirit-Influenced, making them more powerful.\nSometimes the Spirit will reach and Possess a Rare or Unique monster, making them substantially stronger and rewarding while occasionally summoning spiritual animals depending on the type of Animal Spirit they represent.\nPossessed monsters are more rewarding depending on how many Spirit-Influenced monsters were defeated leading up to possession."
+   },
+   "cn": {
+    "name": "阿兹莫里之灵",
+    "sub": "Content",
+    "desc": "阿兹莫里之灵是各类阿兹莫里动物守卫的灵魂。\n阿兹莫里之灵表现为当你接近时会逃走的灵光。被其接触的普通或魔法怪物将成为灵魂影响怪物，变得更强。\n有时灵魂会附身于一只稀有或传奇怪物上，使其大幅强化并提高掉落奖励，偶尔会依照其代表的动物灵魂类型召唤灵体动物。\n附身怪物的掉落奖励会依据在附身前你击败了多少灵魂影响怪物而提升。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/StoneSummoningCircle",
+   "icon": "",
+   "en": {
+    "name": "Summoning Circle",
+    "sub": "Content",
+    "desc": "Activating a Summoning Circle will cause a Boss to be spawned.\nIf an area contains more than one Summoning Circle it will contain runes to reactivate the Summoning Circle instead of additional Summoning Circles."
+   },
+   "cn": {
+    "name": "召唤法阵",
+    "sub": "Content",
+    "desc": "激活召唤法阵将生成一位首领。\n如果一个区域包含多个召唤法阵，那么该区域将包含用于重新激活召唤法阵的符文，而非额外的召唤法阵。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/SoulEaterMonster",
+   "icon": "",
+   "en": {
+    "name": "Monster Soul Eater",
+    "sub": "Content",
+    "desc": "Monsters with Soul Eater gain 1% increased Skill Speed and 1% less damage taken when a monster dies in their Presence, stacking up to 50 times. An eaten Soul is lost every 0.5 seconds if none have been eaten within the past 4 seconds."
+   },
+   "cn": {
+    "name": "怪物噬魂者",
+    "sub": "Content",
+    "desc": "在场的怪物被击败时，具有噬魂者的怪物的技能速度加快 1%，受到的伤害总降 1%，持续 4 秒，最多叠加 50 次。若过去 4 秒内没有获得层数，则每 0.5 秒失去一层。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/SpiritPossessed",
+   "icon": "",
+   "en": {
+    "name": "Possessed",
+    "sub": "Content",
+    "desc": "A Possessed monster is a Rare or Unique monster that has had an Azmeri Spirit enter and empower them. The possessed monster is empowered by the spirit and gains bonuses depending on the type of Spirit that possessed them. Occasionally the possessed monster will summon spiritual animals depending on the type of Animal Spirit they represent.\nPossessed monsters are more rewarding depending on how many Spirit-Influenced monsters were defeated leading up to possession."
+   },
+   "cn": {
+    "name": "附身",
+    "sub": "Content",
+    "desc": "附身怪物是被阿兹莫里之灵进入并强化的稀有或传奇怪物。附身怪物会被灵体强化，根据附身灵体类型获得加成，有时还会根据附身灵体的动物种类召唤相应的灵体动物。\n击败更多灵魂影响怪物能提升最终附身怪物的奖励。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/Waystone",
+   "icon": "",
+   "en": {
+    "name": "Waystones",
+    "sub": "Content",
+    "desc": "Waystones are items that can be used to travel to Maps on the Atlas.\nHigher Waystone tiers open higher level areas containing more difficult monsters which drop higher level items and allows the use of higher tier Atlas Passives.\nWaystones can be modified to increase the difficulty and reward of monsters encountered in Maps."
+   },
+   "cn": {
+    "name": "引路石",
+    "sub": "Content",
+    "desc": "引路石是一种物品，能够让你前往异界图鉴上的地图。\n引路石等阶越高，开启的区域等阶就越高，其中的怪物就更强大，掉落物品等级更高，并允许使用更高等级的异界天赋。\n引路石可以被修改，以增加地图中遭遇的怪物难度和奖励。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/Tablet",
+   "icon": "",
+   "en": {
+    "name": "Tablets",
+    "sub": "Content",
+    "desc": "Tablets are special items that can be used in the Map Device to add more Endgame Mechanics to Maps on your Atlas."
+   },
+   "cn": {
+    "name": "石板",
+    "sub": "Content",
+    "desc": "石板是一种特殊物品，能够在地图设置中使用，为异界上的地图添加更多终局游戏机制。"
    }
   },
   {

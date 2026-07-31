@@ -586,6 +586,82 @@ async function scrapeMaps() {
   return out;
 }
 
+// ---- Map content icons -----------------------------------------------------
+// The small per-node icons on the atlas (mechanic content, boss markers,
+// towers, corruption states, ...) get their in-game tooltip text from
+// poe2db's KeywordPopups. CN pages carry the same language-independent
+// data-keyword attribute alongside a resolved cache2 hover URL.
+
+const MAP_CONTENT_KEYWORDS = [
+  "ContainsBreach", "ContainsRitual", "ContainsDelirium", "ContainsExpedition", "ContainsAbyss",
+  "ContainsIncursion", "ContainsCorruption", "ContainsUniqueMap", "ContainsHideout", "ContainsWanderingTrader",
+  "Citadel", "PrecursorTower", "CorruptedNexus", "CorruptedBoss", "DeadlyMapBoss", "PowerfulMapBoss",
+  "CheckpointMaps", "EndgameHub", "NaturalSpawn", "TheBurningMonoilth", "Shrine", "Strongbox", "Essence",
+  "RogueExile", "AzmeriSpirit", "StoneSummoningCircle", "SoulEaterMonster", "SpiritPossessed", "Waystone", "Tablet",
+];
+const CONTENT_ICON = (k) => {
+  const m = k.match(/^Contains(Breach|Ritual|Delirium|Expedition|Incursion|Corruption)$/);
+  if (m) return `https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontent${m[1].toLowerCase()}.webp`;
+  return "";
+};
+
+function parseKeywordHover(html) {
+  const $ = cheerio.load(html);
+  const name = $("h5.card-header").first().text().trim();
+  const desc = cleanText($(".keyword-body").first());
+  return name ? { name, desc } : null;
+}
+
+async function scrapeMapContents() {
+  console.log("Map content icons:");
+  const cnHoverByKeyword = new Map();
+  for (const page of ["Waystones", "Vaal_City", "Trial_of_the_Sekhemas", "Ultimatum"]) {
+    let html = "";
+    try {
+      html = await getPage("cn", page);
+    } catch {
+      continue;
+    }
+    const $ = cheerio.load(html);
+    $("a[data-keyword]").each((_, a) => {
+      const k = $(a).attr("data-keyword");
+      const h = $(a).attr("data-hover") ?? "";
+      if (k && h.startsWith("http") && !cnHoverByKeyword.has(k)) cnHoverByKeyword.set(k, h);
+    });
+  }
+  const out = [];
+  const misses = [];
+  for (const k of MAP_CONTENT_KEYWORDS) {
+    let enP = null;
+    let cnP = null;
+    try {
+      enP = parseKeywordHover(
+        await getUrl(`https://poe2db.tw/us/hover?s=${encodeURIComponent("Data\\KeywordPopups/" + k)}`, `hover_us_kw_${k}.html`),
+      );
+    } catch {}
+    const cnUrl = cnHoverByKeyword.get(k);
+    if (cnUrl) {
+      try {
+        cnP = parseKeywordHover(await getUrl(cnUrl, `hover_cn_kw_${k}.html`, { fast: true, headers: { Referer: "https://poe2db.tw/" } }));
+      } catch {}
+    }
+    if (!enP) {
+      misses.push(k);
+      continue;
+    }
+    out.push({
+      cat: "map",
+      key: `map/content/${k}`,
+      icon: CONTENT_ICON(k),
+      en: { name: enP.name, sub: "Content", desc: enP.desc },
+      cn: cnP ? { name: cnP.name, sub: "Content", desc: cnP.desc } : null,
+    });
+  }
+  if (misses.length) console.warn(`  ! no EN hover for: ${misses.join(", ")}`);
+  console.log(`  content keywords: ${out.length} (cn paired: ${out.filter((e) => e.cn).length})`);
+  return out;
+}
+
 // ---- Buffs & Debuffs -------------------------------------------------------
 // poe2db /us/Buff and /cn/Buff "#BuffDefinitions" pane: every buff/debuff with
 // its status-bar icon, frame type (Buff/Debuff/Flask/Charges) and subtype
@@ -779,6 +855,7 @@ entries.push(...questEntries);
 entries.push(...(await scrapeStoryRewards(questEntries)));
 entries.push(...(await scrapeAtlasMasters()));
 entries.push(...(await scrapeMaps()));
+entries.push(...(await scrapeMapContents()));
 entries.push(...(await scrapeBuffs()));
 entries.push(...(await scrapeTrees()));
 

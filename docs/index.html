@@ -366,7 +366,7 @@ function groupOf(e) {
       return /major/i.test(s) ? ["Major", "主要"] : /minor/i.test(s) ? ["Minor", "次要"] : ["", ""];
     }
     case "map": {
-      const M = { "Map": ["Maps", "地图"], "Unique Map": ["Unique Maps", "传奇地图"], "Trader": ["Traders", "商人"], "Hideout": ["Hideouts", "藏身处"], "Legend": ["Atlas Legend", "图例"] };
+      const M = { "Map": ["Maps", "地图"], "Unique Map": ["Unique Maps", "传奇地图"], "Trader": ["Traders", "商人"], "Hideout": ["Hideouts", "藏身处"], "Legend": ["Atlas Legend", "图例"], "Content": ["Map Contents", "地图内容"] };
       return M[e.en.sub] ?? [e.en.sub || "Maps", ""];
     }
     case "buff": {
@@ -550,8 +550,9 @@ function render() {
     const rank = (g) => { const i = GROUP_ORDER.indexOf(g); return i < 0 ? 10 : i; };
     items.sort((a, b) => rank(a._g) - rank(b._g) || a._g.localeCompare(b._g) || a.en.name.localeCompare(b.en.name));
   } else if (cat === "map") {
-    const ORDER = ["Maps", "Unique Maps", "Traders", "Hideouts", "Atlas Legend"];
-    items.sort((a, b) => ORDER.indexOf(a._g) - ORDER.indexOf(b._g));
+    const ORDER = ["Maps", "Unique Maps", "Traders", "Hideouts", "Map Contents", "Atlas Legend"];
+    const rank = (g) => { const i = ORDER.indexOf(g); return i < 0 ? 9 : i; };
+    items.sort((a, b) => rank(a._g) - rank(b._g));
   } else if (cat === "atlas-master") {
     items.sort((a, b) => a._g.localeCompare(b._g) || (a.en.sub || "").localeCompare(b.en.sub || ""));
   } else if (cat === "buff") {

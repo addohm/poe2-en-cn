@@ -647,7 +647,8 @@ function setCat(id) {
   $("cattitlezh").textContent = info.zh;
   const gridable = GRID_CATS.has(id);
   $("viewtoggle").hidden = !gridable;
-  if (!gridable) view = "list";
+  // icon categories open in grid view (hover a tile for the full tooltip)
+  view = gridable ? "grid" : "list";
   document.querySelectorAll("#viewtoggle button").forEach((b) => b.classList.toggle("on", b.dataset.v === view));
   render();
   window.scrollTo({ top: 0 });

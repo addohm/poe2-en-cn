@@ -598,6 +598,7 @@ const MAP_CONTENT_KEYWORDS = [
   "Citadel", "PrecursorTower", "CorruptedNexus", "CorruptedBoss", "DeadlyMapBoss", "PowerfulMapBoss",
   "CheckpointMaps", "EndgameHub", "NaturalSpawn", "TheBurningMonoilth", "Shrine", "Strongbox", "Essence",
   "RogueExile", "AzmeriSpirit", "StoneSummoningCircle", "SoulEaterMonster", "SpiritPossessed", "Waystone", "Tablet",
+  "DeliriumGigaMirror", "FracturingMirror", "MapBoss", "Biome",
 ];
 const CONTENT_ICON = (k) => {
   const m = k.match(/^Contains(Breach|Ritual|Delirium|Expedition|Incursion|Corruption)$/);
@@ -615,7 +616,7 @@ function parseKeywordHover(html) {
 async function scrapeMapContents() {
   console.log("Map content icons:");
   const cnHoverByKeyword = new Map();
-  for (const page of ["Waystones", "Vaal_City", "Trial_of_the_Sekhemas", "Ultimatum"]) {
+  for (const page of ["Waystones", "Vaal_City", "Trial_of_the_Sekhemas", "Ultimatum", "Delirium", "Breach", "Ritual", "Expedition", "Abyss"]) {
     let html = "";
     try {
       html = await getPage("cn", page);

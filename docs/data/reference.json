@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-31T10:05:51.572Z",
+ "generated": "2026-07-31T11:00:14.162Z",
  "source": "poe2db.tw (/us and /cn)",
  "entries": [
   {
@@ -31476,6 +31476,66 @@
     "name": "石板",
     "sub": "Content",
     "desc": "石板是一种特殊物品，能够在地图设置中使用，为异界上的地图添加更多终局游戏机制。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/DeliriumGigaMirror",
+   "icon": "",
+   "en": {
+    "name": "Grand Mirror",
+    "sub": "Content",
+    "desc": "A Grand Mirror causes a reflection of the Map Boss. When the bosses are defeated Delirium fog spreads to nearby Maps.\nWhen the fog reaches 100% Deliriousness one of the remaining maps will be transformed into a Simulacrum."
+   },
+   "cn": {
+    "name": "恢宏之镜",
+    "sub": "Content",
+    "desc": "恢宏之镜会生成一个地图首领的镜像，当这些首领被击败后，惊悸迷雾会扩散至附近的地图。\n迷雾所扩散到的地图中，至少有 1 张会转变为梦魇拟像。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/FracturingMirror",
+   "icon": "",
+   "en": {
+    "name": "Fracturing Mirrors",
+    "sub": "Content",
+    "desc": "Fracturing Mirrors are structures found in Delirium Fog that shatter when you get near them, spawning Delirium monsters.\nOccasionally Fracturing Mirrors Shards may appear with other bonuses, such as adding Liquid Emotions to monsters or summoning a Mirrored Boss."
+   },
+   "cn": {
+    "name": "破溃之镜",
+    "sub": "Content",
+    "desc": "破溃之镜是能够在惊悸迷雾中找到的建筑，当你靠近时就会碎裂，并生成惊悸迷雾怪物。\n偶尔，破溃之镜碎片会附带其他增益效果出现，例如为怪物附加液化情感，或召唤一个镜像首领。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/MapBoss",
+   "icon": "",
+   "en": {
+    "name": "Map Boss",
+    "sub": "Content",
+    "desc": "Endgame Maps each contain a Map Boss. These Map Bosses are Unique Monsters that have special mechanics and drop increased rewards.\nDefeating the Map Boss will complete the Map."
+   },
+   "cn": {
+    "name": "地图首领",
+    "sub": "Content",
+    "desc": "终局地图都包含一个地图首领。这些地图首领是传奇怪物，具有特殊机制并掉落增加的奖励。\n击败地图首领将直接完成该地图。"
+   }
+  },
+  {
+   "cat": "map",
+   "key": "map/content/Biome",
+   "icon": "",
+   "en": {
+    "name": "Biome",
+    "sub": "Content",
+    "desc": "Biomes are found throughout Endgame Maps.\nGrass, Forest, Swamp, Desert, Mountain and Water Biomes are all commonly found.\nCities and special biomes are less likely to be encountered."
+   },
+   "cn": {
+    "name": "地貌",
+    "sub": "Content",
+    "desc": "终局地图中分布着多种地貌。\n常见的有草原、森林、沼泽、沙漠、山岳与水泽地貌。\n城市及特殊地貌则较为罕见。"
    }
   },
   {

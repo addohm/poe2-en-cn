@@ -231,6 +231,18 @@
   #modal.open { display: flex; }
   #modal .card { max-width: 860px; width: 100%; margin: 0; border-color: var(--line-bright); box-shadow: 0 20px 70px rgba(0,0,0,.7), 0 0 40px rgba(201,168,106,.08); max-height: 82vh; overflow-y: auto; }
 
+  /* hover tooltip for grid tiles */
+  #tip {
+    position: fixed; z-index: 60; pointer-events: none;
+    max-width: 620px; width: max-content; min-width: 340px;
+  }
+  #tip .card {
+    margin: 0; border-color: var(--line-bright);
+    box-shadow: 0 14px 50px rgba(0,0,0,.75), 0 0 30px rgba(201,168,106,.10);
+    background: linear-gradient(180deg, #181510, #100d09);
+  }
+  @media (hover: none) { #tip { display: none !important; } }
+
   .more { text-align: center; padding: 22px; color: var(--ink-faint); font-size: 13px; letter-spacing: .1em; }
   .empty { text-align: center; padding: 80px 0; color: var(--ink-dim); font-family: var(--serif-en); letter-spacing: .1em; }
   mark { background: rgba(201,168,106,.28); color: #ffe9b0; border-radius: 2px; padding: 0 1px; }
@@ -288,6 +300,7 @@
 </div>
 
 <div id="modal"><div id="modalcard" class="card"></div></div>
+<div id="tip" hidden><div id="tipcard" class="card"></div></div>
 
 <footer id="foot"></footer>
 
@@ -655,6 +668,41 @@ $("list").addEventListener("click", (ev) => {
   $("modalcard").innerHTML = cardHtml(e).replace(/^<div class="card">|<\/div>$/g, "");
   $("modal").classList.add("open");
 });
+
+/* game-style hover tooltip on grid tiles */
+let tipFor = null;
+function positionTip(ev) {
+  const tip = $("tip");
+  const pad = 18;
+  const r = tip.getBoundingClientRect();
+  let x = ev.clientX + pad;
+  let y = ev.clientY + pad;
+  if (x + r.width > innerWidth - 8) x = ev.clientX - r.width - pad;
+  if (y + r.height > innerHeight - 8) y = Math.max(8, innerHeight - r.height - 8);
+  tip.style.left = Math.max(8, x) + "px";
+  tip.style.top = y + "px";
+}
+$("list").addEventListener("mouseover", (ev) => {
+  const t = ev.target.closest(".tile");
+  if (!t) return;
+  if (tipFor !== t.dataset.i) {
+    tipFor = t.dataset.i;
+    const e = DATA[+t.dataset.i];
+    $("tipcard").innerHTML = cardHtml(e).replace(/^<div class="card">|<\/div>$/g, "");
+  }
+  $("tip").hidden = false;
+  positionTip(ev);
+});
+$("list").addEventListener("mousemove", (ev) => {
+  if (!$("tip").hidden && ev.target.closest(".tile")) positionTip(ev);
+});
+$("list").addEventListener("mouseout", (ev) => {
+  if (!ev.relatedTarget || !ev.relatedTarget.closest?.(".tile")) {
+    $("tip").hidden = true;
+    tipFor = null;
+  }
+});
+document.addEventListener("scroll", () => { $("tip").hidden = true; }, { passive: true });
 $("modal").addEventListener("click", (ev) => { if (ev.target.id === "modal") $("modal").classList.remove("open"); });
 document.addEventListener("keydown", (ev) => {
   if (ev.key === "Escape") $("modal").classList.remove("open");

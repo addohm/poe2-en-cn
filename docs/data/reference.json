@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-31T11:00:14.162Z",
+ "generated": "2026-08-02T03:01:27.647Z",
  "source": "poe2db.tw (/us and /cn)",
  "entries": [
   {
@@ -26735,6 +26735,595 @@
     "sub": "",
     "desc": "右键点击，以远古卡古兰之力灌注自身。\n最大生命和魔力提高 5%",
     "reward": ""
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Witch",
+   "icon": "assets/icons/7a9472_blankint.webp",
+   "grp": [
+    "Witch",
+    "女巫"
+   ],
+   "en": {
+    "name": "Witch",
+    "sub": "Class",
+    "desc": ""
+   },
+   "cn": {
+    "name": "女巫",
+    "sub": "职业",
+    "desc": ""
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Witch/Infernalist",
+   "icon": "assets/icons/486de0_iconintfour_witch1.webp",
+   "grp": [
+    "Witch",
+    "女巫"
+   ],
+   "en": {
+    "name": "Infernalist",
+    "sub": "Ascendancy",
+    "desc": "You seek power at any cost... and there is no price too high to pay."
+   },
+   "cn": {
+    "name": "驱炎使",
+    "sub": "升华",
+    "desc": "不计代价地追寻力量……多少代价都不足吝惜。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Witch/Blood_Mage",
+   "icon": "assets/icons/cd28d2_iconintfour_witch2.webp",
+   "grp": [
+    "Witch",
+    "女巫"
+   ],
+   "en": {
+    "name": "Blood Mage",
+    "sub": "Ascendancy",
+    "desc": "Your search for power took you on a journey inwards."
+   },
+   "cn": {
+    "name": "命源法师",
+    "sub": "升华",
+    "desc": "追求力量的旅程，通往了你的内心。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Witch/Lich",
+   "icon": "assets/icons/143add_iconintfour_witch3.webp",
+   "grp": [
+    "Witch",
+    "女巫"
+   ],
+   "en": {
+    "name": "Lich",
+    "sub": "Ascendancy",
+    "desc": "Death is your domain, your flesh merely a material to be mastered."
+   },
+   "cn": {
+    "name": "巫妖",
+    "sub": "升华",
+    "desc": "死亡是你的领域，血肉不过是有待掌控的耗材。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Witch/Abyssal_Lich",
+   "icon": "assets/icons/151827_iconintfour_witch3b.webp",
+   "grp": [
+    "Witch",
+    "女巫"
+   ],
+   "en": {
+    "name": "Abyssal Lich",
+    "sub": "Ascendancy",
+    "desc": "The Well of Souls is yours to command."
+   },
+   "cn": {
+    "name": "深渊巫妖",
+    "sub": "升华",
+    "desc": "灵魂之井由你掌控。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Ranger",
+   "icon": "assets/icons/0533f9_blankdex.webp",
+   "grp": [
+    "Ranger",
+    "游侠"
+   ],
+   "en": {
+    "name": "Ranger",
+    "sub": "Class",
+    "desc": ""
+   },
+   "cn": {
+    "name": "游侠",
+    "sub": "职业",
+    "desc": ""
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Ranger/Deadeye",
+   "icon": "assets/icons/723465_icondexfour_ranger1.webp",
+   "grp": [
+    "Ranger",
+    "游侠"
+   ],
+   "en": {
+    "name": "Deadeye",
+    "sub": "Ascendancy",
+    "desc": "A woman can change the world with a single well-placed arrow."
+   },
+   "cn": {
+    "name": "锐眼",
+    "sub": "升华",
+    "desc": "只需一箭，便可改变世界的女人。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Ranger/Pathfinder",
+   "icon": "assets/icons/e0d6c8_icondexfour_ranger3.webp",
+   "grp": [
+    "Ranger",
+    "游侠"
+   ],
+   "en": {
+    "name": "Pathfinder",
+    "sub": "Ascendancy",
+    "desc": "There are venoms and virtues aplenty in the wilds, if you know where to look."
+   },
+   "cn": {
+    "name": "追猎者",
+    "sub": "升华",
+    "desc": "荒野中充满了恶毒与美善，只要你知道在何处寻找。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Warrior",
+   "icon": "assets/icons/fc510b_iconstrfourb.webp",
+   "grp": [
+    "Warrior",
+    "战士"
+   ],
+   "en": {
+    "name": "Warrior",
+    "sub": "Class",
+    "desc": "I wanted very little for myself. A forge, a bed. They took that all away when they burned down my home. Give me one good hammer, and they will find that there is nothing more dangerous than a man of peace roused to war."
+   },
+   "cn": {
+    "name": "战士",
+    "sub": "职业",
+    "desc": "我并不贪图身外之物，只求一个熔炉，一张铺盖。他们却焚毁了我的家园，夺走了我的一切。给我一把精良的锤子，我就能让他们明白，不要逼迫和平的人民挺身而起。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Warrior/Titan",
+   "icon": "assets/icons/b2de01_iconstrfourb_warrior1.webp",
+   "grp": [
+    "Warrior",
+    "战士"
+   ],
+   "en": {
+    "name": "Titan",
+    "sub": "Ascendancy",
+    "desc": "Incredible might has always laid buried within you. Now is the time to rise."
+   },
+   "cn": {
+    "name": "泰坦",
+    "sub": "升华",
+    "desc": "身负惊世骇俗之力，如今正是奋起之时。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Warrior/Warbringer",
+   "icon": "assets/icons/6843de_iconstrfourb_warrior2.webp",
+   "grp": [
+    "Warrior",
+    "战士"
+   ],
+   "en": {
+    "name": "Warbringer",
+    "sub": "Ascendancy",
+    "desc": "Your home has been threatened. A good man must be roused to war."
+   },
+   "cn": {
+    "name": "战争使者",
+    "sub": "升华",
+    "desc": "家园危在旦夕，义士挺身而战。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Warrior/Smith_of_Kitava",
+   "icon": "assets/icons/fdf4b2_iconstrfourb_warrior3.webp",
+   "grp": [
+    "Warrior",
+    "战士"
+   ],
+   "en": {
+    "name": "Smith of Kitava",
+    "sub": "Ascendancy",
+    "desc": "You hunger for power, and by force of arms, you will take it."
+   },
+   "cn": {
+    "name": "奇塔弗匠师",
+    "sub": "升华",
+    "desc": "力量令你如饥似渴，你将凭借刀兵将其夺得。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Sorceress",
+   "icon": "assets/icons/90039c_iconintfourb.webp",
+   "grp": [
+    "Sorceress",
+    "魔巫"
+   ],
+   "en": {
+    "name": "Sorceress",
+    "sub": "Class",
+    "desc": "The elements are mine to control. I know why lightning strikes, why fire burns, and why cold freezes. They do so because I command it. The vengeance of the Maraketh will find those who have transgressed no matter where they run."
+   },
+   "cn": {
+    "name": "魔巫",
+    "sub": "职业",
+    "desc": "元素之力任我掌控。电闪雷鸣，熊熊火光，天寒地冻，都是出自我的命令。僭越之人尽管逃亡天涯海角吧，马拉克斯人必将一雪前耻。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Sorceress/Stormweaver",
+   "icon": "assets/icons/f78ad4_iconintfourb_sorceress1.webp",
+   "grp": [
+    "Sorceress",
+    "魔巫"
+   ],
+   "en": {
+    "name": "Stormweaver",
+    "sub": "Ascendancy",
+    "desc": "The rumble of thunder heralds your approach. Woe to those that draw your ire."
+   },
+   "cn": {
+    "name": "风暴编织者",
+    "sub": "升华",
+    "desc": "电闪雷鸣宣告着你的降临，狂徒鼠辈必将饱尝灾祸。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Sorceress/Chronomancer",
+   "icon": "assets/icons/d54d02_iconintfourb_sorceress2.webp",
+   "grp": [
+    "Sorceress",
+    "魔巫"
+   ],
+   "en": {
+    "name": "Chronomancer",
+    "sub": "Ascendancy",
+    "desc": "The tapestry of time is yours to weave; an element you alone may master."
+   },
+   "cn": {
+    "name": "塑时术师",
+    "sub": "升华",
+    "desc": "时光的织缕任你编织，唯你掌控。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Sorceress/Disciple_of_Varashta",
+   "icon": "assets/icons/453f1a_iconintfourb_sorceress3.webp",
+   "grp": [
+    "Sorceress",
+    "魔巫"
+   ],
+   "en": {
+    "name": "Disciple of Varashta",
+    "sub": "Ascendancy",
+    "desc": "By your command, they will earn redemption...one duty at a time."
+   },
+   "cn": {
+    "name": "瓦拉煞的门徒",
+    "sub": "升华",
+    "desc": "遵你命令，他们将完成一项项任务……逐步获得救赎。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Huntress",
+   "icon": "assets/icons/a11e81_icondexfourb.webp",
+   "grp": [
+    "Huntress",
+    "女猎手"
+   ],
+   "en": {
+    "name": "Huntress",
+    "sub": "Class",
+    "desc": "The Spirit bid me leave my mountain, only to find violence and death. Give me a spear! If they want blood, I will show them what it means to fight for survival."
+   },
+   "cn": {
+    "name": "女猎手",
+    "sub": "职业",
+    "desc": "万灵呼唤我走出故山，眼前却只有暴行与死亡。给我一柄战矛！既然他们只愿沐血，我就让他们见识一下为生存而战的真正意义。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Huntress/Amazon",
+   "icon": "assets/icons/f6b039_icondexfourb_huntress1.webp",
+   "grp": [
+    "Huntress",
+    "女猎手"
+   ],
+   "en": {
+    "name": "Amazon",
+    "sub": "Ascendancy",
+    "desc": "You became a weapon of war so that others could live in peace."
+   },
+   "cn": {
+    "name": "亚马逊",
+    "sub": "升华",
+    "desc": "为了让旁人和平安居，你甘愿化身为战争的武器。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Huntress/Spirit_Walker",
+   "icon": "assets/icons/8a78d8_icondexfourb_huntress2.webp",
+   "grp": [
+    "Huntress",
+    "女猎手"
+   ],
+   "en": {
+    "name": "Spirit Walker",
+    "sub": "Ascendancy",
+    "desc": "You were chosen by the Sacred Wisps to enact the Spirit's will."
+   },
+   "cn": {
+    "name": "灵魂行者",
+    "sub": "升华",
+    "desc": "你被圣洁鬼灵选中，以践行万灵的意志。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Huntress/Ritualist",
+   "icon": "assets/icons/1b215e_icondexfourb_huntress3.webp",
+   "grp": [
+    "Huntress",
+    "女猎手"
+   ],
+   "en": {
+    "name": "Ritualist",
+    "sub": "Ascendancy",
+    "desc": "Corruption cost you your home, but taught you so much more..."
+   },
+   "cn": {
+    "name": "仪祭师",
+    "sub": "升华",
+    "desc": "腐化令你失去了家园，又投以智慧作为回报……"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Mercenary",
+   "icon": "assets/icons/5ca310_iconstrdexfourb.webp",
+   "grp": [
+    "Mercenary",
+    "佣兵"
+   ],
+   "en": {
+    "name": "Mercenary",
+    "sub": "Class",
+    "desc": "You've got a weapon, I'll wield it. Just tell me where to point it. I've seen the highs and horrors of war, and I'll do whatever it takes to survive. If you've got coin, I'm your man."
+   },
+   "cn": {
+    "name": "佣兵",
+    "sub": "职业",
+    "desc": "你有武器，我就能用，告诉我将它指向何处就行。我见识过战争的热血和恐怖。为了生存，我会不惜一切代价。只要你有钱，我就是你的人。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Mercenary/Tactician",
+   "icon": "assets/icons/84cfd9_iconstrdexfourb_mercenary1.webp",
+   "grp": [
+    "Mercenary",
+    "佣兵"
+   ],
+   "en": {
+    "name": "Tactician",
+    "sub": "Ascendancy",
+    "desc": "Countless wars have left you with skills somewhat resembling a decent officer..."
+   },
+   "cn": {
+    "name": "战术家",
+    "sub": "升华",
+    "desc": "经历无数场战争的洗礼，你已和精锐的军官别无二致……"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Mercenary/Witchhunter",
+   "icon": "assets/icons/216b8e_iconstrdexfourb_mercenary2.webp",
+   "grp": [
+    "Mercenary",
+    "佣兵"
+   ],
+   "en": {
+    "name": "Witchhunter",
+    "sub": "Ascendancy",
+    "desc": "There's something very wrong with this world... and you're going to fix it."
+   },
+   "cn": {
+    "name": "猎巫人",
+    "sub": "升华",
+    "desc": "横行世间的不义……将由你拨乱反正。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Mercenary/Gemling_Legionnaire",
+   "icon": "assets/icons/3de472_iconstrdexfourb_mercenary3.webp",
+   "grp": [
+    "Mercenary",
+    "佣兵"
+   ],
+   "en": {
+    "name": "Gemling Legionnaire",
+    "sub": "Ascendancy",
+    "desc": "The more you embrace virtue gems, the more power they offer..."
+   },
+   "cn": {
+    "name": "古灵使徒斗士",
+    "sub": "升华",
+    "desc": "向古灵宝石献出身心，它们也会赋予你力量……"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Monk",
+   "icon": "assets/icons/5bda61_icondexintfourb.webp",
+   "grp": [
+    "Monk",
+    "行者"
+   ],
+   "en": {
+    "name": "Monk",
+    "sub": "Class",
+    "desc": "My life has been naught but discipline and focus, preparing me for this. I fight for the Benevolent Dreamer. Free my hands, and those who seek chaos will fall before me!"
+   },
+   "cn": {
+    "name": "行者",
+    "sub": "职业",
+    "desc": "我辈此生别无他物，只与戒律专注相伴，得以面对此等乱局。我为仁爱的幻梦者而战。解放我的双手，我会让混沌的爪牙一一拜服在地！"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Monk/Martial_Artist",
+   "icon": "assets/icons/9259d0_icondexintfourb_monk1.webp",
+   "grp": [
+    "Monk",
+    "行者"
+   ],
+   "en": {
+    "name": "Martial Artist",
+    "sub": "Ascendancy",
+    "desc": "They made you a human weapon... but that strength has set you free."
+   },
+   "cn": {
+    "name": "武圣",
+    "sub": "升华",
+    "desc": "他们把你锻造成人形兵器……但那份力量，却让你挣脱了枷锁。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Monk/Invoker",
+   "icon": "assets/icons/2ffe1e_icondexintfourb_monk2.webp",
+   "grp": [
+    "Monk",
+    "行者"
+   ],
+   "en": {
+    "name": "Invoker",
+    "sub": "Ascendancy",
+    "desc": "True strength lies within. One must only focus... and believe."
+   },
+   "cn": {
+    "name": "祈求者",
+    "sub": "升华",
+    "desc": "真正的力量源于内心，你只需全神贯注……坚守信念。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Monk/Acolyte_of_Chayula",
+   "icon": "assets/icons/c593d9_icondexintfourb_monk3.webp",
+   "grp": [
+    "Monk",
+    "行者"
+   ],
+   "en": {
+    "name": "Acolyte of Chayula",
+    "sub": "Ascendancy",
+    "desc": "The truth of your faith threatens to break your very soul... but in that struggle lies power beyond belief."
+   },
+   "cn": {
+    "name": "夏乌拉追随者",
+    "sub": "升华",
+    "desc": "追随的真相令你的内心摇摇欲坠……挣扎中却蕴藏着超乎想象的力量。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Druid",
+   "icon": "assets/icons/75f2cd_iconstrintfourb.webp",
+   "grp": [
+    "Druid",
+    "德鲁伊"
+   ],
+   "en": {
+    "name": "Druid",
+    "sub": "Class",
+    "desc": "The wrath of the wild and the mind of a man - with the ruthlessness of both. I have weathered more than most could fathom, and I will have my vengeance."
+   },
+   "cn": {
+    "name": "德鲁伊",
+    "sub": "职业",
+    "desc": "怀揣荒野之怒与人类心智——兼具二者的冷酷无情。我所历经的磨难远超常人想象，而我的复仇，必将到来。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Druid/Oracle",
+   "icon": "assets/icons/566049_iconstrintfourb_druid1.webp",
+   "grp": [
+    "Druid",
+    "德鲁伊"
+   ],
+   "en": {
+    "name": "Oracle",
+    "sub": "Ascendancy",
+    "desc": "There are many paths to achieve your goals... and you see them all."
+   },
+   "cn": {
+    "name": "神谕者",
+    "sub": "升华",
+    "desc": "达成目标有多种途径……皆在你洞悉之下。"
+   }
+  },
+  {
+   "cat": "class",
+   "key": "class/Druid/Shaman",
+   "icon": "assets/icons/bd5f28_iconstrintfourb_druid2.webp",
+   "grp": [
+    "Druid",
+    "德鲁伊"
+   ],
+   "en": {
+    "name": "Shaman",
+    "sub": "Ascendancy",
+    "desc": "Wraeclast has suffered for too long.You are vengeance incarnate."
+   },
+   "cn": {
+    "name": "萨满",
+    "sub": "升华",
+    "desc": "瓦尔克拉斯的苦难绵亘太久。你就是复仇的化身。"
    }
   },
   {

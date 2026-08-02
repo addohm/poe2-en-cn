@@ -586,6 +586,78 @@ async function scrapeMaps() {
   return out;
 }
 
+// ---- Classes & ascendancies ------------------------------------------------
+// Class list + class->ascendancy mapping from maxroll's data.min.json
+// (classes without ascendancies are unreleased stubs); localized names,
+// flavour text, and icons from poe2db class/ascendancy pages.
+
+const CHAR_DATA_URL = "https://assets-ng.maxroll.gg/poe2planner/game/data.min.json";
+
+function parseClassPage(html) {
+  const $ = cheerio.load(html);
+  const name =
+    $(".newItemPopup .itemName .lc").first().text().trim() ||
+    $("title").text().split(" - ")[0].trim();
+  const flavour = cleanText($(".FlavourText").first());
+  const icon = $(".itemboximage img").first().attr("src") ?? "";
+  return name ? { name, flavour, icon } : null;
+}
+
+async function scrapeClasses() {
+  console.log("Classes & ascendancies:");
+  const data = JSON.parse(await getUrl(CHAR_DATA_URL, "maxroll_data.min.json"));
+  const out = [];
+  for (const cls of Object.values(data.characters)) {
+    const ascNames = Object.values(cls.ascendancies ?? {})
+      .map((a) => a.name)
+      .filter((n) => n && !/DNT/.test(n));
+    if (/DNT/.test(cls.name) || !ascNames.length) continue; // unreleased
+    const clsSlug = nameToSlug(cls.name);
+    let clsEn = null;
+    let clsCn = null;
+    try { clsEn = parseClassPage(await getPage("us", clsSlug)); } catch {}
+    try { clsCn = parseClassPage(await getPage("cn", clsSlug)); } catch {}
+    if (!clsEn) {
+      console.warn(`  ! no page for class ${cls.name}`);
+      continue;
+    }
+    // poe2db styles some class names ALL-CAPS
+    if (clsEn.name === clsEn.name.toUpperCase()) {
+      clsEn.name = clsEn.name.replace(/\S+/g, (w) => w[0] + w.slice(1).toLowerCase());
+    }
+    const grp = [clsEn.name, clsCn?.name ?? ""];
+    out.push({
+      cat: "class",
+      key: `class/${clsSlug}`,
+      icon: clsEn.icon,
+      grp,
+      en: { name: clsEn.name, sub: "Class", desc: clsEn.flavour },
+      cn: clsCn ? { name: clsCn.name, sub: "职业", desc: clsCn.flavour } : null,
+    });
+    for (const asc of ascNames) {
+      const slug = nameToSlug(asc);
+      let aEn = null;
+      let aCn = null;
+      try { aEn = parseClassPage(await getPage("us", slug)); } catch {}
+      try { aCn = parseClassPage(await getPage("cn", slug)); } catch {}
+      if (!aEn) {
+        console.warn(`  ! no page for ascendancy ${asc}`);
+        continue;
+      }
+      out.push({
+        cat: "class",
+        key: `class/${clsSlug}/${slug}`,
+        icon: aEn.icon,
+        grp,
+        en: { name: aEn.name, sub: "Ascendancy", desc: aEn.flavour },
+        cn: aCn ? { name: aCn.name, sub: "升华", desc: aCn.flavour } : null,
+      });
+    }
+  }
+  console.log(`  classes: ${out.length} entries (cn paired: ${out.filter((e) => e.cn).length})`);
+  return out;
+}
+
 // ---- Map content icons -----------------------------------------------------
 // The small per-node icons on the atlas (mechanic content, boss markers,
 // towers, corruption states, ...) get their in-game tooltip text from
@@ -854,6 +926,7 @@ entries.push(
 const questEntries = await scrapeQuests();
 entries.push(...questEntries);
 entries.push(...(await scrapeStoryRewards(questEntries)));
+entries.push(...(await scrapeClasses()));
 entries.push(...(await scrapeAtlasMasters()));
 entries.push(...(await scrapeMaps()));
 entries.push(...(await scrapeMapContents()));

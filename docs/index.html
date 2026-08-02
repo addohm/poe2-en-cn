@@ -312,6 +312,7 @@ const NAV = [
   { section: ["Campaign", "战役"], cats: [
     ["quest", "Quests", "任务"],
     ["story-reward", "Story Rewards", "剧情奖励"],
+    ["class", "Classes", "职业"],
   ]},
   { section: ["Trials", "试炼"], cats: [
     ["sekhemas-boon", "Boons", "恩赐"],
@@ -339,7 +340,7 @@ const NAV = [
     ["buff", "Buffs & Debuffs", "增益减益"],
   ]},
 ];
-const GRID_CATS = new Set(["sekhemas-boon", "sekhemas-affliction", "genesis-tree", "passive-tree", "chaos-mod", "atlas-master", "story-reward", "buff", "map",
+const GRID_CATS = new Set(["sekhemas-boon", "sekhemas-affliction", "genesis-tree", "passive-tree", "chaos-mod", "atlas-master", "story-reward", "class", "buff", "map",
   "atlas-core", "atlas-breach", "atlas-delirium", "atlas-ritual", "atlas-expedition", "atlas-abyss", "atlas-incursion"]);
 const CHUNK = 120;
 // virtual categories: id -> [real cat, atlas sub-tree]
@@ -389,6 +390,7 @@ function groupOf(e) {
         { Buff: "增益", Debuff: "减益", Flask: "药剂", Charges: "充能" }[t] ?? "",
       ];
     }
+    case "class": return e.grp ?? ["", ""];
     case "atlas-master": {
       const g = (e.en.sub || "").replace(/\s*T\d+$/, "").trim();
       const zh = (e.cn?.sub || "").replace(/\s*T\d+$/, "").trim();
